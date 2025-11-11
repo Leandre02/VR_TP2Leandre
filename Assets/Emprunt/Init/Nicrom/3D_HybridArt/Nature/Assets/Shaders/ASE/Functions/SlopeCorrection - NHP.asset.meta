@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 820b7fa424e41b9418eeb495157a948c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 181109
+  packageName: Nature - Hybrid Pack
+  packageVersion: 1.1.4
+  assetPath: Assets/Nicrom/3D_HybridArt/Nature/Assets/Shaders/ASE/Functions/SlopeCorrection
+    - NHP.asset
+  uploadId: 763345

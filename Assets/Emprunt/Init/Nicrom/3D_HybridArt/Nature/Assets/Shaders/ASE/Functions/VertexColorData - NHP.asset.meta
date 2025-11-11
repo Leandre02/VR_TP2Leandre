@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: dd198d332c0ec7c46a31dc0320acfdfc
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 181109
+  packageName: Nature - Hybrid Pack
+  packageVersion: 1.1.4
+  assetPath: Assets/Nicrom/3D_HybridArt/Nature/Assets/Shaders/ASE/Functions/VertexColorData
+    - NHP.asset
+  uploadId: 763345

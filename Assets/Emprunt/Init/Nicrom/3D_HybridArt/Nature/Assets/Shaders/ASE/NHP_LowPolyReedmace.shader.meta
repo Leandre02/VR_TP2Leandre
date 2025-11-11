@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e2d7b67912c5bc040a5ce41036ce9b7f
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 181109
+  packageName: Nature - Hybrid Pack
+  packageVersion: 1.1.4
+  assetPath: Assets/Nicrom/3D_HybridArt/Nature/Assets/Shaders/ASE/NHP_LowPolyReedmace.shader
+  uploadId: 763345

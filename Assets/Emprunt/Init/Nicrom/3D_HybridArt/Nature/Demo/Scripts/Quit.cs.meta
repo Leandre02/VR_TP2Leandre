@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 61e1636abe9226244913d69f8054175b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 181109
+  packageName: Nature - Hybrid Pack
+  packageVersion: 1.1.4
+  assetPath: Assets/Nicrom/3D_HybridArt/Nature/Demo/Scripts/Quit.cs
+  uploadId: 763345

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a3eecc63a5f531740a4d8e870c32652e
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 181109
+  packageName: Nature - Hybrid Pack
+  packageVersion: 1.1.4
+  assetPath: Assets/Nicrom/3D_HybridArt/Nature/Assets/Shaders/ASE/NHP_StylisedGrass.shader
+  uploadId: 763345

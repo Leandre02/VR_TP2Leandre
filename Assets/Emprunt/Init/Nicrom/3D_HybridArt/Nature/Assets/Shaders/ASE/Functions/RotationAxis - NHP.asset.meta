@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 7c8df9b7b65c98845a3b8d5e4b10c1e0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 181109
+  packageName: Nature - Hybrid Pack
+  packageVersion: 1.1.4
+  assetPath: Assets/Nicrom/3D_HybridArt/Nature/Assets/Shaders/ASE/Functions/RotationAxis
+    - NHP.asset
+  uploadId: 763345
