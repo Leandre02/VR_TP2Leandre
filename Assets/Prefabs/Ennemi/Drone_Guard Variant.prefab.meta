@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a42906096b57b9945bd3157b955010eb
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 175607
+  packageName: Drone Guard
+  packageVersion: 1.0
+  assetPath: Assets/Drone_Guard/Prefab/Drone_Guard Variant.prefab
+  uploadId: 381488
