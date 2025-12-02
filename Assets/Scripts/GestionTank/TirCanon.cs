@@ -2,26 +2,73 @@ using UnityEngine;
 
 /// <summary>
 /// Represente le tir d un canon 
-/// Definit la sequence de tir avant chaque nouvel instance de nouvel balle 
-/// Source : https://www.youtube.com/watch?v=6oDjyMqWYiI
 /// </summary>
 public class TirCanon : MonoBehaviour
 {
-    public GameObject prefabProjectile; // Le prefab du projectile à instancier
-    public Transform sortie;            // Le point de sortie du canon
-    public float cadence = 6f;          // Tirs par seconde
+    [Header("Projectile")]
+    public GameObject prefabProjectile;
+    public Transform sortie;
+    public float cadence = 6f;
 
-    private float delaiAvantProchainTir = 0f; // Temps restant avant de pouvoir tirer à nouveau
+    private float delaiAvantProchainTir = 0f;
+    private bool tirActif = false;
+
+    void Start()
+    {
+        // On s'abonne une fois que tout est bien initialisé
+        if (SystemeJeu.Instance != null)
+        {
+            SystemeJeu.Instance.OnTir += RecevoirTir;
+            Debug.Log("[TirCanon] Abonné à OnTir");
+        }
+        else
+        {
+            Debug.LogWarning("[TirCanon] SystemeJeu.Instance est null au Start");
+        }
+    }
+
+    void OnDestroy()
+    {
+        if (SystemeJeu.Instance != null)
+        {
+            SystemeJeu.Instance.OnTir -= RecevoirTir;
+        }
+    }
+
+
+    void OnEnable()
+    {
+        if (SystemeJeu.Instance != null)
+            SystemeJeu.Instance.OnTir += RecevoirTir;
+    }
+
+    void OnDisable()
+    {
+        if (SystemeJeu.Instance != null)
+            SystemeJeu.Instance.OnTir -= RecevoirTir;
+    }
+
+    void RecevoirTir(bool actif)
+    {
+        tirActif = actif;
+        Debug.Log("[TirCanon] RecevoirTir -> " + tirActif);
+    }
 
     void Update()
     {
         delaiAvantProchainTir -= Time.deltaTime;
 
-        // Clique gauche pour tirer
-        if (Input.GetMouseButton(0) && delaiAvantProchainTir <= 0f && prefabProjectile && sortie)
+        if (tirActif && delaiAvantProchainTir <= 0f && prefabProjectile != null && sortie != null)
         {
             delaiAvantProchainTir = 1f / Mathf.Max(0.01f, cadence);
             Instantiate(prefabProjectile, sortie.position, sortie.rotation);
+
+            // Son de tir centralisé
+            if (GestionAudio.Instance != null)
+            {
+                GestionAudio.Instance.JouerTir();
+            }
+            Debug.Log("[TirCanon] Tir !");
         }
     }
 }

@@ -20,7 +20,16 @@ public class DroneDestructionState : IDroneState
     {
         drone.ArreterDeplacement();
         drone.GetComponent<Animator>().SetTrigger("Detruit");
-        GameObject.Destroy(drone.gameObject, 2f);
+
+        // Notifie le systeme de quetes
+        if (CompteursQuete.Instance != null)
+        {
+            CompteursQuete.Instance.EnregistrerDroneDetruit();
+            Debug.Log("[CompteursQuete] EnregistrerDroneDetruit appelé");
+
+        }
+
+        GameObject.Destroy(drone.gameObject, 4f);
     }
 
     public void Update()

@@ -28,20 +28,33 @@ public class Vie : MonoBehaviour
         if (PointsDeVie <= 0f) Mourir();
     }
 
-    /// <summary>
-    /// Une methode pour soigner le personnage
-    /// </summary>
-    /// <param name="valeur">La valeur portée par l'objet de guérison</param>
-    public void Soigner(float valeur)
-    {
-        if (valeur <= 0f) return;
-        PointsDeVie = Mathf.Min(pointsDeVieMax, PointsDeVie + valeur);
-        OnVieChange?.Invoke(PointsDeVie, pointsDeVieMax);
-    }
-
     private void Mourir()
     {
-        
+        // Si c'est un drone qui meurt
+        Drone drone = GetComponent<Drone>();
+        if (drone != null)
+        {
+            if (CompteursQuete.Instance != null)
+            {
+                CompteursQuete.Instance.EnregistrerDroneDetruit();
+                Debug.Log("Drone détruit via Vie, EnregistrerDroneDetruit appelé");
+            }
+            drone.ChangerEtat(new DroneDestructionState(drone));
+            return;
+
+        }
+
+        // Si c'est le joueur qui meurt
+
+        if (CompareTag("Player"))
+        {
+            if (GestionFinPartie.Instance != null)
+            {
+                GestionFinPartie.Instance.DeclarerDefaite();
+            }
+            return;
+        }
+
         Destroy(gameObject); // Detruit l'objet
     }
 }

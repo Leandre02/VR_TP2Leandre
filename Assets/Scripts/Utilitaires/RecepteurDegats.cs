@@ -18,7 +18,7 @@ public class Recepteur : MonoBehaviour
         }
     }
 
-    // Exemple d'utilisation avec OnCollisionEnter
+    // Pour les collisions
     void OnCollisionEnter(Collision col)
     {
         Degats degats = col.gameObject.GetComponent<Degats>();

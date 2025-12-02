@@ -24,7 +24,10 @@ public class DroneAttaqueState : IDroneState
     /// </summary>
     public void EntrerEtat()
     {
-        drone.GetComponent<Animator>().Play("Attaque");
+        var animator = drone.Animator;
+        animator.SetBool("Patrouille", false);   // on arrête le déplacement
+        animator.ResetTrigger("Detruit");
+        animator.SetTrigger("Attaque");
         dernierTempsAttaque = -delaiRecharge;
     }
 

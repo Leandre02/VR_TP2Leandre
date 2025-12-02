@@ -6,74 +6,81 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class ControleTank : MonoBehaviour
 {
-    // Source - pour le deplacement de mon tank : https://docs.unity3d.com/ScriptReference/CharacterController.Move.html
+    public float vitesse = 5f;
+    public float vitesseRotation = 150f;
 
-    public float vitesse = 5f;          // Vitesse du tank en m/s
-    public float vitesseRotation = 150f; // Vitesse de rotation en degrés/s
     private float multiplicateurVitesse = 1f;
     private float timerRalentissement = 0f;
-
-
-    private CharacterController controller; // Le controller de mon tank
+    private CharacterController controller;
     private float vitesseVerticale;
-    
+
+    // Stocke les inputs recus des events
+    private Vector2 inputDeplacement;
+
+    private float vitesseActuelle = 0f;
+
     void Awake()
     {
         controller = GetComponent<CharacterController>();
     }
 
-    /// <summary>
-    /// Récupere l'entrée de mes Players inputs et assigne l'axe correspondant
-    /// </summary>
+    void OnEnable()
+    {
+        if (SystemeJeu.Instance != null)
+            SystemeJeu.Instance.OnDeplacement += RecevoirDeplacement;
+    }
+
+    void OnDisable()
+    {
+        if (SystemeJeu.Instance != null)
+            SystemeJeu.Instance.OnDeplacement -= RecevoirDeplacement;
+    }
+
+    void RecevoirDeplacement(Vector2 mouvement)
+    {
+        inputDeplacement = mouvement;
+    }
+
     void Update()
     {
-        // Source - gestion des axes : https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Input.GetAxis.html
-
-        float avance = Input.GetAxis("Vertical");    // Retourne l'axe vertical
-        float tourne = Input.GetAxis("Horizontal");  // Retourne l'axe horizontal
-
+        // Gestion ralentissement
         if (timerRalentissement > 0)
         {
             timerRalentissement -= Time.deltaTime;
             if (timerRalentissement <= 0)
-            {
-                multiplicateurVitesse = 1f; // Revenir à la vitesse normale
-            }
+                multiplicateurVitesse = 1f;
         }
 
         float vitesseEffective = vitesse * multiplicateurVitesse;
 
-        // Calcul de la rotation sur l’axe Y
-        if (Mathf.Abs(tourne) > 0.1f)
+        // Rotation
+        if (Mathf.Abs(inputDeplacement.x) > 0.1f)
         {
-            transform.Rotate(0, tourne * vitesseRotation * Time.deltaTime, 0);
+            transform.Rotate(0, inputDeplacement.x * vitesseRotation * Time.deltaTime, 0);
         }
 
-        // Direction avant du tank
-        Vector3 deplacement = transform.forward * avance * vitesseEffective;
+        // Déplacement avant/arrière
+        Vector3 deplacement = transform.forward * inputDeplacement.y * vitesseEffective;
 
-        // Source - Pour la gestion de la gravité : https://docs.unity3d.com/6000.0/Documentation/ScriptReference/CharacterController-isGrounded.html
+        // Vitesse actuelle (pour le son)
+        vitesseActuelle = Mathf.Abs(inputDeplacement.y) * vitesseEffective;
+
+        // Gravité
         if (controller.isGrounded)
-        {
-            vitesseVerticale = -1f; // Force pour rester collé au sol
-        }
+            vitesseVerticale = -1f;
         else
-        {
-            vitesseVerticale += Physics.gravity.y * Time.deltaTime; // applique la gravité 
-        }
+            vitesseVerticale += Physics.gravity.y * Time.deltaTime;
 
-        // Déplacement vertical
         deplacement.y = vitesseVerticale;
-
-        // Appliquer le déplacement
         controller.Move(deplacement * Time.deltaTime);
+
+        // Mise à jour du son moteur via le gestionnaire audio
+        if (GestionAudio.Instance != null)
+        {
+            GestionAudio.Instance.MettreAJourMoteur(vitesseActuelle);
+        }
     }
 
-    /// <summary>
-    /// Applique un facteur de ralentissement sur la vitesse du tank pour une durée donnée.
-    /// </summary>
-    /// <param name="facteur">Multiplicateur de vitesse (ex : 0.5f pour -50%)</param>
-    /// <param name="duree">Durée du ralentissement en secondes</param>
     public void AppliquerRalentissement(float facteur, float duree)
     {
         multiplicateurVitesse = facteur;

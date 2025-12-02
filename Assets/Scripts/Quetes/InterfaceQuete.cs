@@ -19,6 +19,28 @@ public class InterfaceQuete : MonoBehaviour
         Instance = this;
     }
 
+    void OnEnable()
+    {
+        if (GestionQuetes.Instance != null)
+        {
+            InterfaceQuete.Instance.MettreAJourAffichage(GestionQuetes.Instance.quetesActives);
+        }
+
+        // On s'abonne à l'event
+        if (SystemeJeu.Instance != null)
+        {
+            SystemeJeu.Instance.OnToggleJournal += BasculerFenetre;
+        }
+    }
+
+    void OnDisable()
+    {
+        if (SystemeJeu.Instance != null)
+        {
+            SystemeJeu.Instance.OnToggleJournal -= BasculerFenetre;
+        }
+    }
+
     public void MettreAJourAffichage(List<Quete> quetes)
     {
         foreach (Transform enfant in parentListeQuetes)
@@ -56,16 +78,11 @@ public class InterfaceQuete : MonoBehaviour
         panelQuetes.SetActive(false);
         
     }
-    void Update()
+
+    public void BasculerFenetre()
     {
-        if (Input.GetKeyDown(KeyCode.J)) //  J pour Journal des quêtes
-        {
-            AfficherFenetre();
-        }
-        else if (Input.GetKeyUp(KeyCode.J))
-        {
-            FermerFenetre();
-        }
+        bool actif = panelQuetes.activeSelf;
+        panelQuetes.SetActive(!actif);
     }
 
 }

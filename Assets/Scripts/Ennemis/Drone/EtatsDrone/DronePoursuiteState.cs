@@ -18,7 +18,10 @@ public class DronePoursuiteState : IDroneState
     /// </summary>
     public void EntrerEtat()
     {
-        drone.GetComponent<Animator>().Play("Patrouille");
+        var animator = drone.Animator;
+        animator.ResetTrigger("Attaque");
+        animator.ResetTrigger("Detruit");
+        animator.SetBool("Patrouille", true);
     }
 
     public void Update()

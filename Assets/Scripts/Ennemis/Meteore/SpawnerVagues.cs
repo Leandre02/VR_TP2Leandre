@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using System.Collections;
 
 /// <summary>
@@ -9,29 +9,46 @@ public class SpawnerVagues : MonoBehaviour
 {
     // Source : https://www.youtube.com/watch?v=SELTWo1XZ0c
 
-    public GameObject prefabMeteorite; // Le prefab de la météorite à instancier
-    public Transform cibleVisee;       // La cible visée
+    public GameObject prefabMeteorite; // Le prefab de la mÃ©tÃ©orite Ã  instancier
+    public Transform cibleVisee;       // La cible visÃ©e
     public float rayonZone;      // Rayon de dispersion autour du centre
-    public int quantite;          // Nombre de météorites à faire tomber
-    public float delaiEntreSpawns; // Délai entre chaque spawn
+    public int quantite;          // Nombre de mÃ©tÃ©orites Ã  faire tomber
+    public float delaiEntreSpawns; // DÃ©lai entre chaque spawn
+
+    [SerializeField] private float vitesseBase = 10f;
+    private float multiplicateurVitesse = 1f;
 
     void Start()
     {
         StartCoroutine(Spawn());
     }
+    public void ChangerVitesse(float valeurSlider)
+    {
+        multiplicateurVitesse = valeurSlider;
+    }
 
-   private IEnumerator Spawn()
+    private void Update()
+    {
+        float vitesseReelle = vitesseBase * multiplicateurVitesse;
+      
+    }
+
+    private IEnumerator Spawn()
     {
         for (int i = 0; i < quantite; i++)
         {
-            Vector3 cible = cibleVisee ? cibleVisee.position : transform.position; // Recalcul la position de ma cibleVisee a chaque spawn
-            Vector3 positionSpawn = new Vector3(cible.x, cible.y + 30f, cible.z); // La position d'impact
+            Vector3 cible = cibleVisee ? cibleVisee.position : transform.position;
+            Vector2 offset2D = Random.insideUnitCircle * rayonZone;
+            Vector3 pointAleatoire = new Vector3(cible.x + offset2D.x, cible.y, cible.z + offset2D.y);
+            Vector3 positionSpawn = pointAleatoire + Vector3.up * 30f;
 
-            // Instancie la météorite
-            Instantiate(prefabMeteorite, positionSpawn, Quaternion.identity);
+            GameObject meteore = Instantiate(prefabMeteorite, positionSpawn, Quaternion.identity);
 
-            yield return new WaitForSeconds(delaiEntreSpawns); // retoune le temps entre chaque spawns
 
+            Destroy(meteore, 15f);
+
+            yield return new WaitForSeconds(delaiEntreSpawns);
         }
     }
 }
+

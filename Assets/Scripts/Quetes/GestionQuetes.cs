@@ -20,26 +20,58 @@ public class GestionQuetes : MonoBehaviour
     /// </summary>
     void Start()
     {
+
+        Debug.Log("[GestionQuetes] Start, CompteursQuete.Instance = " + (CompteursQuete.Instance != null));
+
         Quete q = new Quete();
         q.nomQuete = "Ma première quête !";
-        q.description = "Traverser la vallée avant la fin du temps imparti.";
+        q.description = "Traverse la vallée avant la fin du temps imparti.";
         q.nomObjectif = "Traverser la vallée";
         q.nombreRequis = 1; 
         AjouterQuete(q);
 
         Quete q2 = new Quete();
         q2.nomQuete = "Ma deuxième quête !";
-        q2.description = "Va chercher la clé pour déverouiller la porte";
-        q2.nomObjectif = "chercher la Clé";
+        q2.description = "Tue le drone de surveillance";
+        q2.nomObjectif = "tuerMonstres";
         q2.nombreRequis = 1;
         AjouterQuete(q2);
 
         Quete q3 = new Quete();
         q3.nomQuete = "Ma troisième quête !";
-        q3.description = "Tue 5 monstres.";
-        q3.nomObjectif = "tuerMonstres";
-        q3.nombreRequis = 5;
+        q3.description = "Survie à la pluie de meteorite";
+        q3.nomObjectif = "Survivre à la pluie de météorite";
+        q3.nombreRequis = 1;
         AjouterQuete(q3);
+
+        if (CompteursQuete.Instance != null)
+        {
+            Debug.Log("[GestionQuetes] Abonnements aux events des compteurs");
+
+            // Vallée traversée
+            CompteursQuete.Instance.OnValleTraversee += () =>
+            {
+                ProgressionQuete("Traverser la vallée");
+            };
+
+            // Drones détruits
+            CompteursQuete.Instance.OnDroneDetruit += () =>
+            {
+                Debug.Log("[GestionQuetes] Event OnDroneDetruit reçu -> ProgressionQuete(\"tuerMonstres\")");
+
+                ProgressionQuete("tuerMonstres");
+            };
+
+            // Survie à la pluie de météorite
+            CompteursQuete.Instance.OnMeteoriteSurvecue += () =>
+            {
+                ProgressionQuete("Survivre à la pluie de météorite");
+            };
+        }
+        else
+        {
+            Debug.LogWarning("CompteursQuete.Instance est null dans GestionQuetes.Start()");
+        }
 
     }
 
@@ -57,8 +89,13 @@ public class GestionQuetes : MonoBehaviour
                 return;
             }
         }
+
         quetesActives.Add(quete);
-        InterfaceQuete.Instance.MettreAJourAffichage(quetesActives);
+
+        if (InterfaceQuete.Instance != null)
+        {
+            InterfaceQuete.Instance.MettreAJourAffichage(quetesActives);
+        }
     }
 
     /// <summary>
@@ -69,6 +106,10 @@ public class GestionQuetes : MonoBehaviour
     {
         foreach (var quete in quetesActives)
             quete.MettreAJourProgression(nomObjectif);
-        InterfaceQuete.Instance.MettreAJourAffichage(quetesActives);
+
+        if (InterfaceQuete.Instance != null)
+        {
+            InterfaceQuete.Instance.MettreAJourAffichage(quetesActives);
+        }
     }
 }

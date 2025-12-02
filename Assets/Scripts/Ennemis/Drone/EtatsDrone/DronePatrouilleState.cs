@@ -21,7 +21,11 @@ public class DronePatrouilleState : IDroneState
     public void EntrerEtat()
     {
         pointDefini = false;
-        drone.GetComponent<Animator>().Play("Patrouille");
+
+        var animator = drone.Animator;
+        animator.ResetTrigger("Attaque");
+        animator.ResetTrigger("Detruit");
+        animator.SetBool("Patrouille", true);
     }
 
     public void Update()
@@ -52,7 +56,7 @@ public class DronePatrouilleState : IDroneState
     /// <returns></returns>
     private Vector3 ObtenirPointPatrouille()
     {
-        Vector3 posAleatoire = Random.insideUnitSphere * 10f + drone.transform.position;
+        Vector3 posAleatoire = Random.insideUnitSphere * 5f + drone.transform.position;
         posAleatoire.y = drone.transform.position.y;
         return posAleatoire;
     }

@@ -19,9 +19,11 @@ public class Drone : MonoBehaviour
     private IDroneState etatCourant; // L'état courant du drone
     private bool aImpacte = false; // Indique si le drone a déjà impacté le tank
 
+    public Animator Animator => animator;
+
     void Awake()
     {
-        agent = GetComponent<NavMeshAgent>();
+        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         animator = GetComponent<Animator>();
         ChangerEtat(new DroneIdleState(this));
         if (cible == null)
@@ -54,6 +56,7 @@ public class Drone : MonoBehaviour
     {
         if (agent != null && agent.isOnNavMesh)
         {
+            agent.isStopped = false; // autorise le mouvement
             agent.SetDestination(position);
         }
         else

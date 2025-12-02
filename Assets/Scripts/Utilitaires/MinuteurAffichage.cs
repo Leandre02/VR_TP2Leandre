@@ -2,28 +2,47 @@ using TMPro;
 using UnityEngine;
 
 /// <summary>
-/// Represente un minuteur affichant le temps restant au format MM:SS.
+/// Représente un minuteur affichant le temps restant au format MM:SS.
 /// </summary>
 public class MinuteurAffichage : MonoBehaviour
 {
-    public float temps = 120f; // Le temps initial en secondes
-    public TextMeshProUGUI minuteurText; // Le composant TextMeshPro pour afficher le temps
-    private bool actif = true;
+    [SerializeField] private float dureePartie = 120f;          // Temps de jeu en secondes
+    [SerializeField] private TextMeshProUGUI minuteurText;      // Texte TMP pour afficher le temps
 
-    void Update()
+    private float tempsRestant;
+
+    private void Start()
     {
-        if (!actif) return;
+        tempsRestant = dureePartie;
+        MettreAJourTexte();
+    }
 
-        temps -= Time.deltaTime;
-        if (temps < 0)
+    private void Update()
+    {
+        // Si la partie est déjà terminée, on arrête le timer
+        if (GestionFinPartie.Instance != null && GestionFinPartie.Instance.PartieTerminee)
+            return;
+
+        tempsRestant -= Time.deltaTime;
+
+        if (tempsRestant <= 0f)
         {
-            temps = 0;
-            actif = false;
+            tempsRestant = 0f;
+
+            // Déclare la défaite une seule fois
+            if (GestionFinPartie.Instance != null)
+            {
+                GestionFinPartie.Instance.DeclarerDefaite();
+            }
         }
 
-        int minutes = Mathf.FloorToInt(temps / 60);
-        int secondes = Mathf.FloorToInt(temps % 60);
+        MettreAJourTexte();
+    }
 
+    private void MettreAJourTexte()
+    {
+        int minutes = Mathf.FloorToInt(tempsRestant / 60f);
+        int secondes = Mathf.FloorToInt(tempsRestant % 60f);
         minuteurText.text = string.Format("{0:00}:{1:00}", minutes, secondes);
     }
 }
