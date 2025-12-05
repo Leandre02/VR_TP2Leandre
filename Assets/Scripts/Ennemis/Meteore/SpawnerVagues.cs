@@ -20,7 +20,7 @@ public class SpawnerVagues : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(Spawn());
+        StartCoroutine(Generateur());
     }
     public void ChangerVitesse(float valeurSlider)
     {
@@ -33,7 +33,7 @@ public class SpawnerVagues : MonoBehaviour
       
     }
 
-    private IEnumerator Spawn()
+    private IEnumerator Generateur()
     {
         for (int i = 0; i < quantite; i++)
         {
