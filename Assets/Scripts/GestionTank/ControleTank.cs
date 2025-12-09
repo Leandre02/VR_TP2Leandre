@@ -9,8 +9,7 @@ public class ControleTank : MonoBehaviour
     public float vitesse = 5f;
     public float vitesseRotation = 150f;
 
-    private float multiplicateurVitesse = 1f;
-    private float timerRalentissement = 0f;
+   
     private CharacterController controller;
     private float vitesseVerticale;
 
@@ -43,16 +42,6 @@ public class ControleTank : MonoBehaviour
 
     void Update()
     {
-        // Gestion ralentissement
-        if (timerRalentissement > 0)
-        {
-            timerRalentissement -= Time.deltaTime;
-            if (timerRalentissement <= 0)
-                multiplicateurVitesse = 1f;
-        }
-
-        float vitesseEffective = vitesse * multiplicateurVitesse;
-
         // Rotation
         if (Mathf.Abs(inputDeplacement.x) > 0.1f)
         {
@@ -60,10 +49,10 @@ public class ControleTank : MonoBehaviour
         }
 
         // Déplacement avant/arrière
-        Vector3 deplacement = transform.forward * inputDeplacement.y * vitesseEffective;
+        Vector3 deplacement = transform.forward * inputDeplacement.y * vitesse;
 
         // Vitesse actuelle (pour le son)
-        vitesseActuelle = Mathf.Abs(inputDeplacement.y) * vitesseEffective;
+        vitesseActuelle = Mathf.Abs(inputDeplacement.y) * vitesse;
 
         // Gravité
         if (controller.isGrounded)
@@ -81,9 +70,5 @@ public class ControleTank : MonoBehaviour
         }
     }
 
-    public void AppliquerRalentissement(float facteur, float duree)
-    {
-        multiplicateurVitesse = facteur;
-        timerRalentissement = duree;
-    }
+   
 }

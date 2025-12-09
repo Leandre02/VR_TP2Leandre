@@ -37,7 +37,7 @@ public class CompteursQuete : MonoBehaviour
     public void EnregistrerDroneDetruit()
     {
         dronesDetruits++;
-        Debug.Log($"Drones detruits: {dronesDetruits}");
+        Debug.Log($"[CompteursQuete] Drone #{dronesDetruits}");
 
         // Notifie les quetes
         OnDroneDetruit?.Invoke();

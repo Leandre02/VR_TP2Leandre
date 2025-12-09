@@ -18,8 +18,17 @@ public class DroneDestructionState : IDroneState
     /// </summary>
     public void EntrerEtat()
     {
+        Debug.Log("[DroneDestructionState] EntrerEtat appelé pour " + drone.name);
+
         drone.ArreterDeplacement();
         drone.GetComponent<Animator>().SetTrigger("Detruit");
+
+        // Désactive le collider pour éviter les interactions
+        Collider col = drone.GetComponent<Collider>();
+        if (col != null)
+        {
+            col.enabled = false;
+        }
 
         // Notifie le systeme de quetes
         if (CompteursQuete.Instance != null)

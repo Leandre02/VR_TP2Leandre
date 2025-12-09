@@ -12,30 +12,25 @@ public class SpawnerVagues : MonoBehaviour
     public GameObject prefabMeteorite; // Le prefab de la météorite à instancier
     public Transform cibleVisee;       // La cible visée
     public float rayonZone;      // Rayon de dispersion autour du centre
-    public int quantite;          // Nombre de météorites à faire tomber
-    public float delaiEntreSpawns; // Délai entre chaque spawn
+    public float delaiEntreSpawns = 2f; // Délai entre chaque spawn
 
-    [SerializeField] private float vitesseBase = 10f;
-    private float multiplicateurVitesse = 1f;
+    [SerializeField] private float dureeVieMeteorite = 15f; // Temps avant destruction auto
+
 
     void Start()
     {
         StartCoroutine(Generateur());
     }
-    public void ChangerVitesse(float valeurSlider)
-    {
-        multiplicateurVitesse = valeurSlider;
-    }
 
-    private void Update()
+    public void ChangerDifficulte(float valeurSlider)
     {
-        float vitesseReelle = vitesseBase * multiplicateurVitesse;
-      
+        delaiEntreSpawns = 3.5f - valeurSlider;
+        Debug.Log("[SpawnerVagues] Nouveau délai: " + delaiEntreSpawns + "s");
     }
 
     private IEnumerator Generateur()
     {
-        for (int i = 0; i < quantite; i++)
+        while (true)
         {
             Vector3 cible = cibleVisee ? cibleVisee.position : transform.position;
             Vector2 offset2D = Random.insideUnitCircle * rayonZone;
@@ -44,9 +39,7 @@ public class SpawnerVagues : MonoBehaviour
 
             GameObject meteore = Instantiate(prefabMeteorite, positionSpawn, Quaternion.identity);
 
-
-            Destroy(meteore, 15f);
-
+            Destroy(meteore, dureeVieMeteorite);
             yield return new WaitForSeconds(delaiEntreSpawns);
         }
     }

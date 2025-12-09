@@ -11,13 +11,12 @@ public class Drone : MonoBehaviour
     public ControleTank cible;               // Le script du tank cible
     public float distanceDetection;   // Distance de détection
 
-    public float facteurRalentissement; // Facteur de ralentissement appliqué au tank
-    public float dureeRalentissement; // Durée du ralentissement en secondes
+    public float rayonExplosion = 5f;        // Rayon des degats d'explosion
+    public float degatsExplosion = 30f;
 
     private NavMeshAgent agent; // Le NavMeshAgent pour le déplacement
     private Animator animator; // L'Animator pour les animations
     private IDroneState etatCourant; // L'état courant du drone
-    private bool aImpacte = false; // Indique si le drone a déjà impacté le tank
 
     public Animator Animator => animator;
 
@@ -76,15 +75,27 @@ public class Drone : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    public void Exploser()
     {
-        if (aImpacte) return;
+        // Verifie si la cible existe et est assez proche
+        if (cible == null) return;
 
-        if (collision.gameObject.TryGetComponent<ControleTank>(out var tank))
+        float distanceAuTank = Vector3.Distance(transform.position, cible.transform.position);
+
+        // Si le tank est dans le rayon d'explosion
+        if (distanceAuTank <= rayonExplosion)
         {
-            aImpacte = true;
-            tank.AppliquerRalentissement(facteurRalentissement, dureeRalentissement);
-            ChangerEtat(new DroneDestructionState(this));
+            // Calcul degats proportionnels
+            float facteurDistance = 1f - (distanceAuTank / rayonExplosion);
+            float degatsFinaux = degatsExplosion * facteurDistance;
+
+            // Applique degats directement au tank
+            Recepteur recepteur = cible.GetComponent<Recepteur>();
+            if (recepteur != null)
+            {
+                recepteur.RecevoirDegats(degatsFinaux);
+            }
         }
     }
+
 }

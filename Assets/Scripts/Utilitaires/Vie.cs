@@ -11,6 +11,8 @@ public class Vie : MonoBehaviour
 
     public float PointsDeVie { get; private set; }
 
+    private bool estMort = false;
+
     // Événement pour notifier les changements de vie (vie actuelle, vie max)
     public event Action<float, float> OnVieChange;
 
@@ -22,6 +24,9 @@ public class Vie : MonoBehaviour
 
     public void PrendreDegats(float degats)
     {
+
+        if (estMort) return;
+
         if (degats <= 0f) return;
         PointsDeVie = Mathf.Max(0f, PointsDeVie - degats);
         OnVieChange?.Invoke(PointsDeVie, pointsDeVieMax);
@@ -30,15 +35,15 @@ public class Vie : MonoBehaviour
 
     private void Mourir()
     {
+        if (estMort) return;
+
+        estMort = true;
         // Si c'est un drone qui meurt
         Drone drone = GetComponent<Drone>();
         if (drone != null)
         {
-            if (CompteursQuete.Instance != null)
-            {
-                CompteursQuete.Instance.EnregistrerDroneDetruit();
-                Debug.Log("Drone détruit via Vie, EnregistrerDroneDetruit appelé");
-            }
+            drone.Exploser();
+           
             drone.ChangerEtat(new DroneDestructionState(drone));
             return;
 
