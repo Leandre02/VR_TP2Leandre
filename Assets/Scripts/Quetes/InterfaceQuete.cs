@@ -41,6 +41,10 @@ public class InterfaceQuete : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Une methode pour mettre à jour l'affichage des quêtes dans l'interface utilisateur.
+    /// </summary>
+    /// <param name="quetes">La quete en cours</param>
     public void MettreAJourAffichage(List<Quete> quetes)
     {
         foreach (Transform enfant in parentListeQuetes)
@@ -66,19 +70,26 @@ public class InterfaceQuete : MonoBehaviour
 
     }
 
-    // Methode pour ouvrir le panneau des quêtes
+    /// <summary>
+    /// Methode pour ouvrir le panneau des quêtes
+    /// </summary>
     public void AfficherFenetre()
     {
         panelQuetes.SetActive(true);
     }
 
-    // Methode pour fermer le panneau des quêtes
+    /// <summary>
+    /// Methode pour fermer le panneau des quêtes
+    /// </summary>
     public void FermerFenetre()
     {
         panelQuetes.SetActive(false);
         
     }
 
+    /// <summary>
+    /// Methode pour basculer l'affichage du panneau des quêtes
+    /// </summary>
     public void BasculerFenetre()
     {
         bool actif = panelQuetes.activeSelf;

@@ -24,7 +24,9 @@ public class DroneIdleState : IDroneState
         animator.SetBool("Patrouille", false);
     }
 
-
+    /// <summary>
+    /// Permet de mettre à jour l'état d'attente
+    /// </summary>
     public void Update()
     {
         if (drone.cible != null)

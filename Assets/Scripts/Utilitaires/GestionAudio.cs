@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// Une classe singleton pour gérer l'audio global du jeu.
+/// </summary>
 public class GestionAudio : MonoBehaviour
 {
     public static GestionAudio Instance { get; private set; }
@@ -36,6 +39,9 @@ public class GestionAudio : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    /// <summary>
+    /// Une méthode pour jouer la musique de fond du menu.
+    /// </summary>
     public void JouerMusiqueMenu()
     {
         if (sourceMusique == null || musiqueMenu == null) return;
@@ -44,6 +50,9 @@ public class GestionAudio : MonoBehaviour
         sourceMusique.Play();
     }
 
+    /// <summary>
+    /// Une méthode pour jouer la musique de fond du jeu.
+    /// </summary>
     public void JouerMusiqueJeu()
     {
         if (sourceMusique == null || musiqueJeu == null) return;
@@ -52,6 +61,9 @@ public class GestionAudio : MonoBehaviour
         sourceMusique.Play();
     }
 
+    /// <summary>
+    /// Une méthode pour jouer le son de tir du tank.
+    /// </summary>
     public void JouerTir()
     {
         if (sourceSFX == null || sonTir == null) return;

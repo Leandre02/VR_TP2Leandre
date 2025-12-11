@@ -3,6 +3,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// Une classe qui gère l'introduction du jeu avec des messages successifs.
+/// </summary>
 public class IntroJeu : MonoBehaviour
 {
     [Header("Références UI")]
@@ -42,6 +45,10 @@ public class IntroJeu : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Une méthode appelée lors du changement d'état du menu principal.
+    /// </summary>
+    /// <param name="menuOuvert"></param>
     private void SurChangementEtatMenu(bool menuOuvert)
     {
         // Quand le menu se ferme pour la première fois, on lance l'intro
@@ -58,6 +65,9 @@ public class IntroJeu : MonoBehaviour
         LancerIntro();
     }
 
+    /// <summary>
+    /// Une méthode pour lancer l'introduction du jeu.
+    /// </summary>
     private void LancerIntro()
     {
         if (messagesIntro == null || messagesIntro.Length == 0) return;
@@ -69,6 +79,9 @@ public class IntroJeu : MonoBehaviour
         MettreJeuEnPause(true);
     }
 
+    /// <summary>
+    /// Une méthode pour afficher le message courant de l'introduction.
+    /// </summary>
     private void AfficherMessageCourant()
     {
         if (panelIntro != null)
@@ -80,6 +93,10 @@ public class IntroJeu : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Une méthode pour mettre le jeu en pause ou le reprendre.
+    /// </summary>
+    /// <param name="pause"></param>
     private void MettreJeuEnPause(bool pause)
     {
         if (pause)
@@ -102,7 +119,9 @@ public class IntroJeu : MonoBehaviour
         }
     }
 
-    // Methode appelée par le bouton "Suivant"
+    /// <summary>
+    /// Methode appelée par le bouton "Suivant"
+    /// </summary>
     public void BoutonSuivant()
     {
         indexCourant++;
@@ -125,7 +144,9 @@ public class IntroJeu : MonoBehaviour
         }
     }
 
-    // Appelé par le bouton "Passer"
+    /// <summary>
+    /// Appelé par le bouton "Passer"
+    /// </summary>
     public void BoutonPasser()
     {
         if (panelIntro != null)

@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// Une classe pour gérer l'affichage de la vie d'une entité dans une barre de progression UI.
+/// </summary>
 public class CalculVie : MonoBehaviour
 {
     [SerializeField] private Vie cible;

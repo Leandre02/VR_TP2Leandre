@@ -40,17 +40,25 @@ public class MenuPrincipal : MonoBehaviour
         }
     }
 
-    
+    /// <summary>
+    /// Le bouton pour demarrer une nouvelle partie
+    /// </summary>
     public void BoutonDemarrer()
     {
         RedemarrerJeu();
     }
 
+    /// <summary>
+    /// Le bouton pour continuer la partie
+    /// </summary>
     public void BoutonContinuer()
     {
         FermerMenu();
     }
 
+    /// <summary>
+    /// Le bouton pour ouvrir les options
+    /// </summary>
     public void BoutonOptions()
     {
         if (panelOptions != null)
@@ -71,6 +79,9 @@ public class MenuPrincipal : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Le bouton pour ouvrir les parametres
+    /// </summary>
     public void BoutonParametres()
     {
         if (panelParam != null)
@@ -115,6 +126,9 @@ public class MenuPrincipal : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Une methode pour ouvrir le menu principal
+    /// </summary>
     public void OuvrirMenu()
     {
         menuOuvert = true;
@@ -142,6 +156,9 @@ public class MenuPrincipal : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Une methode pour fermer le menu principal
+    /// </summary>
     public void FermerMenu()
     {
         menuOuvert = false;

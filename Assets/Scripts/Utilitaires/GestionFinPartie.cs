@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// Une classe pour gérer la fin de la partie (victoire ou défaite).
+/// </summary>
 public class GestionFinPartie : MonoBehaviour
 {
     public static GestionFinPartie Instance { get; private set; }
@@ -20,6 +23,9 @@ public class GestionFinPartie : MonoBehaviour
         Instance = this;
     }
 
+    /// <summary>
+    /// Une méthode pour déclarer la victoire.
+    /// </summary>
     public void DeclarerVictoire()
     {
         if (partieTerminee) return;
@@ -31,6 +37,9 @@ public class GestionFinPartie : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Une methode pour déclarer la défaite.
+    /// </summary>
     public void DeclarerDefaite()
     {
         if (partieTerminee) return;

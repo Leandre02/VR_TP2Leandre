@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Represente les différentes phases du jeu.
+/// </summary>
 public enum PhaseJeu
 {
     Meteorites,
@@ -7,6 +10,9 @@ public enum PhaseJeu
     Victoire
 }
 
+/// <summary>
+/// Une classe pour gérer les phases du jeu.
+/// </summary>
 public class GestionPhasesJeu : MonoBehaviour
 {
     public static GestionPhasesJeu Instance { get; private set; }
@@ -38,6 +44,9 @@ public class GestionPhasesJeu : MonoBehaviour
         ActiverPhaseMeteorites();
     }
 
+    /// <summary>
+    /// Une méthode pour activer la phase des météorites.
+    /// </summary>
     private void ActiverPhaseMeteorites()
     {
         phaseCourante = PhaseJeu.Meteorites;
@@ -51,6 +60,9 @@ public class GestionPhasesJeu : MonoBehaviour
         dronesDetruits = 0;
     }
 
+    /// <summary>
+    /// Une méthode pour passer à la phase des drones.
+    /// </summary>
     public void PasserEnPhaseDrones()
     {
         if (phaseCourante != PhaseJeu.Meteorites)
@@ -65,6 +77,9 @@ public class GestionPhasesJeu : MonoBehaviour
             gestionnaireDrones.SetActive(true); // active le spawner de drones
     }
 
+    /// <summary>
+    /// Une méthode pour notifier la destruction d'un drone.
+    /// </summary>
     public void NotifierDroneDetruit()
     {
         if (phaseCourante != PhaseJeu.Drones)
@@ -78,6 +93,9 @@ public class GestionPhasesJeu : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Une méthode pour activer la phase de victoire.
+    /// </summary>
     private void ActiverVictoire()
     {
         phaseCourante = PhaseJeu.Victoire;

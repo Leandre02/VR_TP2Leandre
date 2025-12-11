@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Une classe pour gérer une barre de progression UI.
+/// </summary>
 public class BarreProgression : MonoBehaviour
 {
     [SerializeField] private Image barre;   

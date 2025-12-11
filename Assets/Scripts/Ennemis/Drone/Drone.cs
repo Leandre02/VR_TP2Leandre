@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 /// <summary>
-/// Represente un drone ennemi qui poursuit et impacte la vitesse du tank du joueur
+/// Represente un drone ennemi
 /// </summary>
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(NavMeshAgent))]
@@ -12,7 +12,7 @@ public class Drone : MonoBehaviour
     public float distanceDetection;   // Distance de détection
 
     public float rayonExplosion = 5f;        // Rayon des degats d'explosion
-    public float degatsExplosion = 30f;
+    public float degatsExplosion = 30f; // Degats max de l'explosion
 
     private NavMeshAgent agent; // Le NavMeshAgent pour le déplacement
     private Animator animator; // L'Animator pour les animations

@@ -28,6 +28,9 @@ public class SpawnerVagues : MonoBehaviour
         Debug.Log("[SpawnerVagues] Nouveau délai: " + delaiEntreSpawns + "s");
     }
 
+    /// <summary>
+    /// Coroutine qui génère des météorites à intervalles réguliers
+    /// </summary>
     private IEnumerator Generateur()
     {
         while (true)

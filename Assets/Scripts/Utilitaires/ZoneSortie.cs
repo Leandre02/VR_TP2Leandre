@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// Represente une zone de sortie que le joueur doit atteindre pour terminer le niveau.
+/// </summary>
 public class ZoneSortie : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)

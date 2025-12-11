@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 /// <summary>
 /// Gere le systeme de jeu central et distribue les events
+/// Code inspiré de :https://www.youtube.com/watch?v=_Odo5C436hU
 /// </summary>
 public class SystemeJeu : MonoBehaviour
 {

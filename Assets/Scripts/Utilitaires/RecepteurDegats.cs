@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// Represente un récepteur de dégâts pour un objet dans le jeu.
+/// </summary>
 public class Recepteur : MonoBehaviour
 {
     private Vie vie; // Référence au script Vie sur le même objet

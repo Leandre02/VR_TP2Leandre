@@ -63,7 +63,7 @@ public class TirCanon : MonoBehaviour
             delaiAvantProchainTir = 1f / Mathf.Max(0.01f, cadence);
             Instantiate(prefabProjectile, sortie.position, sortie.rotation);
 
-            // Son de tir centralisé
+            // Son de tir
             if (GestionAudio.Instance != null)
             {
                 GestionAudio.Instance.JouerTir();
