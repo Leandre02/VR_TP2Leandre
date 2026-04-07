@@ -1,0 +1,2237 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    SCAN POSITION HIÉRARCHIE SCÈNE                          ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+Scène: VRQuest
+Path: Assets/Scenes/VRQuest.unity
+Date: 2026-03-27 14:15:29
+
+═══════════════════════════════════════════════════════════════════════════════
+
+┌─ ✓ Directional Light
+│  Layer: Default (0)
+│  Tag: Untagged
+│
+├─ TRANSFORM LOCAL
+│  Position: (0.000, 3.000, 0.000)
+│  Rotation:
+│    Euler: (50.00°, 330.00°, 0.00°)
+│    Quaternion: (0.408, -0.235, 0.109, 0.875)
+│  Scale: (1.000, 1.000, 1.000)
+│
+├─ TRANSFORM WORLD
+│  Position: (0.000, 3.000, 0.000)
+│  Rotation:
+│    Euler: (50.00°, 330.00°, 0.00°)
+│    Quaternion: (0.408, -0.235, 0.109, 0.875)
+│  Lossy Scale: (1.000, 1.000, 1.000)
+│
+├─ COMPONENTS (3)
+│  • Transform
+│  • Light
+│  • UniversalAdditionalLightData (Enabled: True)
+│
+└─ (aucun enfant)
+
+┌─ ✓ Global Volume
+│  Layer: Default (0)
+│  Tag: Untagged
+│
+├─ TRANSFORM LOCAL
+│  Position: (0.000, 0.000, 0.000)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Scale: (1.000, 1.000, 1.000)
+│
+├─ TRANSFORM WORLD
+│  Position: (0.000, 0.000, 0.000)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Lossy Scale: (1.000, 1.000, 1.000)
+│
+├─ COMPONENTS (2)
+│  • Transform
+│  • Volume (Enabled: True)
+│
+└─ (aucun enfant)
+
+┌─ ✓ XR Origin (XR Rig)
+│  Layer: Ignore Raycast (2)
+│  Tag: Untagged
+│
+├─ TRANSFORM LOCAL
+│  Position: (1.451, 0.000, 1.451)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Scale: (1.000, 1.000, 1.000)
+│
+├─ TRANSFORM WORLD
+│  Position: (1.451, 0.000, 1.451)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Lossy Scale: (1.000, 1.000, 1.000)
+│
+├─ COMPONENTS (6)
+│  • Transform
+│  • XROrigin (Enabled: True)
+│  • CharacterController (Enabled: True)
+│  • InputActionManager (Enabled: True)
+│  • XRInputModalityManager (Enabled: True)
+│  • XRGazeAssistance (Enabled: False)
+│
+└─ ENFANTS (3):
+
+  ┌─ ✓ Camera Offset
+  │  Layer: Default (0)
+  │  Tag: Untagged
+  │
+  ├─ TRANSFORM LOCAL
+  │  Position: (0.000, 1.361, 0.000)
+  │  Rotation:
+  │    Euler: (0.00°, 0.00°, 0.00°)
+  │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+  │  Scale: (1.000, 1.000, 1.000)
+  │
+  ├─ TRANSFORM WORLD
+  │  Position: (1.451, 1.361, 1.451)
+  │  Rotation:
+  │    Euler: (0.00°, 0.00°, 0.00°)
+  │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+  │  Lossy Scale: (1.000, 1.000, 1.000)
+  │
+  ├─ COMPONENTS (1)
+  │  • Transform
+  │
+  └─ ENFANTS (7):
+
+    ┌─ ✓ Main Camera
+    │  Layer: Default (0)
+    │  Tag: MainCamera
+    │
+    ├─ TRANSFORM LOCAL
+    │  Position: (0.000, 0.000, 0.000)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ TRANSFORM WORLD
+    │  Position: (1.451, 1.361, 1.451)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Lossy Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ COMPONENTS (4)
+    │  • Transform
+    │  • Camera
+    │  • AudioListener
+    │  • TrackedPoseDriver (Enabled: True)
+    │
+    └─ (aucun enfant)
+
+    ┌─ ✗ Gaze Interactor
+    │  Layer: Default (0)
+    │  Tag: Untagged
+    │
+    ├─ TRANSFORM LOCAL
+    │  Position: (0.000, 0.000, 0.000)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ TRANSFORM WORLD
+    │  Position: (1.451, 1.361, 1.451)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Lossy Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ COMPONENTS (4)
+    │  • Transform
+    │  • XRGazeInteractor (Enabled: True)
+    │  • GazeInputManager (Enabled: True)
+    │  • TrackedPoseDriver (Enabled: True)
+    │
+    └─ (aucun enfant)
+
+    ┌─ ✗ Gaze Stabilized
+    │  Layer: Default (0)
+    │  Tag: Untagged
+    │
+    ├─ TRANSFORM LOCAL
+    │  Position: (0.000, 0.000, 0.000)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ TRANSFORM WORLD
+    │  Position: (1.451, 1.361, 1.451)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Lossy Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ COMPONENTS (2)
+    │  • Transform
+    │  • XRTransformStabilizer (Enabled: True)
+    │
+    └─ ENFANTS (1):
+
+      ┌─ ✓ Gaze Stabilized Attach
+      │  Layer: Default (0)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (0.000, 0.000, 0.000)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.451, 1.361, 1.451)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Lossy Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ COMPONENTS (1)
+      │  • Transform
+      │
+      └─ (aucun enfant)
+
+
+    ┌─ ✓ Left Controller
+    │  Layer: Default (0)
+    │  Tag: Untagged
+    │
+    ├─ TRANSFORM LOCAL
+    │  Position: (0.000, 0.000, 0.000)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ TRANSFORM WORLD
+    │  Position: (1.451, 1.361, 1.451)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Lossy Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ COMPONENTS (5)
+    │  • Transform
+    │  • ControllerInputActionManager (Enabled: True)
+    │  • XRInteractionGroup (Enabled: True)
+    │  • HapticImpulsePlayer (Enabled: True)
+    │  • TrackedPoseDriver (Enabled: True)
+    │
+    └─ ENFANTS (4):
+
+      ┌─ ✓ Poke Interactor
+      │  Layer: Default (0)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (0.000, 0.000, 0.000)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.451, 1.361, 1.451)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Lossy Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ COMPONENTS (3)
+      │  • Transform
+      │  • XRPokeInteractor (Enabled: True)
+      │  • SimpleHapticFeedback (Enabled: True)
+      │
+      └─ ENFANTS (2):
+
+        ┌─ ✓ Poke Point
+        │  Layer: Default (0)
+        │  Tag: Untagged
+        │
+        ├─ TRANSFORM LOCAL
+        │  Position: (0.000, 0.000, 0.008)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Scale: (0.010, 0.010, 0.010)
+        │
+        ├─ TRANSFORM WORLD
+        │  Position: (1.451, 1.361, 1.458)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Lossy Scale: (0.010, 0.010, 0.010)
+        │
+        ├─ COMPONENTS (1)
+        │  • Transform
+        │
+        └─ ENFANTS (1):
+
+          ┌─ ✓ Pinch_Pointer_LOD0
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (0.000, 0.000, -0.720)
+          │  Rotation:
+          │    Euler: (90.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.707, 0.000, 0.000, 0.707)
+          │  Scale: (50.000, 50.000, 50.000)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.451, 1.361, 1.451)
+          │  Rotation:
+          │    Euler: (90.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.707, 0.000, 0.000, 0.707)
+          │  Lossy Scale: (0.500, 0.500, 0.500)
+          │
+          ├─ COMPONENTS (2)
+          │  • Transform
+          │  • SkinnedMeshRenderer (Enabled: True)
+          │
+          └─ (aucun enfant)
+
+
+        ┌─ ✓ Poke Point Affordances
+        │  Layer: Default (0)
+        │  Tag: Untagged
+        │
+        ├─ TRANSFORM LOCAL
+        │  Position: (0.000, 0.000, 0.000)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Scale: (1.000, 1.000, 1.000)
+        │
+        ├─ TRANSFORM WORLD
+        │  Position: (1.451, 1.361, 1.451)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Lossy Scale: (1.000, 1.000, 1.000)
+        │
+        ├─ COMPONENTS (1)
+        │  • Transform
+        │
+        └─ ENFANTS (2):
+
+          ┌─ ✓ Poke
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (0.000, 0.000, 0.000)
+          │  Rotation:
+          │    Euler: (0.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+          │  Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.451, 1.361, 1.451)
+          │  Rotation:
+          │    Euler: (0.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+          │  Lossy Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ COMPONENTS (4)
+          │  • Transform
+          │  • XRInteractorAffordanceStateProvider (Enabled: True)
+          │  • MaterialPropertyBlockHelper (Enabled: True)
+          │  • ColorMaterialPropertyAffordanceReceiver (Enabled: True)
+          │
+          └─ (aucun enfant)
+
+          ┌─ ✓ NearFar
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (0.000, 0.000, 0.000)
+          │  Rotation:
+          │    Euler: (0.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+          │  Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.451, 1.361, 1.451)
+          │  Rotation:
+          │    Euler: (0.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+          │  Lossy Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ COMPONENTS (4)
+          │  • Transform
+          │  • XRInteractorAffordanceStateProvider (Enabled: True)
+          │  • MaterialPropertyBlockHelper (Enabled: True)
+          │  • ColorMaterialPropertyAffordanceReceiver (Enabled: True)
+          │
+          └─ (aucun enfant)
+
+
+
+      ┌─ ✓ Near-Far Interactor
+      │  Layer: Default (0)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (0.000, 0.000, 0.000)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.451, 1.361, 1.451)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Lossy Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ COMPONENTS (6)
+      │  • Transform
+      │  • NearFarInteractor (Enabled: True)
+      │  • InteractionAttachController (Enabled: True)
+      │  • SphereInteractionCaster (Enabled: True)
+      │  • CurveInteractionCaster (Enabled: True)
+      │  • SimpleHapticFeedback (Enabled: True)
+      │
+      └─ ENFANTS (1):
+
+        ┌─ ✓ LineVisual
+        │  Layer: Default (0)
+        │  Tag: Untagged
+        │
+        ├─ TRANSFORM LOCAL
+        │  Position: (0.000, 0.000, 0.000)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Scale: (1.000, 1.000, 1.000)
+        │
+        ├─ TRANSFORM WORLD
+        │  Position: (1.451, 1.361, 1.451)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Lossy Scale: (1.000, 1.000, 1.000)
+        │
+        ├─ COMPONENTS (4)
+        │  • Transform
+        │  • CurveVisualController (Enabled: True)
+        │  • LineRenderer (Enabled: False)
+        │  • SortingGroup
+        │
+        └─ (aucun enfant)
+
+
+      ┌─ ✓ Teleport Interactor
+      │  Layer: Default (0)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (0.000, -0.020, -0.035)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.451, 1.341, 1.416)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Lossy Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ COMPONENTS (6)
+      │  • Transform
+      │  • XRRayInteractor (Enabled: True)
+      │  • LineRenderer (Enabled: True)
+      │  • XRInteractorLineVisual (Enabled: True)
+      │  • SortingGroup
+      │  • SimpleHapticFeedback (Enabled: True)
+      │
+      └─ (aucun enfant)
+
+      ┌─ ✓ Left Controller Visual
+      │  Layer: Default (0)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (0.000, 0.000, -0.050)
+      │  Rotation:
+      │    Euler: (0.00°, 180.00°, 0.00°)
+      │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+      │  Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.451, 1.361, 1.401)
+      │  Rotation:
+      │    Euler: (0.00°, 180.00°, 0.00°)
+      │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+      │  Lossy Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ COMPONENTS (2)
+      │  • Transform
+      │  • ControllerAnimator (Enabled: True)
+      │
+      └─ ENFANTS (1):
+
+        ┌─ ✓ UniversalController
+        │  Layer: Default (0)
+        │  Tag: Untagged
+        │
+        ├─ TRANSFORM LOCAL
+        │  Position: (0.000, 0.000, 0.000)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Scale: (1.000, 1.000, 1.000)
+        │
+        ├─ TRANSFORM WORLD
+        │  Position: (1.451, 1.361, 1.401)
+        │  Rotation:
+        │    Euler: (0.00°, 180.00°, 0.00°)
+        │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+        │  Lossy Scale: (1.000, 1.000, 1.000)
+        │
+        ├─ COMPONENTS (1)
+        │  • Transform
+        │
+        └─ ENFANTS (6):
+
+          ┌─ ✓ Bumper
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (-0.013, -0.029, 0.027)
+          │  Rotation:
+          │    Euler: (0.00°, 345.00°, 0.00°)
+          │    Quaternion: (0.000, -0.131, 0.000, 0.991)
+          │  Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.463, 1.333, 1.373)
+          │  Rotation:
+          │    Euler: (0.00°, 165.00°, 0.00°)
+          │    Quaternion: (0.000, 0.991, 0.000, 0.131)
+          │  Lossy Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ COMPONENTS (3)
+          │  • Transform
+          │  • MeshFilter
+          │  • MeshRenderer (Enabled: True)
+          │
+          └─ (aucun enfant)
+
+          ┌─ ✓ Button_Home
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (0.000, -0.003, 0.025)
+          │  Rotation:
+          │    Euler: (21.18°, 0.00°, 0.00°)
+          │    Quaternion: (0.184, 0.000, 0.000, 0.983)
+          │  Scale: (1.019, 1.019, 1.019)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.451, 1.358, 1.376)
+          │  Rotation:
+          │    Euler: (21.18°, 180.00°, 0.00°)
+          │    Quaternion: (0.000, 0.983, -0.184, 0.000)
+          │  Lossy Scale: (1.019, 1.019, 1.019)
+          │
+          ├─ COMPONENTS (3)
+          │  • Transform
+          │  • MeshFilter
+          │  • MeshRenderer (Enabled: True)
+          │
+          └─ (aucun enfant)
+
+          ┌─ ✓ Controller_Base
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (0.000, 0.000, 0.000)
+          │  Rotation:
+          │    Euler: (270.00°, 0.00°, 0.00°)
+          │    Quaternion: (-0.707, 0.000, 0.000, 0.707)
+          │  Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.451, 1.361, 1.401)
+          │  Rotation:
+          │    Euler: (270.00°, 180.00°, 0.00°)
+          │    Quaternion: (0.000, 0.707, 0.707, 0.000)
+          │  Lossy Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ COMPONENTS (3)
+          │  • Transform
+          │  • MeshFilter
+          │  • MeshRenderer (Enabled: True)
+          │
+          └─ (aucun enfant)
+
+          ┌─ ✓ TouchPad
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (0.000, -0.002, -0.005)
+          │  Rotation:
+          │    Euler: (0.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+          │  Scale: (0.982, 1.550, 0.982)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.451, 1.359, 1.406)
+          │  Rotation:
+          │    Euler: (0.00°, 180.00°, 0.00°)
+          │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+          │  Lossy Scale: (0.982, 1.550, 0.982)
+          │
+          ├─ COMPONENTS (3)
+          │  • Transform
+          │  • MeshFilter
+          │  • MeshRenderer (Enabled: True)
+          │
+          └─ (aucun enfant)
+
+          ┌─ ✓ Trigger
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (0.000, -0.013, -0.020)
+          │  Rotation:
+          │    Euler: (0.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+          │  Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.451, 1.348, 1.421)
+          │  Rotation:
+          │    Euler: (0.00°, 180.00°, 0.00°)
+          │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+          │  Lossy Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ COMPONENTS (3)
+          │  • Transform
+          │  • MeshFilter
+          │  • MeshRenderer (Enabled: True)
+          │
+          └─ (aucun enfant)
+
+          ┌─ ✓ XRController_Thumbstick_Buttons
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (0.000, 0.000, 0.000)
+          │  Rotation:
+          │    Euler: (0.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+          │  Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.451, 1.361, 1.401)
+          │  Rotation:
+          │    Euler: (0.00°, 180.00°, 0.00°)
+          │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+          │  Lossy Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ COMPONENTS (1)
+          │  • Transform
+          │
+          └─ ENFANTS (4):
+
+            ┌─ ✓ Button_A
+            │  Layer: Default (0)
+            │  Tag: Untagged
+            │
+            ├─ TRANSFORM LOCAL
+            │  Position: (-0.008, 0.001, 0.006)
+            │  Rotation:
+            │    Euler: (0.00°, 0.00°, 0.00°)
+            │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+            │  Scale: (1.000, 1.000, 1.000)
+            │
+            ├─ TRANSFORM WORLD
+            │  Position: (1.459, 1.363, 1.395)
+            │  Rotation:
+            │    Euler: (0.00°, 180.00°, 0.00°)
+            │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+            │  Lossy Scale: (1.000, 1.000, 1.000)
+            │
+            ├─ COMPONENTS (3)
+            │  • Transform
+            │  • MeshFilter
+            │  • MeshRenderer (Enabled: True)
+            │
+            └─ (aucun enfant)
+
+            ┌─ ✓ Button_B
+            │  Layer: Default (0)
+            │  Tag: Untagged
+            │
+            ├─ TRANSFORM LOCAL
+            │  Position: (-0.012, 0.001, -0.009)
+            │  Rotation:
+            │    Euler: (0.00°, 0.00°, 0.00°)
+            │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+            │  Scale: (1.000, 1.000, 1.000)
+            │
+            ├─ TRANSFORM WORLD
+            │  Position: (1.463, 1.363, 1.410)
+            │  Rotation:
+            │    Euler: (0.00°, 180.00°, 0.00°)
+            │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+            │  Lossy Scale: (1.000, 1.000, 1.000)
+            │
+            ├─ COMPONENTS (3)
+            │  • Transform
+            │  • MeshFilter
+            │  • MeshRenderer (Enabled: True)
+            │
+            └─ (aucun enfant)
+
+            ┌─ ✓ ThumbStick
+            │  Layer: Default (0)
+            │  Tag: Untagged
+            │
+            ├─ TRANSFORM LOCAL
+            │  Position: (0.009, -0.003, -0.007)
+            │  Rotation:
+            │    Euler: (0.00°, 0.00°, 0.00°)
+            │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+            │  Scale: (1.343, 1.343, 1.343)
+            │
+            ├─ TRANSFORM WORLD
+            │  Position: (1.442, 1.359, 1.408)
+            │  Rotation:
+            │    Euler: (0.00°, 180.00°, 0.00°)
+            │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+            │  Lossy Scale: (1.343, 1.343, 1.343)
+            │
+            ├─ COMPONENTS (3)
+            │  • Transform
+            │  • MeshFilter
+            │  • MeshRenderer (Enabled: True)
+            │
+            └─ (aucun enfant)
+
+            ┌─ ✓ ThumbStick_Base
+            │  Layer: Default (0)
+            │  Tag: Untagged
+            │
+            ├─ TRANSFORM LOCAL
+            │  Position: (0.009, 0.002, -0.007)
+            │  Rotation:
+            │    Euler: (0.00°, 0.00°, 0.00°)
+            │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+            │  Scale: (1.000, 1.000, 1.000)
+            │
+            ├─ TRANSFORM WORLD
+            │  Position: (1.442, 1.363, 1.408)
+            │  Rotation:
+            │    Euler: (0.00°, 180.00°, 0.00°)
+            │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+            │  Lossy Scale: (1.000, 1.000, 1.000)
+            │
+            ├─ COMPONENTS (3)
+            │  • Transform
+            │  • MeshFilter
+            │  • MeshRenderer (Enabled: True)
+            │
+            └─ (aucun enfant)
+
+
+
+
+
+    ┌─ ✓ Left Controller Teleport Stabilized Origin
+    │  Layer: Default (0)
+    │  Tag: Untagged
+    │
+    ├─ TRANSFORM LOCAL
+    │  Position: (0.000, 0.000, 0.000)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ TRANSFORM WORLD
+    │  Position: (1.451, 1.361, 1.451)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Lossy Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ COMPONENTS (2)
+    │  • Transform
+    │  • XRTransformStabilizer (Enabled: True)
+    │
+    └─ ENFANTS (1):
+
+      ┌─ ✓ Left Controller Stabilized Attach
+      │  Layer: Default (0)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (0.000, 0.000, 0.000)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.451, 1.361, 1.451)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Lossy Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ COMPONENTS (1)
+      │  • Transform
+      │
+      └─ (aucun enfant)
+
+
+    ┌─ ✓ Right Controller
+    │  Layer: Default (0)
+    │  Tag: Untagged
+    │
+    ├─ TRANSFORM LOCAL
+    │  Position: (0.000, 0.000, 0.000)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ TRANSFORM WORLD
+    │  Position: (1.451, 1.361, 1.451)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Lossy Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ COMPONENTS (5)
+    │  • Transform
+    │  • ControllerInputActionManager (Enabled: True)
+    │  • XRInteractionGroup (Enabled: True)
+    │  • HapticImpulsePlayer (Enabled: True)
+    │  • TrackedPoseDriver (Enabled: True)
+    │
+    └─ ENFANTS (4):
+
+      ┌─ ✓ Poke Interactor
+      │  Layer: Default (0)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (0.000, 0.000, 0.000)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.451, 1.361, 1.451)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Lossy Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ COMPONENTS (3)
+      │  • Transform
+      │  • XRPokeInteractor (Enabled: True)
+      │  • SimpleHapticFeedback (Enabled: True)
+      │
+      └─ ENFANTS (2):
+
+        ┌─ ✓ Poke Point
+        │  Layer: Default (0)
+        │  Tag: Untagged
+        │
+        ├─ TRANSFORM LOCAL
+        │  Position: (0.000, 0.000, 0.008)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Scale: (0.010, 0.010, 0.010)
+        │
+        ├─ TRANSFORM WORLD
+        │  Position: (1.451, 1.361, 1.458)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Lossy Scale: (0.010, 0.010, 0.010)
+        │
+        ├─ COMPONENTS (1)
+        │  • Transform
+        │
+        └─ ENFANTS (1):
+
+          ┌─ ✓ Pinch_Pointer_LOD0
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (0.000, 0.000, -0.720)
+          │  Rotation:
+          │    Euler: (90.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.707, 0.000, 0.000, 0.707)
+          │  Scale: (50.000, 50.000, 50.000)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.451, 1.361, 1.451)
+          │  Rotation:
+          │    Euler: (90.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.707, 0.000, 0.000, 0.707)
+          │  Lossy Scale: (0.500, 0.500, 0.500)
+          │
+          ├─ COMPONENTS (2)
+          │  • Transform
+          │  • SkinnedMeshRenderer (Enabled: True)
+          │
+          └─ (aucun enfant)
+
+
+        ┌─ ✓ Poke Point Affordances
+        │  Layer: Default (0)
+        │  Tag: Untagged
+        │
+        ├─ TRANSFORM LOCAL
+        │  Position: (0.000, 0.000, 0.000)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Scale: (1.000, 1.000, 1.000)
+        │
+        ├─ TRANSFORM WORLD
+        │  Position: (1.451, 1.361, 1.451)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Lossy Scale: (1.000, 1.000, 1.000)
+        │
+        ├─ COMPONENTS (1)
+        │  • Transform
+        │
+        └─ ENFANTS (2):
+
+          ┌─ ✓ Poke
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (0.000, 0.000, 0.000)
+          │  Rotation:
+          │    Euler: (0.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+          │  Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.451, 1.361, 1.451)
+          │  Rotation:
+          │    Euler: (0.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+          │  Lossy Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ COMPONENTS (4)
+          │  • Transform
+          │  • XRInteractorAffordanceStateProvider (Enabled: True)
+          │  • MaterialPropertyBlockHelper (Enabled: True)
+          │  • ColorMaterialPropertyAffordanceReceiver (Enabled: True)
+          │
+          └─ (aucun enfant)
+
+          ┌─ ✓ NearFar
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (0.000, 0.000, 0.000)
+          │  Rotation:
+          │    Euler: (0.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+          │  Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.451, 1.361, 1.451)
+          │  Rotation:
+          │    Euler: (0.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+          │  Lossy Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ COMPONENTS (4)
+          │  • Transform
+          │  • XRInteractorAffordanceStateProvider (Enabled: True)
+          │  • MaterialPropertyBlockHelper (Enabled: True)
+          │  • ColorMaterialPropertyAffordanceReceiver (Enabled: True)
+          │
+          └─ (aucun enfant)
+
+
+
+      ┌─ ✓ Near-Far Interactor
+      │  Layer: Default (0)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (0.000, 0.000, 0.000)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.451, 1.361, 1.451)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Lossy Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ COMPONENTS (6)
+      │  • Transform
+      │  • NearFarInteractor (Enabled: True)
+      │  • InteractionAttachController (Enabled: True)
+      │  • SphereInteractionCaster (Enabled: True)
+      │  • CurveInteractionCaster (Enabled: True)
+      │  • SimpleHapticFeedback (Enabled: True)
+      │
+      └─ ENFANTS (1):
+
+        ┌─ ✓ LineVisual
+        │  Layer: Default (0)
+        │  Tag: Untagged
+        │
+        ├─ TRANSFORM LOCAL
+        │  Position: (0.000, 0.000, 0.000)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Scale: (1.000, 1.000, 1.000)
+        │
+        ├─ TRANSFORM WORLD
+        │  Position: (1.451, 1.361, 1.451)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Lossy Scale: (1.000, 1.000, 1.000)
+        │
+        ├─ COMPONENTS (4)
+        │  • Transform
+        │  • CurveVisualController (Enabled: True)
+        │  • LineRenderer (Enabled: False)
+        │  • SortingGroup
+        │
+        └─ (aucun enfant)
+
+
+      ┌─ ✓ Teleport Interactor
+      │  Layer: Default (0)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (0.000, -0.020, -0.035)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.451, 1.341, 1.416)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Lossy Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ COMPONENTS (6)
+      │  • Transform
+      │  • XRRayInteractor (Enabled: True)
+      │  • LineRenderer (Enabled: True)
+      │  • XRInteractorLineVisual (Enabled: True)
+      │  • SortingGroup
+      │  • SimpleHapticFeedback (Enabled: True)
+      │
+      └─ (aucun enfant)
+
+      ┌─ ✓ Right Controller Visual
+      │  Layer: Default (0)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (0.000, 0.000, -0.050)
+      │  Rotation:
+      │    Euler: (0.00°, 180.00°, 0.00°)
+      │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+      │  Scale: (-1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.451, 1.361, 1.401)
+      │  Rotation:
+      │    Euler: (0.00°, 180.00°, 0.00°)
+      │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+      │  Lossy Scale: (-1.000, 1.000, 1.000)
+      │
+      ├─ COMPONENTS (2)
+      │  • Transform
+      │  • ControllerAnimator (Enabled: True)
+      │
+      └─ ENFANTS (1):
+
+        ┌─ ✓ UniversalController
+        │  Layer: Default (0)
+        │  Tag: Untagged
+        │
+        ├─ TRANSFORM LOCAL
+        │  Position: (0.000, 0.000, 0.000)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Scale: (1.000, 1.000, 1.000)
+        │
+        ├─ TRANSFORM WORLD
+        │  Position: (1.451, 1.361, 1.401)
+        │  Rotation:
+        │    Euler: (0.00°, 180.00°, 0.00°)
+        │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+        │  Lossy Scale: (-1.000, 1.000, 1.000)
+        │
+        ├─ COMPONENTS (1)
+        │  • Transform
+        │
+        └─ ENFANTS (6):
+
+          ┌─ ✓ Bumper
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (-0.013, -0.029, 0.027)
+          │  Rotation:
+          │    Euler: (0.00°, 345.00°, 0.00°)
+          │    Quaternion: (0.000, -0.131, 0.000, 0.991)
+          │  Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.438, 1.333, 1.373)
+          │  Rotation:
+          │    Euler: (0.00°, 195.00°, 0.00°)
+          │    Quaternion: (0.000, 0.991, 0.000, -0.131)
+          │  Lossy Scale: (-1.000, 1.000, 1.000)
+          │
+          ├─ COMPONENTS (3)
+          │  • Transform
+          │  • MeshFilter
+          │  • MeshRenderer (Enabled: True)
+          │
+          └─ (aucun enfant)
+
+          ┌─ ✓ Button_Home
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (0.000, -0.003, 0.025)
+          │  Rotation:
+          │    Euler: (21.18°, 0.00°, 0.00°)
+          │    Quaternion: (0.184, 0.000, 0.000, 0.983)
+          │  Scale: (1.019, 1.019, 1.019)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.451, 1.358, 1.376)
+          │  Rotation:
+          │    Euler: (21.18°, 180.00°, 0.00°)
+          │    Quaternion: (0.000, 0.983, -0.184, 0.000)
+          │  Lossy Scale: (-1.019, 1.019, 1.019)
+          │
+          ├─ COMPONENTS (3)
+          │  • Transform
+          │  • MeshFilter
+          │  • MeshRenderer (Enabled: True)
+          │
+          └─ (aucun enfant)
+
+          ┌─ ✓ Controller_Base
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (0.000, 0.000, 0.000)
+          │  Rotation:
+          │    Euler: (270.00°, 0.00°, 0.00°)
+          │    Quaternion: (-0.707, 0.000, 0.000, 0.707)
+          │  Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.451, 1.361, 1.401)
+          │  Rotation:
+          │    Euler: (270.00°, 180.00°, 0.00°)
+          │    Quaternion: (0.000, 0.707, 0.707, 0.000)
+          │  Lossy Scale: (-1.000, 1.000, 1.000)
+          │
+          ├─ COMPONENTS (3)
+          │  • Transform
+          │  • MeshFilter
+          │  • MeshRenderer (Enabled: True)
+          │
+          └─ (aucun enfant)
+
+          ┌─ ✓ TouchPad
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (0.000, -0.002, -0.005)
+          │  Rotation:
+          │    Euler: (0.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+          │  Scale: (0.982, 1.550, 0.982)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.451, 1.359, 1.406)
+          │  Rotation:
+          │    Euler: (0.00°, 180.00°, 0.00°)
+          │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+          │  Lossy Scale: (-0.982, 1.550, 0.982)
+          │
+          ├─ COMPONENTS (3)
+          │  • Transform
+          │  • MeshFilter
+          │  • MeshRenderer (Enabled: True)
+          │
+          └─ (aucun enfant)
+
+          ┌─ ✓ Trigger
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (0.000, -0.013, -0.020)
+          │  Rotation:
+          │    Euler: (0.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+          │  Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.451, 1.348, 1.421)
+          │  Rotation:
+          │    Euler: (0.00°, 180.00°, 0.00°)
+          │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+          │  Lossy Scale: (-1.000, 1.000, 1.000)
+          │
+          ├─ COMPONENTS (3)
+          │  • Transform
+          │  • MeshFilter
+          │  • MeshRenderer (Enabled: True)
+          │
+          └─ (aucun enfant)
+
+          ┌─ ✓ XRController_Thumbstick_Buttons
+          │  Layer: Default (0)
+          │  Tag: Untagged
+          │
+          ├─ TRANSFORM LOCAL
+          │  Position: (0.000, 0.000, 0.000)
+          │  Rotation:
+          │    Euler: (0.00°, 0.00°, 0.00°)
+          │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+          │  Scale: (1.000, 1.000, 1.000)
+          │
+          ├─ TRANSFORM WORLD
+          │  Position: (1.451, 1.361, 1.401)
+          │  Rotation:
+          │    Euler: (0.00°, 180.00°, 0.00°)
+          │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+          │  Lossy Scale: (-1.000, 1.000, 1.000)
+          │
+          ├─ COMPONENTS (1)
+          │  • Transform
+          │
+          └─ ENFANTS (4):
+
+            ┌─ ✓ Button_A
+            │  Layer: Default (0)
+            │  Tag: Untagged
+            │
+            ├─ TRANSFORM LOCAL
+            │  Position: (-0.008, 0.001, 0.006)
+            │  Rotation:
+            │    Euler: (0.00°, 0.00°, 0.00°)
+            │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+            │  Scale: (1.000, 1.000, 1.000)
+            │
+            ├─ TRANSFORM WORLD
+            │  Position: (1.443, 1.363, 1.395)
+            │  Rotation:
+            │    Euler: (0.00°, 180.00°, 0.00°)
+            │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+            │  Lossy Scale: (-1.000, 1.000, 1.000)
+            │
+            ├─ COMPONENTS (3)
+            │  • Transform
+            │  • MeshFilter
+            │  • MeshRenderer (Enabled: True)
+            │
+            └─ (aucun enfant)
+
+            ┌─ ✓ Button_B
+            │  Layer: Default (0)
+            │  Tag: Untagged
+            │
+            ├─ TRANSFORM LOCAL
+            │  Position: (-0.012, 0.001, -0.009)
+            │  Rotation:
+            │    Euler: (0.00°, 0.00°, 0.00°)
+            │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+            │  Scale: (1.000, 1.000, 1.000)
+            │
+            ├─ TRANSFORM WORLD
+            │  Position: (1.439, 1.363, 1.410)
+            │  Rotation:
+            │    Euler: (0.00°, 180.00°, 0.00°)
+            │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+            │  Lossy Scale: (-1.000, 1.000, 1.000)
+            │
+            ├─ COMPONENTS (3)
+            │  • Transform
+            │  • MeshFilter
+            │  • MeshRenderer (Enabled: True)
+            │
+            └─ (aucun enfant)
+
+            ┌─ ✓ ThumbStick
+            │  Layer: Default (0)
+            │  Tag: Untagged
+            │
+            ├─ TRANSFORM LOCAL
+            │  Position: (0.009, -0.003, -0.007)
+            │  Rotation:
+            │    Euler: (0.00°, 0.00°, 0.00°)
+            │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+            │  Scale: (1.343, 1.343, 1.343)
+            │
+            ├─ TRANSFORM WORLD
+            │  Position: (1.460, 1.359, 1.408)
+            │  Rotation:
+            │    Euler: (0.00°, 180.00°, 0.00°)
+            │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+            │  Lossy Scale: (-1.343, 1.343, 1.343)
+            │
+            ├─ COMPONENTS (3)
+            │  • Transform
+            │  • MeshFilter
+            │  • MeshRenderer (Enabled: True)
+            │
+            └─ (aucun enfant)
+
+            ┌─ ✓ ThumbStick_Base
+            │  Layer: Default (0)
+            │  Tag: Untagged
+            │
+            ├─ TRANSFORM LOCAL
+            │  Position: (0.009, 0.002, -0.007)
+            │  Rotation:
+            │    Euler: (0.00°, 0.00°, 0.00°)
+            │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+            │  Scale: (1.000, 1.000, 1.000)
+            │
+            ├─ TRANSFORM WORLD
+            │  Position: (1.460, 1.363, 1.408)
+            │  Rotation:
+            │    Euler: (0.00°, 180.00°, 0.00°)
+            │    Quaternion: (0.000, 1.000, 0.000, 0.000)
+            │  Lossy Scale: (-1.000, 1.000, 1.000)
+            │
+            ├─ COMPONENTS (3)
+            │  • Transform
+            │  • MeshFilter
+            │  • MeshRenderer (Enabled: True)
+            │
+            └─ (aucun enfant)
+
+
+
+
+
+    ┌─ ✓ Right Controller Teleport Stabilized Origin
+    │  Layer: Default (0)
+    │  Tag: Untagged
+    │
+    ├─ TRANSFORM LOCAL
+    │  Position: (0.000, 0.000, 0.000)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ TRANSFORM WORLD
+    │  Position: (1.451, 1.361, 1.451)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Lossy Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ COMPONENTS (2)
+    │  • Transform
+    │  • XRTransformStabilizer (Enabled: True)
+    │
+    └─ ENFANTS (1):
+
+      ┌─ ✓ Right Controller Stabilized Attach
+      │  Layer: Default (0)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (0.000, 0.000, 0.000)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.451, 1.361, 1.451)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Lossy Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ COMPONENTS (1)
+      │  • Transform
+      │
+      └─ (aucun enfant)
+
+
+
+  ┌─ ✓ Locomotion
+  │  Layer: Ignore Raycast (2)
+  │  Tag: Untagged
+  │
+  ├─ TRANSFORM LOCAL
+  │  Position: (0.000, 0.000, 0.000)
+  │  Rotation:
+  │    Euler: (0.00°, 0.00°, 0.00°)
+  │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+  │  Scale: (1.000, 1.000, 1.000)
+  │
+  ├─ TRANSFORM WORLD
+  │  Position: (1.451, 0.000, 1.451)
+  │  Rotation:
+  │    Euler: (0.00°, 0.00°, 0.00°)
+  │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+  │  Lossy Scale: (1.000, 1.000, 1.000)
+  │
+  ├─ COMPONENTS (3)
+  │  • Transform
+  │  • LocomotionMediator (Enabled: True)
+  │  • XRBodyTransformer (Enabled: True)
+  │
+  └─ ENFANTS (7):
+
+    ┌─ ✓ Turn
+    │  Layer: Ignore Raycast (2)
+    │  Tag: Untagged
+    │
+    ├─ TRANSFORM LOCAL
+    │  Position: (0.000, 0.000, 0.000)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ TRANSFORM WORLD
+    │  Position: (1.451, 0.000, 1.451)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Lossy Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ COMPONENTS (3)
+    │  • Transform
+    │  • SnapTurnProvider (Enabled: True)
+    │  • ContinuousTurnProvider (Enabled: True)
+    │
+    └─ (aucun enfant)
+
+    ┌─ ✓ Move
+    │  Layer: Ignore Raycast (2)
+    │  Tag: Untagged
+    │
+    ├─ TRANSFORM LOCAL
+    │  Position: (0.000, 0.000, 0.000)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ TRANSFORM WORLD
+    │  Position: (1.451, 0.000, 1.451)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Lossy Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ COMPONENTS (2)
+    │  • Transform
+    │  • DynamicMoveProvider (Enabled: True)
+    │
+    └─ (aucun enfant)
+
+    ┌─ ✗ Grab Move
+    │  Layer: Ignore Raycast (2)
+    │  Tag: Untagged
+    │
+    ├─ TRANSFORM LOCAL
+    │  Position: (0.000, 0.000, 0.000)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ TRANSFORM WORLD
+    │  Position: (1.451, 0.000, 1.451)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Lossy Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ COMPONENTS (4)
+    │  • Transform
+    │  • GrabMoveProvider (Enabled: True)
+    │  • GrabMoveProvider (Enabled: True)
+    │  • TwoHandedGrabMoveProvider (Enabled: True)
+    │
+    └─ (aucun enfant)
+
+    ┌─ ✓ Teleportation
+    │  Layer: Ignore Raycast (2)
+    │  Tag: Untagged
+    │
+    ├─ TRANSFORM LOCAL
+    │  Position: (0.000, 0.000, 0.000)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ TRANSFORM WORLD
+    │  Position: (1.451, 0.000, 1.451)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Lossy Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ COMPONENTS (2)
+    │  • Transform
+    │  • TeleportationProvider (Enabled: True)
+    │
+    └─ (aucun enfant)
+
+    ┌─ ✓ Climb
+    │  Layer: Ignore Raycast (2)
+    │  Tag: Untagged
+    │
+    ├─ TRANSFORM LOCAL
+    │  Position: (0.000, 0.000, 0.000)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ TRANSFORM WORLD
+    │  Position: (1.451, 0.000, 1.451)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Lossy Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ COMPONENTS (2)
+    │  • Transform
+    │  • ClimbProvider (Enabled: True)
+    │
+    └─ ENFANTS (1):
+
+      ┌─ ✓ Climb Teleport
+      │  Layer: Ignore Raycast (2)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (0.000, 0.000, 0.000)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.451, 0.000, 1.451)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Lossy Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ COMPONENTS (3)
+      │  • Transform
+      │  • ClimbTeleportInteractor (Enabled: True)
+      │  • ClimbTeleportDestinationIndicator (Enabled: True)
+      │
+      └─ (aucun enfant)
+
+
+    ┌─ ✓ Gravity
+    │  Layer: Ignore Raycast (2)
+    │  Tag: Untagged
+    │
+    ├─ TRANSFORM LOCAL
+    │  Position: (0.000, 0.000, 0.000)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ TRANSFORM WORLD
+    │  Position: (1.451, 0.000, 1.451)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Lossy Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ COMPONENTS (2)
+    │  • Transform
+    │  • GravityProvider (Enabled: True)
+    │
+    └─ (aucun enfant)
+
+    ┌─ ✓ Jump
+    │  Layer: Ignore Raycast (2)
+    │  Tag: Untagged
+    │
+    ├─ TRANSFORM LOCAL
+    │  Position: (0.000, 0.000, 0.000)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ TRANSFORM WORLD
+    │  Position: (1.451, 0.000, 1.451)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Lossy Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ COMPONENTS (2)
+    │  • Transform
+    │  • JumpProvider (Enabled: True)
+    │
+    └─ (aucun enfant)
+
+
+  ┌─ ✓ Canvas
+  │  Layer: UI (5)
+  │  Tag: Untagged
+  │
+  ├─ TRANSFORM LOCAL
+  │  Position: (0.000, 1.670, 1.211)
+  │  Rotation:
+  │    Euler: (0.00°, 0.00°, 0.00°)
+  │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+  │  Scale: (0.001, 0.001, 0.001)
+  │
+  ├─ TRANSFORM WORLD
+  │  Position: (1.451, 1.670, 2.662)
+  │  Rotation:
+  │    Euler: (0.00°, 0.00°, 0.00°)
+  │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+  │  Lossy Scale: (0.001, 0.001, 0.001)
+  │
+  ├─ COMPONENTS (4)
+  │  • RectTransform
+  │  • Canvas
+  │  • CanvasScaler (Enabled: True)
+  │  • GraphicRaycaster (Enabled: True)
+  │
+  └─ ENFANTS (3):
+
+    ┌─ ✓ PanneauJeu
+    │  Layer: UI (5)
+    │  Tag: Untagged
+    │
+    ├─ TRANSFORM LOCAL
+    │  Position: (0.000, 0.000, 0.000)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ TRANSFORM WORLD
+    │  Position: (1.451, 1.670, 2.662)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Lossy Scale: (0.001, 0.001, 0.001)
+    │
+    ├─ COMPONENTS (3)
+    │  • RectTransform
+    │  • CanvasRenderer
+    │  • Image (Enabled: True)
+    │
+    └─ ENFANTS (2):
+
+      ┌─ ✓ TexteMinuterie
+      │  Layer: UI (5)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (0.000, 111.000, 0.000)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.451, 1.781, 2.662)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Lossy Scale: (0.001, 0.001, 0.001)
+      │
+      ├─ COMPONENTS (3)
+      │  • RectTransform
+      │  • CanvasRenderer
+      │  • TextMeshProUGUI (Enabled: True)
+      │
+      └─ (aucun enfant)
+
+      ┌─ ✓ TexteScore
+      │  Layer: UI (5)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (0.000, 187.000, 0.000)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.451, 1.857, 2.662)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Lossy Scale: (0.001, 0.001, 0.001)
+      │
+      ├─ COMPONENTS (3)
+      │  • RectTransform
+      │  • CanvasRenderer
+      │  • TextMeshProUGUI (Enabled: True)
+      │
+      └─ (aucun enfant)
+
+
+    ┌─ ✗ PanneauFin
+    │  Layer: UI (5)
+    │  Tag: Untagged
+    │
+    ├─ TRANSFORM LOCAL
+    │  Position: (0.000, 0.000, 0.000)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ TRANSFORM WORLD
+    │  Position: (1.451, 1.670, 2.662)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Lossy Scale: (0.001, 0.001, 0.001)
+    │
+    ├─ COMPONENTS (3)
+    │  • RectTransform
+    │  • CanvasRenderer
+    │  • Image (Enabled: True)
+    │
+    └─ ENFANTS (2):
+
+      ┌─ ✓ TexteScoreFinal
+      │  Layer: UI (5)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (0.000, 66.000, 0.000)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.451, 1.736, 2.662)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Lossy Scale: (0.001, 0.001, 0.001)
+      │
+      ├─ COMPONENTS (3)
+      │  • RectTransform
+      │  • CanvasRenderer
+      │  • TextMeshProUGUI (Enabled: True)
+      │
+      └─ (aucun enfant)
+
+      ┌─ ✓ BoutonRejouer
+      │  Layer: UI (5)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (0.000, -14.000, 0.000)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.451, 1.656, 2.662)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Lossy Scale: (0.001, 0.001, 0.001)
+      │
+      ├─ COMPONENTS (4)
+      │  • RectTransform
+      │  • CanvasRenderer
+      │  • Image (Enabled: True)
+      │  • Button (Enabled: True)
+      │
+      └─ ENFANTS (1):
+
+        ┌─ ✓ Text (TMP)
+        │  Layer: UI (5)
+        │  Tag: Untagged
+        │
+        ├─ TRANSFORM LOCAL
+        │  Position: (0.000, 0.000, 0.000)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Scale: (1.000, 1.000, 1.000)
+        │
+        ├─ TRANSFORM WORLD
+        │  Position: (1.451, 1.656, 2.662)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Lossy Scale: (0.001, 0.001, 0.001)
+        │
+        ├─ COMPONENTS (3)
+        │  • RectTransform
+        │  • CanvasRenderer
+        │  • TextMeshProUGUI (Enabled: True)
+        │
+        └─ (aucun enfant)
+
+
+
+    ┌─ ✓ PanneauMenu
+    │  Layer: UI (5)
+    │  Tag: Untagged
+    │
+    ├─ TRANSFORM LOCAL
+    │  Position: (0.000, 0.000, 0.000)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Scale: (1.000, 1.000, 1.000)
+    │
+    ├─ TRANSFORM WORLD
+    │  Position: (1.451, 1.670, 2.662)
+    │  Rotation:
+    │    Euler: (0.00°, 0.00°, 0.00°)
+    │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+    │  Lossy Scale: (0.001, 0.001, 0.001)
+    │
+    ├─ COMPONENTS (3)
+    │  • RectTransform
+    │  • CanvasRenderer
+    │  • Image (Enabled: True)
+    │
+    └─ ENFANTS (2):
+
+      ┌─ ✓ TitreJeu
+      │  Layer: UI (5)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (-36.700, 0.000, 0.000)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.414, 1.670, 2.662)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Lossy Scale: (0.001, 0.001, 0.001)
+      │
+      ├─ COMPONENTS (3)
+      │  • RectTransform
+      │  • CanvasRenderer
+      │  • TextMeshProUGUI (Enabled: True)
+      │
+      └─ (aucun enfant)
+
+      ┌─ ✓ BoutonDemarrer
+      │  Layer: UI (5)
+      │  Tag: Untagged
+      │
+      ├─ TRANSFORM LOCAL
+      │  Position: (0.000, -69.600, 0.000)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Scale: (1.000, 1.000, 1.000)
+      │
+      ├─ TRANSFORM WORLD
+      │  Position: (1.451, 1.600, 2.662)
+      │  Rotation:
+      │    Euler: (0.00°, 0.00°, 0.00°)
+      │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+      │  Lossy Scale: (0.001, 0.001, 0.001)
+      │
+      ├─ COMPONENTS (4)
+      │  • RectTransform
+      │  • CanvasRenderer
+      │  • Image (Enabled: True)
+      │  • Button (Enabled: True)
+      │
+      └─ ENFANTS (1):
+
+        ┌─ ✓ Text (TMP)
+        │  Layer: UI (5)
+        │  Tag: Untagged
+        │
+        ├─ TRANSFORM LOCAL
+        │  Position: (0.000, 0.000, 0.000)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Scale: (1.000, 1.000, 1.000)
+        │
+        ├─ TRANSFORM WORLD
+        │  Position: (1.451, 1.600, 2.662)
+        │  Rotation:
+        │    Euler: (0.00°, 0.00°, 0.00°)
+        │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+        │  Lossy Scale: (0.001, 0.001, 0.001)
+        │
+        ├─ COMPONENTS (3)
+        │  • RectTransform
+        │  • CanvasRenderer
+        │  • TextMeshProUGUI (Enabled: True)
+        │
+        └─ (aucun enfant)
+
+
+
+
+
+┌─ ✓ XR Interaction Manager
+│  Layer: Default (0)
+│  Tag: Untagged
+│
+├─ TRANSFORM LOCAL
+│  Position: (0.000, 0.000, 0.000)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Scale: (1.000, 1.000, 1.000)
+│
+├─ TRANSFORM WORLD
+│  Position: (0.000, 0.000, 0.000)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Lossy Scale: (1.000, 1.000, 1.000)
+│
+├─ COMPONENTS (2)
+│  • Transform
+│  • XRInteractionManager (Enabled: True)
+│
+└─ (aucun enfant)
+
+┌─ ✓ Sol
+│  Layer: Default (0)
+│  Tag: Untagged
+│
+├─ TRANSFORM LOCAL
+│  Position: (1.507, 1.055, 1.507)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Scale: (5.000, 1.000, 5.000)
+│
+├─ TRANSFORM WORLD
+│  Position: (1.507, 1.055, 1.507)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Lossy Scale: (5.000, 1.000, 5.000)
+│
+├─ COMPONENTS (4)
+│  • Transform
+│  • MeshFilter
+│  • MeshRenderer (Enabled: True)
+│  • MeshCollider (Enabled: True)
+│
+└─ (aucun enfant)
+
+┌─ ✓ Marteau
+│  Layer: Default (0)
+│  Tag: Marteau
+│
+├─ TRANSFORM LOCAL
+│  Position: (1.531, 1.650, 1.450)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Scale: (0.150, 0.700, 0.150)
+│
+├─ TRANSFORM WORLD
+│  Position: (1.531, 1.650, 1.450)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Lossy Scale: (0.150, 0.700, 0.150)
+│
+├─ COMPONENTS (8)
+│  • Transform
+│  • MeshFilter
+│  • MeshRenderer (Enabled: True)
+│  • BoxCollider (Enabled: True)
+│  • Rigidbody
+│  • XRGrabInteractable (Enabled: True)
+│  • FeedbackMarteau (Enabled: True)
+│  • AudioSource
+│
+└─ ENFANTS (1):
+
+  ┌─ ✓ TeteMarteau
+  │  Layer: Default (0)
+  │  Tag: Untagged
+  │
+  ├─ TRANSFORM LOCAL
+  │  Position: (0.206, 0.640, -0.130)
+  │  Rotation:
+  │    Euler: (0.00°, 0.00°, 0.00°)
+  │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+  │  Scale: (1.660, 0.280, 2.660)
+  │
+  ├─ TRANSFORM WORLD
+  │  Position: (1.562, 2.098, 1.431)
+  │  Rotation:
+  │    Euler: (0.00°, 0.00°, 0.00°)
+  │    Quaternion: (0.000, 0.000, 0.000, 1.000)
+  │  Lossy Scale: (0.249, 0.196, 0.399)
+  │
+  ├─ COMPONENTS (4)
+  │  • Transform
+  │  • MeshFilter
+  │  • MeshRenderer (Enabled: True)
+  │  • BoxCollider (Enabled: True)
+  │
+  └─ (aucun enfant)
+
+
+┌─ ✓ GestionnaireSpawn
+│  Layer: Default (0)
+│  Tag: Untagged
+│
+├─ TRANSFORM LOCAL
+│  Position: (0.107, 1.055, 6.122)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Scale: (1.000, 1.000, 1.000)
+│
+├─ TRANSFORM WORLD
+│  Position: (0.107, 1.055, 6.122)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Lossy Scale: (1.000, 1.000, 1.000)
+│
+├─ COMPONENTS (2)
+│  • Transform
+│  • GestionnaireSpawn (Enabled: True)
+│
+└─ (aucun enfant)
+
+┌─ ✓ SpawnPoint1
+│  Layer: Default (0)
+│  Tag: Untagged
+│
+├─ TRANSFORM LOCAL
+│  Position: (0.107, 1.750, 8.350)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Scale: (1.000, 1.000, 1.000)
+│
+├─ TRANSFORM WORLD
+│  Position: (0.107, 1.750, 8.350)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Lossy Scale: (1.000, 1.000, 1.000)
+│
+├─ COMPONENTS (1)
+│  • Transform
+│
+└─ (aucun enfant)
+
+┌─ ✓ SpawnPoint2
+│  Layer: Default (0)
+│  Tag: Untagged
+│
+├─ TRANSFORM LOCAL
+│  Position: (0.107, 1.055, 6.122)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Scale: (1.000, 1.000, 1.000)
+│
+├─ TRANSFORM WORLD
+│  Position: (0.107, 1.055, 6.122)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Lossy Scale: (1.000, 1.000, 1.000)
+│
+├─ COMPONENTS (1)
+│  • Transform
+│
+└─ (aucun enfant)
+
+┌─ ✓ SpawnPoint3
+│  Layer: Default (0)
+│  Tag: Untagged
+│
+├─ TRANSFORM LOCAL
+│  Position: (4.630, 1.900, 6.122)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Scale: (1.000, 1.000, 1.000)
+│
+├─ TRANSFORM WORLD
+│  Position: (4.630, 1.900, 6.122)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Lossy Scale: (1.000, 1.000, 1.000)
+│
+├─ COMPONENTS (1)
+│  • Transform
+│
+└─ (aucun enfant)
+
+┌─ ✓ SpawnPoint4
+│  Layer: Default (0)
+│  Tag: Untagged
+│
+├─ TRANSFORM LOCAL
+│  Position: (0.107, 1.110, -1.580)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Scale: (1.000, 1.000, 1.000)
+│
+├─ TRANSFORM WORLD
+│  Position: (0.107, 1.110, -1.580)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Lossy Scale: (1.000, 1.000, 1.000)
+│
+├─ COMPONENTS (1)
+│  • Transform
+│
+└─ (aucun enfant)
+
+┌─ ✓ EventSystem
+│  Layer: Default (0)
+│  Tag: Untagged
+│
+├─ TRANSFORM LOCAL
+│  Position: (0.000, 0.000, 0.000)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Scale: (1.000, 1.000, 1.000)
+│
+├─ TRANSFORM WORLD
+│  Position: (0.000, 0.000, 0.000)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Lossy Scale: (1.000, 1.000, 1.000)
+│
+├─ COMPONENTS (3)
+│  • Transform
+│  • EventSystem (Enabled: True)
+│  • InputSystemUIInputModule (Enabled: True)
+│
+└─ (aucun enfant)
+
+┌─ ✓ GestionnaireJeu
+│  Layer: Default (0)
+│  Tag: Untagged
+│
+├─ TRANSFORM LOCAL
+│  Position: (-1.097, 1.055, 4.669)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Scale: (1.000, 1.000, 1.000)
+│
+├─ TRANSFORM WORLD
+│  Position: (-1.097, 1.055, 4.669)
+│  Rotation:
+│    Euler: (0.00°, 0.00°, 0.00°)
+│    Quaternion: (0.000, 0.000, 0.000, 1.000)
+│  Lossy Scale: (1.000, 1.000, 1.000)
+│
+├─ COMPONENTS (2)
+│  • Transform
+│  • GestionnaireJeu (Enabled: True)
+│
+└─ (aucun enfant)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+📊 STATISTIQUES
+═══════════════════════════════════════════════════════════════════════════════
+Total objets: 88
+  • Actifs: 84
+  • Inactifs: 4

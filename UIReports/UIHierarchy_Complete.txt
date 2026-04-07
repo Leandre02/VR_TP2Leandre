@@ -1,0 +1,3222 @@
+=== EXPORT HIERARCHIE UI UNITY ===
+Date: 27/03/2026 2:17:34 PM
+Scene: VRQuest
+
+- Directional Light [ACTIF]
+  → Transform
+    Propriétés:
+      m_LocalRotation: (Quaternion)
+      m_LocalPosition: (Vector3)
+      m_LocalScale: (Vector3)
+      m_ConstrainProportionsScale: False
+  → Light
+    Propriétés:
+      m_Type: (Enum)
+      m_Color: (Color)
+      m_Intensity: 2
+      m_Range: 10
+      m_SpotAngle: 30
+      m_InnerSpotAngle: 21.80208
+      m_CookieSize2D: (Vector2)
+      m_Shadows: (Generic)
+      m_Cookie: NONE (reference manquante?)
+      m_DrawHalo: False
+      m_BakingOutput: (Generic)
+      m_Flare: NONE (reference manquante?)
+      m_RenderMode: (Enum)
+      m_CullingMask: (LayerMask)
+      m_RenderingLayerMask: 1
+      m_Lightmapping: (Enum)
+      m_LightShadowCasterMode: 0
+      m_AreaSize: (Vector2)
+      m_BounceIntensity: 1
+      m_ColorTemperature: 5000
+      m_UseColorTemperature: True
+      m_BoundingSphereOverride: (Vector4)
+      m_UseBoundingSphereOverride: False
+      m_UseViewFrustumForShadowCasterCull: True
+      m_ForceVisible: False
+      m_ShadowRadius: 0
+      m_ShadowAngle: 0
+      m_LightUnit: 1
+      m_LuxAtDistance: 1
+      m_EnableSpotReflector: True
+  → UniversalAdditionalLightData
+    Propriétés:
+      m_UsePipelineSettings: True
+      m_AdditionalLightsShadowResolutionTier: 2
+      m_CustomShadowLayers: False
+      m_LightCookieSize: (Vector2)
+      m_LightCookieOffset: (Vector2)
+      m_SoftShadowQuality: (Enum)
+      m_RenderingLayersMask: (RenderingLayerMask)
+      m_ShadowRenderingLayersMask: (RenderingLayerMask)
+      m_Version: (Enum)
+      m_LightLayerMask: (Enum)
+      m_ShadowLayerMask: (Enum)
+      m_RenderingLayers: 1
+      m_ShadowRenderingLayers: 1
+- Global Volume [ACTIF]
+  → Transform
+    Propriétés:
+      m_LocalRotation: (Quaternion)
+      m_LocalPosition: (Vector3)
+      m_LocalScale: (Vector3)
+      m_ConstrainProportionsScale: False
+  → Volume
+    Propriétés:
+      m_IsGlobal: True
+      priority: 0
+      blendDistance: 0
+      weight: 1
+      sharedProfile: SampleSceneProfile
+- XR Origin (XR Rig) [ACTIF]
+  → Transform
+    Propriétés:
+      m_LocalRotation: (Quaternion)
+      m_LocalPosition: (Vector3)
+      m_LocalScale: (Vector3)
+      m_ConstrainProportionsScale: False
+  → XROrigin
+    Propriétés:
+      m_Camera: Main Camera
+      m_OriginBaseGameObject: XR Origin (XR Rig)
+      m_CameraFloorOffsetObject: Camera Offset
+      m_RequestedTrackingOriginMode: (Enum)
+      m_CameraYOffset: 1.36144
+  → CharacterController
+    Propriétés:
+      m_Material: NONE (reference manquante?)
+      m_IncludeLayers: (LayerMask)
+      m_ExcludeLayers: (LayerMask)
+      m_LayerOverridePriority: 0
+      m_ProvidesContacts: False
+      m_Height: 1.36144
+      m_Radius: 0.1
+      m_SlopeLimit: 45
+      m_StepOffset: 0.5
+      m_SkinWidth: 0.08
+      m_MinMoveDistance: 0.001
+      m_Center: (Vector3)
+  → InputActionManager
+    Propriétés:
+      m_ActionAssets: (Generic)
+  → XRInputModalityManager
+    Propriétés:
+      m_LeftController: Left Controller
+      m_RightController: Right Controller
+      m_MotionControllerModeStarted: (Generic)
+      m_MotionControllerModeEnded: (Generic)
+  → XRGazeAssistance
+    Propriétés:
+      m_GazeInteractor: Gaze Interactor
+      m_FallbackDivergence: 60
+      m_HideCursorWithNoActiveRays: True
+      m_RayInteractors: (Generic)
+      m_AimAssistRequiredAngle: 30
+      m_AimAssistRequiredSpeed: 0.25
+      m_AimAssistPercent: 0.8
+      m_AimAssistMaxSpeedPercent: 10
+  - Camera Offset [ACTIF]
+    → Transform
+      Propriétés:
+        m_LocalRotation: (Quaternion)
+        m_LocalPosition: (Vector3)
+        m_LocalScale: (Vector3)
+        m_ConstrainProportionsScale: False
+    - Main Camera [ACTIF]
+      → Transform
+        Propriétés:
+          m_LocalRotation: (Quaternion)
+          m_LocalPosition: (Vector3)
+          m_LocalScale: (Vector3)
+          m_ConstrainProportionsScale: False
+      → Camera
+        Propriétés:
+          m_ClearFlags: (Enum)
+          m_BackGroundColor: (Color)
+          m_projectionMatrixMode: 1
+          m_GateFitMode: 2
+          m_FOVAxisMode: 0
+          m_Iso: 200
+          m_ShutterSpeed: 0.005
+          m_Aperture: 16
+          m_FocusDistance: 10
+          m_FocalLength: 50
+          m_BladeCount: 5
+          m_Curvature: (Vector2)
+          m_BarrelClipping: 0.25
+          m_Anamorphism: 0
+          m_SensorSize: (Vector2)
+          m_LensShift: (Vector2)
+          m_NormalizedViewPortRect: (Rect)
+          near clip plane: 0.01
+          far clip plane: 1000
+          field of view: 60
+          orthographic: False
+          orthographic size: 5
+          m_Depth: -1
+          m_CullingMask: (LayerMask)
+          m_RenderingPath: (Enum)
+          m_TargetTexture: NONE (reference manquante?)
+          m_TargetDisplay: 0
+          m_TargetEye: 3
+          m_HDR: True
+          m_AllowMSAA: True
+          m_AllowDynamicResolution: False
+          m_ForceIntoRT: False
+          m_OcclusionCulling: True
+          m_StereoConvergence: 10
+          m_StereoSeparation: 0.022
+      → AudioListener
+      → TrackedPoseDriver
+        Propriétés:
+          m_TrackingType: (Enum)
+          m_UpdateType: (Enum)
+          m_IgnoreTrackingState: False
+          m_PositionInput: (Generic)
+          m_RotationInput: (Generic)
+          m_TrackingStateInput: (Generic)
+    - Gaze Interactor [INACTIF]
+      → Transform
+        Propriétés:
+          m_LocalRotation: (Quaternion)
+          m_LocalPosition: (Vector3)
+          m_LocalScale: (Vector3)
+          m_ConstrainProportionsScale: False
+      → XRGazeInteractor
+        Propriétés:
+          m_InteractionManager: NONE (reference manquante?)
+          m_InteractionLayers: (Generic)
+          m_Handedness: (Enum)
+          m_AttachTransform: Gaze Stabilized Attach
+          m_KeepSelectedTargetValid: True
+          m_DisableVisualsWhenBlockedInGroup: True
+          m_StartingSelectedInteractable: NONE (reference manquante?)
+          m_StartingTargetFilter: NONE (reference manquante?)
+          m_AutoFindParentInteractableInHierarchy: False
+          m_ParentInteractableObject: NONE (reference manquante?)
+          m_HoverEntered: (Generic)
+          m_HoverExited: (Generic)
+          m_SelectEntered: (Generic)
+          m_SelectExited: (Generic)
+          m_StartingHoverFilters: (Generic)
+          m_StartingSelectFilters: (Generic)
+          m_SelectInput: (Generic)
+          m_ActivateInput: (Generic)
+          m_SelectActionTrigger: (Enum)
+          m_AllowHoveredActivate: False
+          m_TargetPriorityMode: (Enum)
+          m_HideControllerOnSelect: False
+          m_InputCompatibilityMode: (Enum)
+          m_PlayAudioClipOnSelectEntered: False
+          m_AudioClipForOnSelectEntered: NONE (reference manquante?)
+          m_PlayAudioClipOnSelectExited: False
+          m_AudioClipForOnSelectExited: NONE (reference manquante?)
+          m_PlayAudioClipOnSelectCanceled: False
+          m_AudioClipForOnSelectCanceled: NONE (reference manquante?)
+          m_PlayAudioClipOnHoverEntered: False
+          m_AudioClipForOnHoverEntered: NONE (reference manquante?)
+          m_PlayAudioClipOnHoverExited: False
+          m_AudioClipForOnHoverExited: NONE (reference manquante?)
+          m_PlayAudioClipOnHoverCanceled: False
+          m_AudioClipForOnHoverCanceled: NONE (reference manquante?)
+          m_AllowHoverAudioWhileSelecting: False
+          m_PlayHapticsOnSelectEntered: False
+          m_HapticSelectEnterIntensity: 0
+          m_HapticSelectEnterDuration: 0
+          m_PlayHapticsOnSelectExited: False
+          m_HapticSelectExitIntensity: 0
+          m_HapticSelectExitDuration: 0
+          m_PlayHapticsOnSelectCanceled: False
+          m_HapticSelectCancelIntensity: 0
+          m_HapticSelectCancelDuration: 0
+          m_PlayHapticsOnHoverEntered: False
+          m_HapticHoverEnterIntensity: 0
+          m_HapticHoverEnterDuration: 0
+          m_PlayHapticsOnHoverExited: False
+          m_HapticHoverExitIntensity: 0
+          m_HapticHoverExitDuration: 0
+          m_PlayHapticsOnHoverCanceled: False
+          m_HapticHoverCancelIntensity: 0
+          m_HapticHoverCancelDuration: 0
+          m_AllowHoverHapticsWhileSelecting: False
+          m_LineType: (Enum)
+          m_BlendVisualLinePoints: True
+          m_MaxRaycastDistance: 30
+          m_RayOriginTransform: Gaze Stabilized
+          m_ReferenceFrame: NONE (reference manquante?)
+          m_Velocity: 16
+          m_Acceleration: 9.8
+          m_AdditionalGroundHeight: 0.1
+          m_AdditionalFlightTime: 0.5
+          m_EndPointDistance: 30
+          m_EndPointHeight: -10
+          m_ControlPointDistance: 10
+          m_ControlPointHeight: 5
+          m_SampleFrequency: 20
+          m_HitDetectionType: (Enum)
+          m_SphereCastRadius: 0.1
+          m_ConeCastAngle: 6
+          m_LiveConeCastDebugVisuals: False
+          m_RaycastMask: (LayerMask)
+          m_RaycastTriggerInteraction: (Enum)
+          m_RaycastSnapVolumeInteraction: (Enum)
+          m_HitClosestOnly: False
+          m_HoverToSelect: True
+          m_HoverTimeToSelect: 1
+          m_AutoDeselect: True
+          m_TimeToAutoDeselect: 0.25
+          m_EnableUIInteraction: True
+          m_BlockInteractionsWithScreenSpaceUI: False
+          m_BlockUIOnInteractableSelection: True
+          m_ManipulateAttachTransform: False
+          m_UseForceGrab: False
+          m_RotateSpeed: 180
+          m_TranslateSpeed: 1
+          m_RotateReferenceFrame: NONE (reference manquante?)
+          m_RotateMode: (Enum)
+          m_UIHoverEntered: (Generic)
+          m_UIHoverExited: (Generic)
+          m_EnableARRaycasting: False
+          m_OccludeARHitsWith3DObjects: False
+          m_OccludeARHitsWith2DObjects: False
+          m_ScaleMode: (Enum)
+          m_UIPressInput: (Generic)
+          m_UIScrollInput: (Generic)
+          m_TranslateManipulationInput: (Generic)
+          m_RotateManipulationInput: (Generic)
+          m_DirectionalManipulationInput: (Generic)
+          m_ScaleToggleInput: (Generic)
+          m_ScaleOverTimeInput: (Generic)
+          m_ScaleDistanceDeltaInput: (Generic)
+          m_GazeAssistanceCalculation: (Enum)
+          m_GazeAssistanceColliderFixedSize: 1
+          m_GazeAssistanceColliderScale: 1
+          m_GazeAssistanceSnapVolume: NONE (reference manquante?)
+          m_GazeAssistanceDistanceScaling: False
+          m_ClampGazeAssistanceDistanceScaling: False
+          m_GazeAssistanceDistanceScalingClampValue: 0
+      → GazeInputManager
+        Propriétés:
+          m_FallbackIfEyeTrackingUnavailable: True
+      → TrackedPoseDriver
+        Propriétés:
+          m_TrackingType: (Enum)
+          m_UpdateType: (Enum)
+          m_IgnoreTrackingState: False
+          m_PositionInput: (Generic)
+          m_RotationInput: (Generic)
+          m_TrackingStateInput: (Generic)
+    - Gaze Stabilized [INACTIF]
+      → Transform
+        Propriétés:
+          m_LocalRotation: (Quaternion)
+          m_LocalPosition: (Vector3)
+          m_LocalScale: (Vector3)
+          m_ConstrainProportionsScale: False
+      → XRTransformStabilizer
+        Propriétés:
+          m_Target: Gaze Interactor
+          m_AimTargetObject: NONE (reference manquante?)
+          m_UseLocalSpace: True
+          m_AngleStabilization: 20
+          m_PositionStabilization: 0.25
+      - Gaze Stabilized Attach [ACTIF]
+        → Transform
+          Propriétés:
+            m_LocalRotation: (Quaternion)
+            m_LocalPosition: (Vector3)
+            m_LocalScale: (Vector3)
+            m_ConstrainProportionsScale: False
+    - Left Controller [ACTIF]
+      → Transform
+        Propriétés:
+          m_LocalRotation: (Quaternion)
+          m_LocalPosition: (Vector3)
+          m_LocalScale: (Vector3)
+          m_ConstrainProportionsScale: False
+      → ControllerInputActionManager
+        Propriétés:
+          m_RayInteractor: NONE (reference manquante?)
+          m_NearFarInteractor: Near-Far Interactor
+          m_TeleportInteractor: Teleport Interactor
+          m_TeleportMode: XRI Left Locomotion/Teleport Mode
+          m_TeleportModeCancel: XRI Left Locomotion/Teleport Mode Cancel
+          m_Turn: XRI Left Locomotion/Turn
+          m_SnapTurn: XRI Left Locomotion/Snap Turn
+          m_Move: XRI Left Locomotion/Move
+          m_UIScroll: XRI Left Interaction/UI Scroll
+          m_SmoothMotionEnabled: True
+          m_SmoothTurnEnabled: False
+          m_NearFarEnableTeleportDuringNearInteraction: True
+          m_UIScrollingEnabled: True
+          m_RayInteractorChanged: (Generic)
+      → XRInteractionGroup
+        Propriétés:
+          m_GroupName: "Left"
+          m_InteractionManager: NONE (reference manquante?)
+          m_StartingGroupMembers: (Generic)
+          m_StartingInteractionOverridesMap: (Generic)
+      → HapticImpulsePlayer
+        Propriétés:
+          m_HapticOutput: (Generic)
+          m_AmplitudeMultiplier: 1
+      → TrackedPoseDriver
+        Propriétés:
+          m_TrackingType: (Enum)
+          m_UpdateType: (Enum)
+          m_IgnoreTrackingState: False
+          m_PositionInput: (Generic)
+          m_RotationInput: (Generic)
+          m_TrackingStateInput: (Generic)
+      - Poke Interactor [ACTIF]
+        → Transform
+          Propriétés:
+            m_LocalRotation: (Quaternion)
+            m_LocalPosition: (Vector3)
+            m_LocalScale: (Vector3)
+            m_ConstrainProportionsScale: False
+        → XRPokeInteractor
+          Propriétés:
+            m_InteractionManager: NONE (reference manquante?)
+            m_InteractionLayers: (Generic)
+            m_Handedness: (Enum)
+            m_AttachTransform: Poke Point
+            m_KeepSelectedTargetValid: True
+            m_DisableVisualsWhenBlockedInGroup: True
+            m_StartingSelectedInteractable: NONE (reference manquante?)
+            m_StartingTargetFilter: NONE (reference manquante?)
+            m_AutoFindParentInteractableInHierarchy: False
+            m_ParentInteractableObject: NONE (reference manquante?)
+            m_HoverEntered: (Generic)
+            m_HoverExited: (Generic)
+            m_SelectEntered: (Generic)
+            m_SelectExited: (Generic)
+            m_StartingHoverFilters: (Generic)
+            m_StartingSelectFilters: (Generic)
+            m_PokeDepth: 0.1
+            m_PokeWidth: 0.0075
+            m_PokeSelectWidth: 0.015
+            m_PokeHoverRadius: 0.015
+            m_PokeInteractionOffset: 0.005
+            m_PhysicsLayerMask: (LayerMask)
+            m_PhysicsTriggerInteraction: (Enum)
+            m_UIDocumentTriggerInteraction: (Enum)
+            m_RequirePokeFilter: True
+            m_EnableUIInteraction: True
+            m_ClickUIOnDown: True
+            m_DebugVisualizationsEnabled: False
+            m_UIHoverEntered: (Generic)
+            m_UIHoverExited: (Generic)
+        → SimpleHapticFeedback
+          Propriétés:
+            m_InteractorSourceObject: Poke Interactor
+            m_HapticImpulsePlayer: Left Controller
+            m_PlaySelectEntered: True
+            m_SelectEnteredData: (Generic)
+            m_PlaySelectExited: False
+            m_SelectExitedData: (Generic)
+            m_PlaySelectCanceled: False
+            m_SelectCanceledData: (Generic)
+            m_PlayHoverEntered: True
+            m_HoverEnteredData: (Generic)
+            m_PlayHoverExited: False
+            m_HoverExitedData: (Generic)
+            m_PlayHoverCanceled: False
+            m_HoverCanceledData: (Generic)
+            m_AllowHoverHapticsWhileSelecting: False
+        - Poke Point [ACTIF]
+          → Transform
+            Propriétés:
+              m_LocalRotation: (Quaternion)
+              m_LocalPosition: (Vector3)
+              m_LocalScale: (Vector3)
+              m_ConstrainProportionsScale: False
+          - Pinch_Pointer_LOD0 [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            → SkinnedMeshRenderer
+              Propriétés:
+                m_CastShadows: (Enum)
+                m_ReceiveShadows: True
+                m_DynamicOccludee: True
+                m_StaticShadowCaster: False
+                m_MotionVectors: (Enum)
+                m_LightProbeUsage: 1
+                m_ReflectionProbeUsage: 1
+                m_RayTracingMode: 3
+                m_RayTraceProcedural: False
+                m_RayTracingAccelStructBuildFlagsOverride: False
+                m_RayTracingAccelStructBuildFlags: 1
+                m_SmallMeshCulling: True
+                m_ForceMeshLod: -1
+                m_MeshLodSelectionBias: 0
+                m_RenderingLayerMask: 1
+                m_RendererPriority: 0
+                m_Materials: (Generic)
+                m_ProbeAnchor: NONE (reference manquante?)
+                m_LightProbeVolumeOverride: NONE (reference manquante?)
+                m_ScaleInLightmap: 1
+                m_ReceiveGI: 1
+                m_PreserveUVs: False
+                m_IgnoreNormalsForChartDetection: False
+                m_ImportantGI: False
+                m_StitchLightmapSeams: True
+                m_MinimumChartSize: 4
+                m_AutoUVMaxDistance: 0.5
+                m_AutoUVMaxAngle: 89
+                m_LightmapParameters: NONE (reference manquante?)
+                m_MaskInteraction: (Enum)
+                m_Quality: (Enum)
+                m_UpdateWhenOffscreen: True
+                m_SkinnedMotionVectors: True
+                m_Mesh: Pinch_Pointer_LOD0
+                m_BlendShapeWeights: (Generic)
+                m_RootBone: NONE (reference manquante?)
+                m_AABB: (Bounds)
+        - Poke Point Affordances [ACTIF]
+          → Transform
+            Propriétés:
+              m_LocalRotation: (Quaternion)
+              m_LocalPosition: (Vector3)
+              m_LocalScale: (Vector3)
+              m_ConstrainProportionsScale: False
+          - Poke [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            → XRInteractorAffordanceStateProvider
+              Propriétés:
+                m_TransitionDuration: 0.125
+                m_InteractorSource: Poke Interactor
+                m_IgnoreHoverEvents: False
+                m_IgnoreSelectEvents: False
+                m_IgnoreActivateEvents: True
+                m_IgnoreUGUIHover: False
+                m_IgnoreUGUISelect: False
+                m_IgnoreXRInteractionEvents: False
+                m_SelectClickAnimationMode: (Enum)
+                m_ActivateClickAnimationMode: (Enum)
+                m_ClickAnimationDuration: 0.25
+                m_ClickAnimationCurve: (Generic)
+            → MaterialPropertyBlockHelper
+              Propriétés:
+                m_Renderer: Pinch_Pointer_LOD0
+                m_MaterialIndex: 0
+            → ColorMaterialPropertyAffordanceReceiver
+              Propriétés:
+                m_AffordanceStateProvider: Poke
+                m_ReplaceIdleStateValueWithInitialValue: False
+                m_AffordanceThemeDatum: (Generic)
+                m_ValueUpdated: (Generic)
+                m_MaterialPropertyBlockHelper: Poke
+                m_ColorPropertyName: "_BaseColor"
+          - NearFar [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            → XRInteractorAffordanceStateProvider
+              Propriétés:
+                m_TransitionDuration: 0.125
+                m_InteractorSource: Near-Far Interactor
+                m_IgnoreHoverEvents: False
+                m_IgnoreSelectEvents: False
+                m_IgnoreActivateEvents: True
+                m_IgnoreUGUIHover: False
+                m_IgnoreUGUISelect: False
+                m_IgnoreXRInteractionEvents: False
+                m_SelectClickAnimationMode: (Enum)
+                m_ActivateClickAnimationMode: (Enum)
+                m_ClickAnimationDuration: 0.25
+                m_ClickAnimationCurve: (Generic)
+            → MaterialPropertyBlockHelper
+              Propriétés:
+                m_Renderer: Pinch_Pointer_LOD0
+                m_MaterialIndex: 0
+            → ColorMaterialPropertyAffordanceReceiver
+              Propriétés:
+                m_AffordanceStateProvider: NearFar
+                m_ReplaceIdleStateValueWithInitialValue: False
+                m_AffordanceThemeDatum: (Generic)
+                m_ValueUpdated: (Generic)
+                m_MaterialPropertyBlockHelper: NearFar
+                m_ColorPropertyName: "_BaseColor"
+      - Near-Far Interactor [ACTIF]
+        → Transform
+          Propriétés:
+            m_LocalRotation: (Quaternion)
+            m_LocalPosition: (Vector3)
+            m_LocalScale: (Vector3)
+            m_ConstrainProportionsScale: False
+        → NearFarInteractor
+          Propriétés:
+            m_InteractionManager: NONE (reference manquante?)
+            m_InteractionLayers: (Generic)
+            m_Handedness: (Enum)
+            m_AttachTransform: NONE (reference manquante?)
+            m_KeepSelectedTargetValid: True
+            m_DisableVisualsWhenBlockedInGroup: True
+            m_StartingSelectedInteractable: NONE (reference manquante?)
+            m_StartingTargetFilter: NONE (reference manquante?)
+            m_AutoFindParentInteractableInHierarchy: False
+            m_ParentInteractableObject: NONE (reference manquante?)
+            m_HoverEntered: (Generic)
+            m_HoverExited: (Generic)
+            m_SelectEntered: (Generic)
+            m_SelectExited: (Generic)
+            m_StartingHoverFilters: (Generic)
+            m_StartingSelectFilters: (Generic)
+            m_SelectInput: (Generic)
+            m_ActivateInput: (Generic)
+            m_SelectActionTrigger: (Enum)
+            m_AllowHoveredActivate: False
+            m_TargetPriorityMode: (Enum)
+            m_HideControllerOnSelect: False
+            m_InputCompatibilityMode: (Enum)
+            m_PlayAudioClipOnSelectEntered: False
+            m_AudioClipForOnSelectEntered: NONE (reference manquante?)
+            m_PlayAudioClipOnSelectExited: False
+            m_AudioClipForOnSelectExited: NONE (reference manquante?)
+            m_PlayAudioClipOnSelectCanceled: False
+            m_AudioClipForOnSelectCanceled: NONE (reference manquante?)
+            m_PlayAudioClipOnHoverEntered: False
+            m_AudioClipForOnHoverEntered: NONE (reference manquante?)
+            m_PlayAudioClipOnHoverExited: False
+            m_AudioClipForOnHoverExited: NONE (reference manquante?)
+            m_PlayAudioClipOnHoverCanceled: False
+            m_AudioClipForOnHoverCanceled: NONE (reference manquante?)
+            m_AllowHoverAudioWhileSelecting: True
+            m_PlayHapticsOnSelectEntered: False
+            m_HapticSelectEnterIntensity: 0
+            m_HapticSelectEnterDuration: 0
+            m_PlayHapticsOnSelectExited: False
+            m_HapticSelectExitIntensity: 0
+            m_HapticSelectExitDuration: 0
+            m_PlayHapticsOnSelectCanceled: False
+            m_HapticSelectCancelIntensity: 0
+            m_HapticSelectCancelDuration: 0
+            m_PlayHapticsOnHoverEntered: False
+            m_HapticHoverEnterIntensity: 0
+            m_HapticHoverEnterDuration: 0
+            m_PlayHapticsOnHoverExited: False
+            m_HapticHoverExitIntensity: 0
+            m_HapticHoverExitDuration: 0
+            m_PlayHapticsOnHoverCanceled: False
+            m_HapticHoverCancelIntensity: 0
+            m_HapticHoverCancelDuration: 0
+            m_AllowHoverHapticsWhileSelecting: True
+            m_InteractionAttachController: Near-Far Interactor
+            m_EnableNearCasting: True
+            m_NearInteractionCaster: Near-Far Interactor
+            m_NearCasterSortingStrategy: (Enum)
+            m_SortNearTargetsAfterTargetFilter: False
+            m_EnableFarCasting: True
+            m_FarInteractionCaster: Near-Far Interactor
+            m_FarAttachMode: (Enum)
+            m_EnableUIInteraction: True
+            m_BlockUIOnInteractableSelection: True
+            m_UIHoverEntered: (Generic)
+            m_UIHoverExited: (Generic)
+            m_UIPressInput: (Generic)
+            m_UIScrollInput: (Generic)
+        → InteractionAttachController
+          Propriétés:
+            m_TransformToFollow: Near-Far Interactor
+            m_MotionStabilizationMode: (Enum)
+            m_PositionStabilization: 0.25
+            m_AngleStabilization: 20
+            m_SmoothOffset: False
+            m_SmoothingSpeed: 10
+            m_UseDistanceBasedVelocityScaling: True
+            m_UseMomentum: True
+            m_MomentumDecayScale: 1.25
+            m_MomentumDecayScaleFromInput: 5.5
+            m_ZVelocityRampThreshold: 0.3
+            m_PullVelocityBias: 1
+            m_PushVelocityBias: 1.25
+            m_MinAdditionalVelocityScalar: 0.05
+            m_MaxAdditionalVelocityScalar: 1.5
+            m_UseManipulationInput: True
+            m_ManipulationInput: (Generic)
+            m_ManipulationXAxisMode: (Enum)
+            m_ManipulationYAxisMode: (Enum)
+            m_CombineManipulationAxes: False
+            m_ManipulationTranslateSpeed: 1
+            m_ManipulationRotateSpeed: 180
+            m_ManipulationRotateReferenceFrame: NONE (reference manquante?)
+            m_EnableDebugLines: False
+        → SphereInteractionCaster
+          Propriétés:
+            m_CastOrigin: Near-Far Interactor
+            m_EnableStabilization: False
+            m_PositionStabilization: 0.25
+            m_AngleStabilization: 20
+            m_AimTargetObject: NONE (reference manquante?)
+            m_PhysicsLayerMask: (LayerMask)
+            m_PhysicsTriggerInteraction: (Enum)
+            m_CastRadius: 0.1
+        → CurveInteractionCaster
+          Propriétés:
+            m_CastOrigin: Near-Far Interactor
+            m_EnableStabilization: True
+            m_PositionStabilization: 0.25
+            m_AngleStabilization: 20
+            m_AimTargetObject: Near-Far Interactor
+            m_RaycastMask: (LayerMask)
+            m_RaycastTriggerInteraction: (Enum)
+            m_RaycastSnapVolumeInteraction: (Enum)
+            m_RaycastUIDocumentTriggerInteraction: (Enum)
+            m_TargetNumCurveSegments: 1
+            m_HitDetectionType: (Enum)
+            m_CastDistance: 10
+            m_SphereCastRadius: 0.1
+            m_ConeCastAngle: 6
+            m_LiveConeCastDebugVisuals: False
+        → SimpleHapticFeedback
+          Propriétés:
+            m_InteractorSourceObject: Near-Far Interactor
+            m_HapticImpulsePlayer: NONE (reference manquante?)
+            m_PlaySelectEntered: True
+            m_SelectEnteredData: (Generic)
+            m_PlaySelectExited: False
+            m_SelectExitedData: (Generic)
+            m_PlaySelectCanceled: False
+            m_SelectCanceledData: (Generic)
+            m_PlayHoverEntered: True
+            m_HoverEnteredData: (Generic)
+            m_PlayHoverExited: False
+            m_HoverExitedData: (Generic)
+            m_PlayHoverCanceled: False
+            m_HoverCanceledData: (Generic)
+            m_AllowHoverHapticsWhileSelecting: False
+        - LineVisual [ACTIF]
+          → Transform
+            Propriétés:
+              m_LocalRotation: (Quaternion)
+              m_LocalPosition: (Vector3)
+              m_LocalScale: (Vector3)
+              m_ConstrainProportionsScale: False
+          → CurveVisualController
+            Propriétés:
+              m_LineRenderer: LineVisual
+              m_CurveVisualObject: Near-Far Interactor
+              m_OverrideLineOrigin: True
+              m_LineOriginTransform: Near-Far Interactor
+              m_VisualPointCount: 20
+              m_MaxVisualCurveDistance: 10
+              m_RestingVisualLineLength: 0.25
+              m_LineDynamicsMode: (Enum)
+              m_RetractDelay: 1
+              m_RetractDuration: 1
+              m_ExtendLineToEmptyHit: False
+              m_ExtensionRate: 10
+              m_EndPointExpansionRate: 10
+              m_ComputeMidPointWithComplexCurves: False
+              m_SnapToSelectedAttachIfAvailable: True
+              m_SnapToSnapVolumeIfAvailable: True
+              m_CurveStartOffset: 0.015
+              m_CurveEndOffset: 0.005
+              m_CustomizeLinePropertiesForState: True
+              m_LinePropertyAnimationSpeed: 8
+              m_NoValidHitProperties: (Generic)
+              m_UIHitProperties: (Generic)
+              m_UIPressHitProperties: (Generic)
+              m_SelectHitProperties: (Generic)
+              m_HoverHitProperties: (Generic)
+              m_RenderLineInWorldSpace: True
+              m_SwapMaterials: False
+              m_BaseLineMaterial: NONE (reference manquante?)
+              m_EmptyHitMaterial: NONE (reference manquante?)
+          → LineRenderer
+            Propriétés:
+              m_CastShadows: (Enum)
+              m_ReceiveShadows: True
+              m_DynamicOccludee: True
+              m_StaticShadowCaster: False
+              m_MotionVectors: (Enum)
+              m_LightProbeUsage: 0
+              m_ReflectionProbeUsage: 0
+              m_RayTracingMode: 0
+              m_RayTraceProcedural: False
+              m_RayTracingAccelStructBuildFlagsOverride: False
+              m_RayTracingAccelStructBuildFlags: 1
+              m_SmallMeshCulling: True
+              m_ForceMeshLod: -1
+              m_MeshLodSelectionBias: 0
+              m_RenderingLayerMask: 1
+              m_RendererPriority: 0
+              m_Materials: (Generic)
+              m_ProbeAnchor: NONE (reference manquante?)
+              m_LightProbeVolumeOverride: NONE (reference manquante?)
+              m_ScaleInLightmap: 1
+              m_ReceiveGI: 1
+              m_PreserveUVs: False
+              m_IgnoreNormalsForChartDetection: False
+              m_ImportantGI: False
+              m_StitchLightmapSeams: True
+              m_MinimumChartSize: 4
+              m_AutoUVMaxDistance: 0.5
+              m_AutoUVMaxAngle: 89
+              m_LightmapParameters: NONE (reference manquante?)
+              m_MaskInteraction: (Enum)
+              m_Positions: (Generic)
+              m_Parameters: (Generic)
+              m_UseWorldSpace: True
+              m_Loop: False
+              m_ApplyActiveColorSpace: False
+          → SortingGroup
+      - Teleport Interactor [ACTIF]
+        → Transform
+          Propriétés:
+            m_LocalRotation: (Quaternion)
+            m_LocalPosition: (Vector3)
+            m_LocalScale: (Vector3)
+            m_ConstrainProportionsScale: False
+        → XRRayInteractor
+          Propriétés:
+            m_InteractionManager: NONE (reference manquante?)
+            m_InteractionLayers: (Generic)
+            m_Handedness: (Enum)
+            m_AttachTransform: Left Controller Stabilized Attach
+            m_KeepSelectedTargetValid: False
+            m_DisableVisualsWhenBlockedInGroup: True
+            m_StartingSelectedInteractable: NONE (reference manquante?)
+            m_StartingTargetFilter: NONE (reference manquante?)
+            m_AutoFindParentInteractableInHierarchy: False
+            m_ParentInteractableObject: NONE (reference manquante?)
+            m_HoverEntered: (Generic)
+            m_HoverExited: (Generic)
+            m_SelectEntered: (Generic)
+            m_SelectExited: (Generic)
+            m_StartingHoverFilters: (Generic)
+            m_StartingSelectFilters: (Generic)
+            m_SelectInput: (Generic)
+            m_ActivateInput: (Generic)
+            m_SelectActionTrigger: (Enum)
+            m_AllowHoveredActivate: False
+            m_TargetPriorityMode: (Enum)
+            m_HideControllerOnSelect: False
+            m_InputCompatibilityMode: (Enum)
+            m_PlayAudioClipOnSelectEntered: False
+            m_AudioClipForOnSelectEntered: NONE (reference manquante?)
+            m_PlayAudioClipOnSelectExited: False
+            m_AudioClipForOnSelectExited: NONE (reference manquante?)
+            m_PlayAudioClipOnSelectCanceled: False
+            m_AudioClipForOnSelectCanceled: NONE (reference manquante?)
+            m_PlayAudioClipOnHoverEntered: False
+            m_AudioClipForOnHoverEntered: NONE (reference manquante?)
+            m_PlayAudioClipOnHoverExited: False
+            m_AudioClipForOnHoverExited: NONE (reference manquante?)
+            m_PlayAudioClipOnHoverCanceled: False
+            m_AudioClipForOnHoverCanceled: NONE (reference manquante?)
+            m_AllowHoverAudioWhileSelecting: False
+            m_PlayHapticsOnSelectEntered: False
+            m_HapticSelectEnterIntensity: 0
+            m_HapticSelectEnterDuration: 0
+            m_PlayHapticsOnSelectExited: False
+            m_HapticSelectExitIntensity: 0
+            m_HapticSelectExitDuration: 0
+            m_PlayHapticsOnSelectCanceled: False
+            m_HapticSelectCancelIntensity: 0
+            m_HapticSelectCancelDuration: 0
+            m_PlayHapticsOnHoverEntered: False
+            m_HapticHoverEnterIntensity: 0
+            m_HapticHoverEnterDuration: 0
+            m_PlayHapticsOnHoverExited: False
+            m_HapticHoverExitIntensity: 0
+            m_HapticHoverExitDuration: 0
+            m_PlayHapticsOnHoverCanceled: False
+            m_HapticHoverCancelIntensity: 0
+            m_HapticHoverCancelDuration: 0
+            m_AllowHoverHapticsWhileSelecting: False
+            m_LineType: (Enum)
+            m_BlendVisualLinePoints: True
+            m_MaxRaycastDistance: 30
+            m_RayOriginTransform: Left Controller Teleport Stabilized Origin
+            m_ReferenceFrame: NONE (reference manquante?)
+            m_Velocity: 10
+            m_Acceleration: 9.8
+            m_AdditionalGroundHeight: 0.1
+            m_AdditionalFlightTime: 0.5
+            m_EndPointDistance: 30
+            m_EndPointHeight: -10
+            m_ControlPointDistance: 10
+            m_ControlPointHeight: 5
+            m_SampleFrequency: 50
+            m_HitDetectionType: (Enum)
+            m_SphereCastRadius: 0.1
+            m_ConeCastAngle: 6
+            m_LiveConeCastDebugVisuals: False
+            m_RaycastMask: (LayerMask)
+            m_RaycastTriggerInteraction: (Enum)
+            m_RaycastSnapVolumeInteraction: (Enum)
+            m_HitClosestOnly: True
+            m_HoverToSelect: False
+            m_HoverTimeToSelect: 0.5
+            m_AutoDeselect: False
+            m_TimeToAutoDeselect: 1
+            m_EnableUIInteraction: False
+            m_BlockInteractionsWithScreenSpaceUI: False
+            m_BlockUIOnInteractableSelection: True
+            m_ManipulateAttachTransform: True
+            m_UseForceGrab: False
+            m_RotateSpeed: 180
+            m_TranslateSpeed: 0
+            m_RotateReferenceFrame: NONE (reference manquante?)
+            m_RotateMode: (Enum)
+            m_UIHoverEntered: (Generic)
+            m_UIHoverExited: (Generic)
+            m_EnableARRaycasting: False
+            m_OccludeARHitsWith3DObjects: False
+            m_OccludeARHitsWith2DObjects: False
+            m_ScaleMode: (Enum)
+            m_UIPressInput: (Generic)
+            m_UIScrollInput: (Generic)
+            m_TranslateManipulationInput: (Generic)
+            m_RotateManipulationInput: (Generic)
+            m_DirectionalManipulationInput: (Generic)
+            m_ScaleToggleInput: (Generic)
+            m_ScaleOverTimeInput: (Generic)
+            m_ScaleDistanceDeltaInput: (Generic)
+        → LineRenderer
+          Propriétés:
+            m_CastShadows: (Enum)
+            m_ReceiveShadows: True
+            m_DynamicOccludee: True
+            m_StaticShadowCaster: False
+            m_MotionVectors: (Enum)
+            m_LightProbeUsage: 0
+            m_ReflectionProbeUsage: 0
+            m_RayTracingMode: 0
+            m_RayTraceProcedural: False
+            m_RayTracingAccelStructBuildFlagsOverride: False
+            m_RayTracingAccelStructBuildFlags: 1
+            m_SmallMeshCulling: True
+            m_ForceMeshLod: -1
+            m_MeshLodSelectionBias: 0
+            m_RenderingLayerMask: 1
+            m_RendererPriority: 0
+            m_Materials: (Generic)
+            m_ProbeAnchor: NONE (reference manquante?)
+            m_LightProbeVolumeOverride: NONE (reference manquante?)
+            m_ScaleInLightmap: 1
+            m_ReceiveGI: 1
+            m_PreserveUVs: False
+            m_IgnoreNormalsForChartDetection: False
+            m_ImportantGI: False
+            m_StitchLightmapSeams: True
+            m_MinimumChartSize: 4
+            m_AutoUVMaxDistance: 0.5
+            m_AutoUVMaxAngle: 89
+            m_LightmapParameters: NONE (reference manquante?)
+            m_MaskInteraction: (Enum)
+            m_Positions: (Generic)
+            m_Parameters: (Generic)
+            m_UseWorldSpace: True
+            m_Loop: False
+            m_ApplyActiveColorSpace: False
+        → XRInteractorLineVisual
+          Propriétés:
+            m_LineWidth: 0.01
+            m_OverrideInteractorLineLength: False
+            m_LineLength: 10
+            m_AutoAdjustLineLength: False
+            m_MinLineLength: 0.02
+            m_UseDistanceToHitAsMaxLineLength: True
+            m_LineRetractionDelay: 0.5
+            m_LineLengthChangeSpeed: 12
+            m_WidthCurve: (AnimationCurve)
+            m_SetLineColorGradient: True
+            m_ValidColorGradient: (Gradient)
+            m_InvalidColorGradient: (Gradient)
+            m_BlockedColorGradient: (Gradient)
+            m_TreatSelectionAsValidState: False
+            m_SmoothMovement: False
+            m_FollowTightness: 10
+            m_SnapThresholdDistance: 10
+            m_Reticle: Directional Teleport Reticle
+            m_BlockedReticle: Blocking Teleport Reticle
+            m_StopLineAtFirstRaycastHit: True
+            m_StopLineAtSelection: False
+            m_SnapEndpointIfAvailable: True
+            m_LineBendRatio: 0.5
+            m_BendingEnabledInteractionLayers: (Generic)
+            m_OverrideInteractorLineOrigin: True
+            m_LineOriginTransform: Poke Point
+            m_LineOriginOffset: 0
+        → SortingGroup
+        → SimpleHapticFeedback
+          Propriétés:
+            m_InteractorSourceObject: Teleport Interactor
+            m_HapticImpulsePlayer: Left Controller
+            m_PlaySelectEntered: True
+            m_SelectEnteredData: (Generic)
+            m_PlaySelectExited: False
+            m_SelectExitedData: (Generic)
+            m_PlaySelectCanceled: False
+            m_SelectCanceledData: (Generic)
+            m_PlayHoverEntered: True
+            m_HoverEnteredData: (Generic)
+            m_PlayHoverExited: False
+            m_HoverExitedData: (Generic)
+            m_PlayHoverCanceled: False
+            m_HoverCanceledData: (Generic)
+            m_AllowHoverHapticsWhileSelecting: True
+      - Left Controller Visual [ACTIF]
+        → Transform
+          Propriétés:
+            m_LocalRotation: (Quaternion)
+            m_LocalPosition: (Vector3)
+            m_LocalScale: (Vector3)
+            m_ConstrainProportionsScale: False
+        → ControllerAnimator
+          Propriétés:
+            m_ThumbstickTransform: ThumbStick
+            m_StickRotationRange: (Vector2)
+            m_StickInput: (Generic)
+            m_TriggerTransform: Trigger
+            m_TriggerXAxisRotationRange: (Vector2)
+            m_TriggerInput: (Generic)
+            m_GripTransform: Bumper
+            m_GripRightRange: (Vector2)
+            m_GripInput: (Generic)
+        - UniversalController [ACTIF]
+          → Transform
+            Propriétés:
+              m_LocalRotation: (Quaternion)
+              m_LocalPosition: (Vector3)
+              m_LocalScale: (Vector3)
+              m_ConstrainProportionsScale: False
+          - Bumper [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            → MeshFilter
+              Propriétés:
+                m_Mesh: Bumper
+            → MeshRenderer
+              Propriétés:
+                m_CastShadows: (Enum)
+                m_ReceiveShadows: True
+                m_DynamicOccludee: True
+                m_StaticShadowCaster: False
+                m_MotionVectors: (Enum)
+                m_LightProbeUsage: 1
+                m_ReflectionProbeUsage: 1
+                m_RayTracingMode: 2
+                m_RayTraceProcedural: False
+                m_RayTracingAccelStructBuildFlagsOverride: False
+                m_RayTracingAccelStructBuildFlags: 1
+                m_SmallMeshCulling: True
+                m_ForceMeshLod: -1
+                m_MeshLodSelectionBias: 0
+                m_RenderingLayerMask: 1
+                m_RendererPriority: 0
+                m_Materials: (Generic)
+                m_ProbeAnchor: NONE (reference manquante?)
+                m_LightProbeVolumeOverride: NONE (reference manquante?)
+                m_ScaleInLightmap: 1
+                m_ReceiveGI: 1
+                m_PreserveUVs: False
+                m_IgnoreNormalsForChartDetection: False
+                m_ImportantGI: False
+                m_StitchLightmapSeams: True
+                m_MinimumChartSize: 4
+                m_AutoUVMaxDistance: 0.5
+                m_AutoUVMaxAngle: 89
+                m_LightmapParameters: NONE (reference manquante?)
+                m_MaskInteraction: (Enum)
+          - Button_Home [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            → MeshFilter
+              Propriétés:
+                m_Mesh: Button_Home
+            → MeshRenderer
+              Propriétés:
+                m_CastShadows: (Enum)
+                m_ReceiveShadows: True
+                m_DynamicOccludee: True
+                m_StaticShadowCaster: False
+                m_MotionVectors: (Enum)
+                m_LightProbeUsage: 1
+                m_ReflectionProbeUsage: 1
+                m_RayTracingMode: 2
+                m_RayTraceProcedural: False
+                m_RayTracingAccelStructBuildFlagsOverride: False
+                m_RayTracingAccelStructBuildFlags: 1
+                m_SmallMeshCulling: True
+                m_ForceMeshLod: -1
+                m_MeshLodSelectionBias: 0
+                m_RenderingLayerMask: 1
+                m_RendererPriority: 0
+                m_Materials: (Generic)
+                m_ProbeAnchor: NONE (reference manquante?)
+                m_LightProbeVolumeOverride: NONE (reference manquante?)
+                m_ScaleInLightmap: 1
+                m_ReceiveGI: 1
+                m_PreserveUVs: False
+                m_IgnoreNormalsForChartDetection: False
+                m_ImportantGI: False
+                m_StitchLightmapSeams: True
+                m_MinimumChartSize: 4
+                m_AutoUVMaxDistance: 0.5
+                m_AutoUVMaxAngle: 89
+                m_LightmapParameters: NONE (reference manquante?)
+                m_MaskInteraction: (Enum)
+          - Controller_Base [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            → MeshFilter
+              Propriétés:
+                m_Mesh: Controller_Base
+            → MeshRenderer
+              Propriétés:
+                m_CastShadows: (Enum)
+                m_ReceiveShadows: True
+                m_DynamicOccludee: True
+                m_StaticShadowCaster: False
+                m_MotionVectors: (Enum)
+                m_LightProbeUsage: 1
+                m_ReflectionProbeUsage: 1
+                m_RayTracingMode: 2
+                m_RayTraceProcedural: False
+                m_RayTracingAccelStructBuildFlagsOverride: False
+                m_RayTracingAccelStructBuildFlags: 1
+                m_SmallMeshCulling: True
+                m_ForceMeshLod: -1
+                m_MeshLodSelectionBias: 0
+                m_RenderingLayerMask: 1
+                m_RendererPriority: 0
+                m_Materials: (Generic)
+                m_ProbeAnchor: NONE (reference manquante?)
+                m_LightProbeVolumeOverride: NONE (reference manquante?)
+                m_ScaleInLightmap: 1
+                m_ReceiveGI: 1
+                m_PreserveUVs: False
+                m_IgnoreNormalsForChartDetection: False
+                m_ImportantGI: False
+                m_StitchLightmapSeams: True
+                m_MinimumChartSize: 4
+                m_AutoUVMaxDistance: 0.5
+                m_AutoUVMaxAngle: 89
+                m_LightmapParameters: NONE (reference manquante?)
+                m_MaskInteraction: (Enum)
+          - TouchPad [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            → MeshFilter
+              Propriétés:
+                m_Mesh: TouchPad
+            → MeshRenderer
+              Propriétés:
+                m_CastShadows: (Enum)
+                m_ReceiveShadows: True
+                m_DynamicOccludee: True
+                m_StaticShadowCaster: False
+                m_MotionVectors: (Enum)
+                m_LightProbeUsage: 1
+                m_ReflectionProbeUsage: 1
+                m_RayTracingMode: 2
+                m_RayTraceProcedural: False
+                m_RayTracingAccelStructBuildFlagsOverride: False
+                m_RayTracingAccelStructBuildFlags: 1
+                m_SmallMeshCulling: True
+                m_ForceMeshLod: -1
+                m_MeshLodSelectionBias: 0
+                m_RenderingLayerMask: 1
+                m_RendererPriority: 0
+                m_Materials: (Generic)
+                m_ProbeAnchor: NONE (reference manquante?)
+                m_LightProbeVolumeOverride: NONE (reference manquante?)
+                m_ScaleInLightmap: 1
+                m_ReceiveGI: 1
+                m_PreserveUVs: False
+                m_IgnoreNormalsForChartDetection: False
+                m_ImportantGI: False
+                m_StitchLightmapSeams: True
+                m_MinimumChartSize: 4
+                m_AutoUVMaxDistance: 0.5
+                m_AutoUVMaxAngle: 89
+                m_LightmapParameters: NONE (reference manquante?)
+                m_MaskInteraction: (Enum)
+          - Trigger [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            → MeshFilter
+              Propriétés:
+                m_Mesh: Trigger
+            → MeshRenderer
+              Propriétés:
+                m_CastShadows: (Enum)
+                m_ReceiveShadows: True
+                m_DynamicOccludee: True
+                m_StaticShadowCaster: False
+                m_MotionVectors: (Enum)
+                m_LightProbeUsage: 1
+                m_ReflectionProbeUsage: 1
+                m_RayTracingMode: 2
+                m_RayTraceProcedural: False
+                m_RayTracingAccelStructBuildFlagsOverride: False
+                m_RayTracingAccelStructBuildFlags: 1
+                m_SmallMeshCulling: True
+                m_ForceMeshLod: -1
+                m_MeshLodSelectionBias: 0
+                m_RenderingLayerMask: 1
+                m_RendererPriority: 0
+                m_Materials: (Generic)
+                m_ProbeAnchor: NONE (reference manquante?)
+                m_LightProbeVolumeOverride: NONE (reference manquante?)
+                m_ScaleInLightmap: 1
+                m_ReceiveGI: 1
+                m_PreserveUVs: False
+                m_IgnoreNormalsForChartDetection: False
+                m_ImportantGI: False
+                m_StitchLightmapSeams: True
+                m_MinimumChartSize: 4
+                m_AutoUVMaxDistance: 0.5
+                m_AutoUVMaxAngle: 89
+                m_LightmapParameters: NONE (reference manquante?)
+                m_MaskInteraction: (Enum)
+          - XRController_Thumbstick_Buttons [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            - Button_A [ACTIF]
+              → Transform
+                Propriétés:
+                  m_LocalRotation: (Quaternion)
+                  m_LocalPosition: (Vector3)
+                  m_LocalScale: (Vector3)
+                  m_ConstrainProportionsScale: False
+              → MeshFilter
+                Propriétés:
+                  m_Mesh: Button_A
+              → MeshRenderer
+                Propriétés:
+                  m_CastShadows: (Enum)
+                  m_ReceiveShadows: True
+                  m_DynamicOccludee: True
+                  m_StaticShadowCaster: False
+                  m_MotionVectors: (Enum)
+                  m_LightProbeUsage: 1
+                  m_ReflectionProbeUsage: 1
+                  m_RayTracingMode: 2
+                  m_RayTraceProcedural: False
+                  m_RayTracingAccelStructBuildFlagsOverride: False
+                  m_RayTracingAccelStructBuildFlags: 1
+                  m_SmallMeshCulling: True
+                  m_ForceMeshLod: -1
+                  m_MeshLodSelectionBias: 0
+                  m_RenderingLayerMask: 1
+                  m_RendererPriority: 0
+                  m_Materials: (Generic)
+                  m_ProbeAnchor: NONE (reference manquante?)
+                  m_LightProbeVolumeOverride: NONE (reference manquante?)
+                  m_ScaleInLightmap: 1
+                  m_ReceiveGI: 1
+                  m_PreserveUVs: False
+                  m_IgnoreNormalsForChartDetection: False
+                  m_ImportantGI: False
+                  m_StitchLightmapSeams: True
+                  m_MinimumChartSize: 4
+                  m_AutoUVMaxDistance: 0.5
+                  m_AutoUVMaxAngle: 89
+                  m_LightmapParameters: NONE (reference manquante?)
+                  m_MaskInteraction: (Enum)
+            - Button_B [ACTIF]
+              → Transform
+                Propriétés:
+                  m_LocalRotation: (Quaternion)
+                  m_LocalPosition: (Vector3)
+                  m_LocalScale: (Vector3)
+                  m_ConstrainProportionsScale: False
+              → MeshFilter
+                Propriétés:
+                  m_Mesh: Button_B
+              → MeshRenderer
+                Propriétés:
+                  m_CastShadows: (Enum)
+                  m_ReceiveShadows: True
+                  m_DynamicOccludee: True
+                  m_StaticShadowCaster: False
+                  m_MotionVectors: (Enum)
+                  m_LightProbeUsage: 1
+                  m_ReflectionProbeUsage: 1
+                  m_RayTracingMode: 2
+                  m_RayTraceProcedural: False
+                  m_RayTracingAccelStructBuildFlagsOverride: False
+                  m_RayTracingAccelStructBuildFlags: 1
+                  m_SmallMeshCulling: True
+                  m_ForceMeshLod: -1
+                  m_MeshLodSelectionBias: 0
+                  m_RenderingLayerMask: 1
+                  m_RendererPriority: 0
+                  m_Materials: (Generic)
+                  m_ProbeAnchor: NONE (reference manquante?)
+                  m_LightProbeVolumeOverride: NONE (reference manquante?)
+                  m_ScaleInLightmap: 1
+                  m_ReceiveGI: 1
+                  m_PreserveUVs: False
+                  m_IgnoreNormalsForChartDetection: False
+                  m_ImportantGI: False
+                  m_StitchLightmapSeams: True
+                  m_MinimumChartSize: 4
+                  m_AutoUVMaxDistance: 0.5
+                  m_AutoUVMaxAngle: 89
+                  m_LightmapParameters: NONE (reference manquante?)
+                  m_MaskInteraction: (Enum)
+            - ThumbStick [ACTIF]
+              → Transform
+                Propriétés:
+                  m_LocalRotation: (Quaternion)
+                  m_LocalPosition: (Vector3)
+                  m_LocalScale: (Vector3)
+                  m_ConstrainProportionsScale: False
+              → MeshFilter
+                Propriétés:
+                  m_Mesh: ThumbStick
+              → MeshRenderer
+                Propriétés:
+                  m_CastShadows: (Enum)
+                  m_ReceiveShadows: True
+                  m_DynamicOccludee: True
+                  m_StaticShadowCaster: False
+                  m_MotionVectors: (Enum)
+                  m_LightProbeUsage: 1
+                  m_ReflectionProbeUsage: 1
+                  m_RayTracingMode: 2
+                  m_RayTraceProcedural: False
+                  m_RayTracingAccelStructBuildFlagsOverride: False
+                  m_RayTracingAccelStructBuildFlags: 1
+                  m_SmallMeshCulling: True
+                  m_ForceMeshLod: -1
+                  m_MeshLodSelectionBias: 0
+                  m_RenderingLayerMask: 1
+                  m_RendererPriority: 0
+                  m_Materials: (Generic)
+                  m_ProbeAnchor: NONE (reference manquante?)
+                  m_LightProbeVolumeOverride: NONE (reference manquante?)
+                  m_ScaleInLightmap: 1
+                  m_ReceiveGI: 1
+                  m_PreserveUVs: False
+                  m_IgnoreNormalsForChartDetection: False
+                  m_ImportantGI: False
+                  m_StitchLightmapSeams: True
+                  m_MinimumChartSize: 4
+                  m_AutoUVMaxDistance: 0.5
+                  m_AutoUVMaxAngle: 89
+                  m_LightmapParameters: NONE (reference manquante?)
+                  m_MaskInteraction: (Enum)
+            - ThumbStick_Base [ACTIF]
+              → Transform
+                Propriétés:
+                  m_LocalRotation: (Quaternion)
+                  m_LocalPosition: (Vector3)
+                  m_LocalScale: (Vector3)
+                  m_ConstrainProportionsScale: False
+              → MeshFilter
+                Propriétés:
+                  m_Mesh: ThumbStick_Base
+              → MeshRenderer
+                Propriétés:
+                  m_CastShadows: (Enum)
+                  m_ReceiveShadows: True
+                  m_DynamicOccludee: True
+                  m_StaticShadowCaster: False
+                  m_MotionVectors: (Enum)
+                  m_LightProbeUsage: 1
+                  m_ReflectionProbeUsage: 1
+                  m_RayTracingMode: 2
+                  m_RayTraceProcedural: False
+                  m_RayTracingAccelStructBuildFlagsOverride: False
+                  m_RayTracingAccelStructBuildFlags: 1
+                  m_SmallMeshCulling: True
+                  m_ForceMeshLod: -1
+                  m_MeshLodSelectionBias: 0
+                  m_RenderingLayerMask: 1
+                  m_RendererPriority: 0
+                  m_Materials: (Generic)
+                  m_ProbeAnchor: NONE (reference manquante?)
+                  m_LightProbeVolumeOverride: NONE (reference manquante?)
+                  m_ScaleInLightmap: 1
+                  m_ReceiveGI: 1
+                  m_PreserveUVs: False
+                  m_IgnoreNormalsForChartDetection: False
+                  m_ImportantGI: False
+                  m_StitchLightmapSeams: True
+                  m_MinimumChartSize: 4
+                  m_AutoUVMaxDistance: 0.5
+                  m_AutoUVMaxAngle: 89
+                  m_LightmapParameters: NONE (reference manquante?)
+                  m_MaskInteraction: (Enum)
+    - Left Controller Teleport Stabilized Origin [ACTIF]
+      → Transform
+        Propriétés:
+          m_LocalRotation: (Quaternion)
+          m_LocalPosition: (Vector3)
+          m_LocalScale: (Vector3)
+          m_ConstrainProportionsScale: False
+      → XRTransformStabilizer
+        Propriétés:
+          m_Target: Poke Point
+          m_AimTargetObject: Teleport Interactor
+          m_UseLocalSpace: False
+          m_AngleStabilization: 20
+          m_PositionStabilization: 0.25
+      - Left Controller Stabilized Attach [ACTIF]
+        → Transform
+          Propriétés:
+            m_LocalRotation: (Quaternion)
+            m_LocalPosition: (Vector3)
+            m_LocalScale: (Vector3)
+            m_ConstrainProportionsScale: False
+    - Right Controller [ACTIF]
+      → Transform
+        Propriétés:
+          m_LocalRotation: (Quaternion)
+          m_LocalPosition: (Vector3)
+          m_LocalScale: (Vector3)
+          m_ConstrainProportionsScale: False
+      → ControllerInputActionManager
+        Propriétés:
+          m_RayInteractor: NONE (reference manquante?)
+          m_NearFarInteractor: Near-Far Interactor
+          m_TeleportInteractor: Teleport Interactor
+          m_TeleportMode: XRI Right Locomotion/Teleport Mode
+          m_TeleportModeCancel: XRI Right Locomotion/Teleport Mode Cancel
+          m_Turn: XRI Right Locomotion/Turn
+          m_SnapTurn: XRI Right Locomotion/Snap Turn
+          m_Move: XRI Right Locomotion/Move
+          m_UIScroll: XRI Right Interaction/UI Scroll
+          m_SmoothMotionEnabled: False
+          m_SmoothTurnEnabled: False
+          m_NearFarEnableTeleportDuringNearInteraction: True
+          m_UIScrollingEnabled: True
+          m_RayInteractorChanged: (Generic)
+      → XRInteractionGroup
+        Propriétés:
+          m_GroupName: "Right"
+          m_InteractionManager: NONE (reference manquante?)
+          m_StartingGroupMembers: (Generic)
+          m_StartingInteractionOverridesMap: (Generic)
+      → HapticImpulsePlayer
+        Propriétés:
+          m_HapticOutput: (Generic)
+          m_AmplitudeMultiplier: 1
+      → TrackedPoseDriver
+        Propriétés:
+          m_TrackingType: (Enum)
+          m_UpdateType: (Enum)
+          m_IgnoreTrackingState: False
+          m_PositionInput: (Generic)
+          m_RotationInput: (Generic)
+          m_TrackingStateInput: (Generic)
+      - Poke Interactor [ACTIF]
+        → Transform
+          Propriétés:
+            m_LocalRotation: (Quaternion)
+            m_LocalPosition: (Vector3)
+            m_LocalScale: (Vector3)
+            m_ConstrainProportionsScale: False
+        → XRPokeInteractor
+          Propriétés:
+            m_InteractionManager: NONE (reference manquante?)
+            m_InteractionLayers: (Generic)
+            m_Handedness: (Enum)
+            m_AttachTransform: Poke Point
+            m_KeepSelectedTargetValid: True
+            m_DisableVisualsWhenBlockedInGroup: True
+            m_StartingSelectedInteractable: NONE (reference manquante?)
+            m_StartingTargetFilter: NONE (reference manquante?)
+            m_AutoFindParentInteractableInHierarchy: False
+            m_ParentInteractableObject: NONE (reference manquante?)
+            m_HoverEntered: (Generic)
+            m_HoverExited: (Generic)
+            m_SelectEntered: (Generic)
+            m_SelectExited: (Generic)
+            m_StartingHoverFilters: (Generic)
+            m_StartingSelectFilters: (Generic)
+            m_PokeDepth: 0.1
+            m_PokeWidth: 0.0075
+            m_PokeSelectWidth: 0.015
+            m_PokeHoverRadius: 0.015
+            m_PokeInteractionOffset: 0.005
+            m_PhysicsLayerMask: (LayerMask)
+            m_PhysicsTriggerInteraction: (Enum)
+            m_UIDocumentTriggerInteraction: (Enum)
+            m_RequirePokeFilter: True
+            m_EnableUIInteraction: True
+            m_ClickUIOnDown: True
+            m_DebugVisualizationsEnabled: False
+            m_UIHoverEntered: (Generic)
+            m_UIHoverExited: (Generic)
+        → SimpleHapticFeedback
+          Propriétés:
+            m_InteractorSourceObject: Poke Interactor
+            m_HapticImpulsePlayer: Right Controller
+            m_PlaySelectEntered: True
+            m_SelectEnteredData: (Generic)
+            m_PlaySelectExited: False
+            m_SelectExitedData: (Generic)
+            m_PlaySelectCanceled: False
+            m_SelectCanceledData: (Generic)
+            m_PlayHoverEntered: True
+            m_HoverEnteredData: (Generic)
+            m_PlayHoverExited: False
+            m_HoverExitedData: (Generic)
+            m_PlayHoverCanceled: False
+            m_HoverCanceledData: (Generic)
+            m_AllowHoverHapticsWhileSelecting: False
+        - Poke Point [ACTIF]
+          → Transform
+            Propriétés:
+              m_LocalRotation: (Quaternion)
+              m_LocalPosition: (Vector3)
+              m_LocalScale: (Vector3)
+              m_ConstrainProportionsScale: False
+          - Pinch_Pointer_LOD0 [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            → SkinnedMeshRenderer
+              Propriétés:
+                m_CastShadows: (Enum)
+                m_ReceiveShadows: True
+                m_DynamicOccludee: True
+                m_StaticShadowCaster: False
+                m_MotionVectors: (Enum)
+                m_LightProbeUsage: 1
+                m_ReflectionProbeUsage: 1
+                m_RayTracingMode: 3
+                m_RayTraceProcedural: False
+                m_RayTracingAccelStructBuildFlagsOverride: False
+                m_RayTracingAccelStructBuildFlags: 1
+                m_SmallMeshCulling: True
+                m_ForceMeshLod: -1
+                m_MeshLodSelectionBias: 0
+                m_RenderingLayerMask: 1
+                m_RendererPriority: 0
+                m_Materials: (Generic)
+                m_ProbeAnchor: NONE (reference manquante?)
+                m_LightProbeVolumeOverride: NONE (reference manquante?)
+                m_ScaleInLightmap: 1
+                m_ReceiveGI: 1
+                m_PreserveUVs: False
+                m_IgnoreNormalsForChartDetection: False
+                m_ImportantGI: False
+                m_StitchLightmapSeams: True
+                m_MinimumChartSize: 4
+                m_AutoUVMaxDistance: 0.5
+                m_AutoUVMaxAngle: 89
+                m_LightmapParameters: NONE (reference manquante?)
+                m_MaskInteraction: (Enum)
+                m_Quality: (Enum)
+                m_UpdateWhenOffscreen: True
+                m_SkinnedMotionVectors: True
+                m_Mesh: Pinch_Pointer_LOD0
+                m_BlendShapeWeights: (Generic)
+                m_RootBone: NONE (reference manquante?)
+                m_AABB: (Bounds)
+        - Poke Point Affordances [ACTIF]
+          → Transform
+            Propriétés:
+              m_LocalRotation: (Quaternion)
+              m_LocalPosition: (Vector3)
+              m_LocalScale: (Vector3)
+              m_ConstrainProportionsScale: False
+          - Poke [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            → XRInteractorAffordanceStateProvider
+              Propriétés:
+                m_TransitionDuration: 0.125
+                m_InteractorSource: Poke Interactor
+                m_IgnoreHoverEvents: False
+                m_IgnoreSelectEvents: False
+                m_IgnoreActivateEvents: True
+                m_IgnoreUGUIHover: False
+                m_IgnoreUGUISelect: False
+                m_IgnoreXRInteractionEvents: False
+                m_SelectClickAnimationMode: (Enum)
+                m_ActivateClickAnimationMode: (Enum)
+                m_ClickAnimationDuration: 0.25
+                m_ClickAnimationCurve: (Generic)
+            → MaterialPropertyBlockHelper
+              Propriétés:
+                m_Renderer: Pinch_Pointer_LOD0
+                m_MaterialIndex: 0
+            → ColorMaterialPropertyAffordanceReceiver
+              Propriétés:
+                m_AffordanceStateProvider: Poke
+                m_ReplaceIdleStateValueWithInitialValue: False
+                m_AffordanceThemeDatum: (Generic)
+                m_ValueUpdated: (Generic)
+                m_MaterialPropertyBlockHelper: Poke
+                m_ColorPropertyName: "_BaseColor"
+          - NearFar [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            → XRInteractorAffordanceStateProvider
+              Propriétés:
+                m_TransitionDuration: 0.125
+                m_InteractorSource: Near-Far Interactor
+                m_IgnoreHoverEvents: False
+                m_IgnoreSelectEvents: False
+                m_IgnoreActivateEvents: True
+                m_IgnoreUGUIHover: False
+                m_IgnoreUGUISelect: False
+                m_IgnoreXRInteractionEvents: False
+                m_SelectClickAnimationMode: (Enum)
+                m_ActivateClickAnimationMode: (Enum)
+                m_ClickAnimationDuration: 0.25
+                m_ClickAnimationCurve: (Generic)
+            → MaterialPropertyBlockHelper
+              Propriétés:
+                m_Renderer: Pinch_Pointer_LOD0
+                m_MaterialIndex: 0
+            → ColorMaterialPropertyAffordanceReceiver
+              Propriétés:
+                m_AffordanceStateProvider: NearFar
+                m_ReplaceIdleStateValueWithInitialValue: False
+                m_AffordanceThemeDatum: (Generic)
+                m_ValueUpdated: (Generic)
+                m_MaterialPropertyBlockHelper: NearFar
+                m_ColorPropertyName: "_BaseColor"
+      - Near-Far Interactor [ACTIF]
+        → Transform
+          Propriétés:
+            m_LocalRotation: (Quaternion)
+            m_LocalPosition: (Vector3)
+            m_LocalScale: (Vector3)
+            m_ConstrainProportionsScale: False
+        → NearFarInteractor
+          Propriétés:
+            m_InteractionManager: NONE (reference manquante?)
+            m_InteractionLayers: (Generic)
+            m_Handedness: (Enum)
+            m_AttachTransform: NONE (reference manquante?)
+            m_KeepSelectedTargetValid: True
+            m_DisableVisualsWhenBlockedInGroup: True
+            m_StartingSelectedInteractable: NONE (reference manquante?)
+            m_StartingTargetFilter: NONE (reference manquante?)
+            m_AutoFindParentInteractableInHierarchy: False
+            m_ParentInteractableObject: NONE (reference manquante?)
+            m_HoverEntered: (Generic)
+            m_HoverExited: (Generic)
+            m_SelectEntered: (Generic)
+            m_SelectExited: (Generic)
+            m_StartingHoverFilters: (Generic)
+            m_StartingSelectFilters: (Generic)
+            m_SelectInput: (Generic)
+            m_ActivateInput: (Generic)
+            m_SelectActionTrigger: (Enum)
+            m_AllowHoveredActivate: False
+            m_TargetPriorityMode: (Enum)
+            m_HideControllerOnSelect: False
+            m_InputCompatibilityMode: (Enum)
+            m_PlayAudioClipOnSelectEntered: False
+            m_AudioClipForOnSelectEntered: NONE (reference manquante?)
+            m_PlayAudioClipOnSelectExited: False
+            m_AudioClipForOnSelectExited: NONE (reference manquante?)
+            m_PlayAudioClipOnSelectCanceled: False
+            m_AudioClipForOnSelectCanceled: NONE (reference manquante?)
+            m_PlayAudioClipOnHoverEntered: False
+            m_AudioClipForOnHoverEntered: NONE (reference manquante?)
+            m_PlayAudioClipOnHoverExited: False
+            m_AudioClipForOnHoverExited: NONE (reference manquante?)
+            m_PlayAudioClipOnHoverCanceled: False
+            m_AudioClipForOnHoverCanceled: NONE (reference manquante?)
+            m_AllowHoverAudioWhileSelecting: True
+            m_PlayHapticsOnSelectEntered: False
+            m_HapticSelectEnterIntensity: 0
+            m_HapticSelectEnterDuration: 0
+            m_PlayHapticsOnSelectExited: False
+            m_HapticSelectExitIntensity: 0
+            m_HapticSelectExitDuration: 0
+            m_PlayHapticsOnSelectCanceled: False
+            m_HapticSelectCancelIntensity: 0
+            m_HapticSelectCancelDuration: 0
+            m_PlayHapticsOnHoverEntered: False
+            m_HapticHoverEnterIntensity: 0
+            m_HapticHoverEnterDuration: 0
+            m_PlayHapticsOnHoverExited: False
+            m_HapticHoverExitIntensity: 0
+            m_HapticHoverExitDuration: 0
+            m_PlayHapticsOnHoverCanceled: False
+            m_HapticHoverCancelIntensity: 0
+            m_HapticHoverCancelDuration: 0
+            m_AllowHoverHapticsWhileSelecting: True
+            m_InteractionAttachController: Near-Far Interactor
+            m_EnableNearCasting: True
+            m_NearInteractionCaster: Near-Far Interactor
+            m_NearCasterSortingStrategy: (Enum)
+            m_SortNearTargetsAfterTargetFilter: False
+            m_EnableFarCasting: True
+            m_FarInteractionCaster: Near-Far Interactor
+            m_FarAttachMode: (Enum)
+            m_EnableUIInteraction: True
+            m_BlockUIOnInteractableSelection: True
+            m_UIHoverEntered: (Generic)
+            m_UIHoverExited: (Generic)
+            m_UIPressInput: (Generic)
+            m_UIScrollInput: (Generic)
+        → InteractionAttachController
+          Propriétés:
+            m_TransformToFollow: Near-Far Interactor
+            m_MotionStabilizationMode: (Enum)
+            m_PositionStabilization: 0.25
+            m_AngleStabilization: 20
+            m_SmoothOffset: False
+            m_SmoothingSpeed: 10
+            m_UseDistanceBasedVelocityScaling: True
+            m_UseMomentum: True
+            m_MomentumDecayScale: 1.25
+            m_MomentumDecayScaleFromInput: 5.5
+            m_ZVelocityRampThreshold: 0.3
+            m_PullVelocityBias: 1
+            m_PushVelocityBias: 1.25
+            m_MinAdditionalVelocityScalar: 0.05
+            m_MaxAdditionalVelocityScalar: 1.5
+            m_UseManipulationInput: True
+            m_ManipulationInput: (Generic)
+            m_ManipulationXAxisMode: (Enum)
+            m_ManipulationYAxisMode: (Enum)
+            m_CombineManipulationAxes: False
+            m_ManipulationTranslateSpeed: 1
+            m_ManipulationRotateSpeed: 180
+            m_ManipulationRotateReferenceFrame: NONE (reference manquante?)
+            m_EnableDebugLines: False
+        → SphereInteractionCaster
+          Propriétés:
+            m_CastOrigin: Near-Far Interactor
+            m_EnableStabilization: False
+            m_PositionStabilization: 0.25
+            m_AngleStabilization: 20
+            m_AimTargetObject: NONE (reference manquante?)
+            m_PhysicsLayerMask: (LayerMask)
+            m_PhysicsTriggerInteraction: (Enum)
+            m_CastRadius: 0.1
+        → CurveInteractionCaster
+          Propriétés:
+            m_CastOrigin: Near-Far Interactor
+            m_EnableStabilization: True
+            m_PositionStabilization: 0.25
+            m_AngleStabilization: 20
+            m_AimTargetObject: Near-Far Interactor
+            m_RaycastMask: (LayerMask)
+            m_RaycastTriggerInteraction: (Enum)
+            m_RaycastSnapVolumeInteraction: (Enum)
+            m_RaycastUIDocumentTriggerInteraction: (Enum)
+            m_TargetNumCurveSegments: 1
+            m_HitDetectionType: (Enum)
+            m_CastDistance: 10
+            m_SphereCastRadius: 0.1
+            m_ConeCastAngle: 6
+            m_LiveConeCastDebugVisuals: False
+        → SimpleHapticFeedback
+          Propriétés:
+            m_InteractorSourceObject: Near-Far Interactor
+            m_HapticImpulsePlayer: NONE (reference manquante?)
+            m_PlaySelectEntered: True
+            m_SelectEnteredData: (Generic)
+            m_PlaySelectExited: False
+            m_SelectExitedData: (Generic)
+            m_PlaySelectCanceled: False
+            m_SelectCanceledData: (Generic)
+            m_PlayHoverEntered: True
+            m_HoverEnteredData: (Generic)
+            m_PlayHoverExited: False
+            m_HoverExitedData: (Generic)
+            m_PlayHoverCanceled: False
+            m_HoverCanceledData: (Generic)
+            m_AllowHoverHapticsWhileSelecting: False
+        - LineVisual [ACTIF]
+          → Transform
+            Propriétés:
+              m_LocalRotation: (Quaternion)
+              m_LocalPosition: (Vector3)
+              m_LocalScale: (Vector3)
+              m_ConstrainProportionsScale: False
+          → CurveVisualController
+            Propriétés:
+              m_LineRenderer: LineVisual
+              m_CurveVisualObject: Near-Far Interactor
+              m_OverrideLineOrigin: True
+              m_LineOriginTransform: Near-Far Interactor
+              m_VisualPointCount: 20
+              m_MaxVisualCurveDistance: 10
+              m_RestingVisualLineLength: 0.25
+              m_LineDynamicsMode: (Enum)
+              m_RetractDelay: 1
+              m_RetractDuration: 1
+              m_ExtendLineToEmptyHit: False
+              m_ExtensionRate: 10
+              m_EndPointExpansionRate: 10
+              m_ComputeMidPointWithComplexCurves: False
+              m_SnapToSelectedAttachIfAvailable: True
+              m_SnapToSnapVolumeIfAvailable: True
+              m_CurveStartOffset: 0.015
+              m_CurveEndOffset: 0.005
+              m_CustomizeLinePropertiesForState: True
+              m_LinePropertyAnimationSpeed: 8
+              m_NoValidHitProperties: (Generic)
+              m_UIHitProperties: (Generic)
+              m_UIPressHitProperties: (Generic)
+              m_SelectHitProperties: (Generic)
+              m_HoverHitProperties: (Generic)
+              m_RenderLineInWorldSpace: True
+              m_SwapMaterials: False
+              m_BaseLineMaterial: NONE (reference manquante?)
+              m_EmptyHitMaterial: NONE (reference manquante?)
+          → LineRenderer
+            Propriétés:
+              m_CastShadows: (Enum)
+              m_ReceiveShadows: True
+              m_DynamicOccludee: True
+              m_StaticShadowCaster: False
+              m_MotionVectors: (Enum)
+              m_LightProbeUsage: 0
+              m_ReflectionProbeUsage: 0
+              m_RayTracingMode: 0
+              m_RayTraceProcedural: False
+              m_RayTracingAccelStructBuildFlagsOverride: False
+              m_RayTracingAccelStructBuildFlags: 1
+              m_SmallMeshCulling: True
+              m_ForceMeshLod: -1
+              m_MeshLodSelectionBias: 0
+              m_RenderingLayerMask: 1
+              m_RendererPriority: 0
+              m_Materials: (Generic)
+              m_ProbeAnchor: NONE (reference manquante?)
+              m_LightProbeVolumeOverride: NONE (reference manquante?)
+              m_ScaleInLightmap: 1
+              m_ReceiveGI: 1
+              m_PreserveUVs: False
+              m_IgnoreNormalsForChartDetection: False
+              m_ImportantGI: False
+              m_StitchLightmapSeams: True
+              m_MinimumChartSize: 4
+              m_AutoUVMaxDistance: 0.5
+              m_AutoUVMaxAngle: 89
+              m_LightmapParameters: NONE (reference manquante?)
+              m_MaskInteraction: (Enum)
+              m_Positions: (Generic)
+              m_Parameters: (Generic)
+              m_UseWorldSpace: True
+              m_Loop: False
+              m_ApplyActiveColorSpace: False
+          → SortingGroup
+      - Teleport Interactor [ACTIF]
+        → Transform
+          Propriétés:
+            m_LocalRotation: (Quaternion)
+            m_LocalPosition: (Vector3)
+            m_LocalScale: (Vector3)
+            m_ConstrainProportionsScale: False
+        → XRRayInteractor
+          Propriétés:
+            m_InteractionManager: NONE (reference manquante?)
+            m_InteractionLayers: (Generic)
+            m_Handedness: (Enum)
+            m_AttachTransform: Right Controller Stabilized Attach
+            m_KeepSelectedTargetValid: False
+            m_DisableVisualsWhenBlockedInGroup: True
+            m_StartingSelectedInteractable: NONE (reference manquante?)
+            m_StartingTargetFilter: NONE (reference manquante?)
+            m_AutoFindParentInteractableInHierarchy: False
+            m_ParentInteractableObject: NONE (reference manquante?)
+            m_HoverEntered: (Generic)
+            m_HoverExited: (Generic)
+            m_SelectEntered: (Generic)
+            m_SelectExited: (Generic)
+            m_StartingHoverFilters: (Generic)
+            m_StartingSelectFilters: (Generic)
+            m_SelectInput: (Generic)
+            m_ActivateInput: (Generic)
+            m_SelectActionTrigger: (Enum)
+            m_AllowHoveredActivate: False
+            m_TargetPriorityMode: (Enum)
+            m_HideControllerOnSelect: False
+            m_InputCompatibilityMode: (Enum)
+            m_PlayAudioClipOnSelectEntered: False
+            m_AudioClipForOnSelectEntered: NONE (reference manquante?)
+            m_PlayAudioClipOnSelectExited: False
+            m_AudioClipForOnSelectExited: NONE (reference manquante?)
+            m_PlayAudioClipOnSelectCanceled: False
+            m_AudioClipForOnSelectCanceled: NONE (reference manquante?)
+            m_PlayAudioClipOnHoverEntered: False
+            m_AudioClipForOnHoverEntered: NONE (reference manquante?)
+            m_PlayAudioClipOnHoverExited: False
+            m_AudioClipForOnHoverExited: NONE (reference manquante?)
+            m_PlayAudioClipOnHoverCanceled: False
+            m_AudioClipForOnHoverCanceled: NONE (reference manquante?)
+            m_AllowHoverAudioWhileSelecting: False
+            m_PlayHapticsOnSelectEntered: False
+            m_HapticSelectEnterIntensity: 0
+            m_HapticSelectEnterDuration: 0
+            m_PlayHapticsOnSelectExited: False
+            m_HapticSelectExitIntensity: 0
+            m_HapticSelectExitDuration: 0
+            m_PlayHapticsOnSelectCanceled: False
+            m_HapticSelectCancelIntensity: 0
+            m_HapticSelectCancelDuration: 0
+            m_PlayHapticsOnHoverEntered: False
+            m_HapticHoverEnterIntensity: 0
+            m_HapticHoverEnterDuration: 0
+            m_PlayHapticsOnHoverExited: False
+            m_HapticHoverExitIntensity: 0
+            m_HapticHoverExitDuration: 0
+            m_PlayHapticsOnHoverCanceled: False
+            m_HapticHoverCancelIntensity: 0
+            m_HapticHoverCancelDuration: 0
+            m_AllowHoverHapticsWhileSelecting: False
+            m_LineType: (Enum)
+            m_BlendVisualLinePoints: True
+            m_MaxRaycastDistance: 30
+            m_RayOriginTransform: Right Controller Teleport Stabilized Origin
+            m_ReferenceFrame: NONE (reference manquante?)
+            m_Velocity: 10
+            m_Acceleration: 9.8
+            m_AdditionalGroundHeight: 0.1
+            m_AdditionalFlightTime: 0.5
+            m_EndPointDistance: 30
+            m_EndPointHeight: -10
+            m_ControlPointDistance: 10
+            m_ControlPointHeight: 5
+            m_SampleFrequency: 50
+            m_HitDetectionType: (Enum)
+            m_SphereCastRadius: 0.1
+            m_ConeCastAngle: 6
+            m_LiveConeCastDebugVisuals: False
+            m_RaycastMask: (LayerMask)
+            m_RaycastTriggerInteraction: (Enum)
+            m_RaycastSnapVolumeInteraction: (Enum)
+            m_HitClosestOnly: True
+            m_HoverToSelect: False
+            m_HoverTimeToSelect: 0.5
+            m_AutoDeselect: False
+            m_TimeToAutoDeselect: 1
+            m_EnableUIInteraction: False
+            m_BlockInteractionsWithScreenSpaceUI: False
+            m_BlockUIOnInteractableSelection: True
+            m_ManipulateAttachTransform: True
+            m_UseForceGrab: False
+            m_RotateSpeed: 180
+            m_TranslateSpeed: 0
+            m_RotateReferenceFrame: NONE (reference manquante?)
+            m_RotateMode: (Enum)
+            m_UIHoverEntered: (Generic)
+            m_UIHoverExited: (Generic)
+            m_EnableARRaycasting: False
+            m_OccludeARHitsWith3DObjects: False
+            m_OccludeARHitsWith2DObjects: False
+            m_ScaleMode: (Enum)
+            m_UIPressInput: (Generic)
+            m_UIScrollInput: (Generic)
+            m_TranslateManipulationInput: (Generic)
+            m_RotateManipulationInput: (Generic)
+            m_DirectionalManipulationInput: (Generic)
+            m_ScaleToggleInput: (Generic)
+            m_ScaleOverTimeInput: (Generic)
+            m_ScaleDistanceDeltaInput: (Generic)
+        → LineRenderer
+          Propriétés:
+            m_CastShadows: (Enum)
+            m_ReceiveShadows: True
+            m_DynamicOccludee: True
+            m_StaticShadowCaster: False
+            m_MotionVectors: (Enum)
+            m_LightProbeUsage: 0
+            m_ReflectionProbeUsage: 0
+            m_RayTracingMode: 0
+            m_RayTraceProcedural: False
+            m_RayTracingAccelStructBuildFlagsOverride: False
+            m_RayTracingAccelStructBuildFlags: 1
+            m_SmallMeshCulling: True
+            m_ForceMeshLod: -1
+            m_MeshLodSelectionBias: 0
+            m_RenderingLayerMask: 1
+            m_RendererPriority: 0
+            m_Materials: (Generic)
+            m_ProbeAnchor: NONE (reference manquante?)
+            m_LightProbeVolumeOverride: NONE (reference manquante?)
+            m_ScaleInLightmap: 1
+            m_ReceiveGI: 1
+            m_PreserveUVs: False
+            m_IgnoreNormalsForChartDetection: False
+            m_ImportantGI: False
+            m_StitchLightmapSeams: True
+            m_MinimumChartSize: 4
+            m_AutoUVMaxDistance: 0.5
+            m_AutoUVMaxAngle: 89
+            m_LightmapParameters: NONE (reference manquante?)
+            m_MaskInteraction: (Enum)
+            m_Positions: (Generic)
+            m_Parameters: (Generic)
+            m_UseWorldSpace: True
+            m_Loop: False
+            m_ApplyActiveColorSpace: False
+        → XRInteractorLineVisual
+          Propriétés:
+            m_LineWidth: 0.01
+            m_OverrideInteractorLineLength: False
+            m_LineLength: 10
+            m_AutoAdjustLineLength: False
+            m_MinLineLength: 0.02
+            m_UseDistanceToHitAsMaxLineLength: True
+            m_LineRetractionDelay: 0.5
+            m_LineLengthChangeSpeed: 12
+            m_WidthCurve: (AnimationCurve)
+            m_SetLineColorGradient: True
+            m_ValidColorGradient: (Gradient)
+            m_InvalidColorGradient: (Gradient)
+            m_BlockedColorGradient: (Gradient)
+            m_TreatSelectionAsValidState: False
+            m_SmoothMovement: False
+            m_FollowTightness: 10
+            m_SnapThresholdDistance: 10
+            m_Reticle: Directional Teleport Reticle
+            m_BlockedReticle: Blocking Teleport Reticle
+            m_StopLineAtFirstRaycastHit: True
+            m_StopLineAtSelection: False
+            m_SnapEndpointIfAvailable: True
+            m_LineBendRatio: 0.5
+            m_BendingEnabledInteractionLayers: (Generic)
+            m_OverrideInteractorLineOrigin: True
+            m_LineOriginTransform: Poke Point
+            m_LineOriginOffset: 0
+        → SortingGroup
+        → SimpleHapticFeedback
+          Propriétés:
+            m_InteractorSourceObject: Teleport Interactor
+            m_HapticImpulsePlayer: Right Controller
+            m_PlaySelectEntered: True
+            m_SelectEnteredData: (Generic)
+            m_PlaySelectExited: False
+            m_SelectExitedData: (Generic)
+            m_PlaySelectCanceled: False
+            m_SelectCanceledData: (Generic)
+            m_PlayHoverEntered: True
+            m_HoverEnteredData: (Generic)
+            m_PlayHoverExited: False
+            m_HoverExitedData: (Generic)
+            m_PlayHoverCanceled: False
+            m_HoverCanceledData: (Generic)
+            m_AllowHoverHapticsWhileSelecting: True
+      - Right Controller Visual [ACTIF]
+        → Transform
+          Propriétés:
+            m_LocalRotation: (Quaternion)
+            m_LocalPosition: (Vector3)
+            m_LocalScale: (Vector3)
+            m_ConstrainProportionsScale: False
+        → ControllerAnimator
+          Propriétés:
+            m_ThumbstickTransform: ThumbStick
+            m_StickRotationRange: (Vector2)
+            m_StickInput: (Generic)
+            m_TriggerTransform: Trigger
+            m_TriggerXAxisRotationRange: (Vector2)
+            m_TriggerInput: (Generic)
+            m_GripTransform: Bumper
+            m_GripRightRange: (Vector2)
+            m_GripInput: (Generic)
+        - UniversalController [ACTIF]
+          → Transform
+            Propriétés:
+              m_LocalRotation: (Quaternion)
+              m_LocalPosition: (Vector3)
+              m_LocalScale: (Vector3)
+              m_ConstrainProportionsScale: False
+          - Bumper [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            → MeshFilter
+              Propriétés:
+                m_Mesh: Bumper
+            → MeshRenderer
+              Propriétés:
+                m_CastShadows: (Enum)
+                m_ReceiveShadows: True
+                m_DynamicOccludee: True
+                m_StaticShadowCaster: False
+                m_MotionVectors: (Enum)
+                m_LightProbeUsage: 1
+                m_ReflectionProbeUsage: 1
+                m_RayTracingMode: 2
+                m_RayTraceProcedural: False
+                m_RayTracingAccelStructBuildFlagsOverride: False
+                m_RayTracingAccelStructBuildFlags: 1
+                m_SmallMeshCulling: True
+                m_ForceMeshLod: -1
+                m_MeshLodSelectionBias: 0
+                m_RenderingLayerMask: 1
+                m_RendererPriority: 0
+                m_Materials: (Generic)
+                m_ProbeAnchor: NONE (reference manquante?)
+                m_LightProbeVolumeOverride: NONE (reference manquante?)
+                m_ScaleInLightmap: 1
+                m_ReceiveGI: 1
+                m_PreserveUVs: False
+                m_IgnoreNormalsForChartDetection: False
+                m_ImportantGI: False
+                m_StitchLightmapSeams: True
+                m_MinimumChartSize: 4
+                m_AutoUVMaxDistance: 0.5
+                m_AutoUVMaxAngle: 89
+                m_LightmapParameters: NONE (reference manquante?)
+                m_MaskInteraction: (Enum)
+          - Button_Home [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            → MeshFilter
+              Propriétés:
+                m_Mesh: Button_Home
+            → MeshRenderer
+              Propriétés:
+                m_CastShadows: (Enum)
+                m_ReceiveShadows: True
+                m_DynamicOccludee: True
+                m_StaticShadowCaster: False
+                m_MotionVectors: (Enum)
+                m_LightProbeUsage: 1
+                m_ReflectionProbeUsage: 1
+                m_RayTracingMode: 2
+                m_RayTraceProcedural: False
+                m_RayTracingAccelStructBuildFlagsOverride: False
+                m_RayTracingAccelStructBuildFlags: 1
+                m_SmallMeshCulling: True
+                m_ForceMeshLod: -1
+                m_MeshLodSelectionBias: 0
+                m_RenderingLayerMask: 1
+                m_RendererPriority: 0
+                m_Materials: (Generic)
+                m_ProbeAnchor: NONE (reference manquante?)
+                m_LightProbeVolumeOverride: NONE (reference manquante?)
+                m_ScaleInLightmap: 1
+                m_ReceiveGI: 1
+                m_PreserveUVs: False
+                m_IgnoreNormalsForChartDetection: False
+                m_ImportantGI: False
+                m_StitchLightmapSeams: True
+                m_MinimumChartSize: 4
+                m_AutoUVMaxDistance: 0.5
+                m_AutoUVMaxAngle: 89
+                m_LightmapParameters: NONE (reference manquante?)
+                m_MaskInteraction: (Enum)
+          - Controller_Base [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            → MeshFilter
+              Propriétés:
+                m_Mesh: Controller_Base
+            → MeshRenderer
+              Propriétés:
+                m_CastShadows: (Enum)
+                m_ReceiveShadows: True
+                m_DynamicOccludee: True
+                m_StaticShadowCaster: False
+                m_MotionVectors: (Enum)
+                m_LightProbeUsage: 1
+                m_ReflectionProbeUsage: 1
+                m_RayTracingMode: 2
+                m_RayTraceProcedural: False
+                m_RayTracingAccelStructBuildFlagsOverride: False
+                m_RayTracingAccelStructBuildFlags: 1
+                m_SmallMeshCulling: True
+                m_ForceMeshLod: -1
+                m_MeshLodSelectionBias: 0
+                m_RenderingLayerMask: 1
+                m_RendererPriority: 0
+                m_Materials: (Generic)
+                m_ProbeAnchor: NONE (reference manquante?)
+                m_LightProbeVolumeOverride: NONE (reference manquante?)
+                m_ScaleInLightmap: 1
+                m_ReceiveGI: 1
+                m_PreserveUVs: False
+                m_IgnoreNormalsForChartDetection: False
+                m_ImportantGI: False
+                m_StitchLightmapSeams: True
+                m_MinimumChartSize: 4
+                m_AutoUVMaxDistance: 0.5
+                m_AutoUVMaxAngle: 89
+                m_LightmapParameters: NONE (reference manquante?)
+                m_MaskInteraction: (Enum)
+          - TouchPad [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            → MeshFilter
+              Propriétés:
+                m_Mesh: TouchPad
+            → MeshRenderer
+              Propriétés:
+                m_CastShadows: (Enum)
+                m_ReceiveShadows: True
+                m_DynamicOccludee: True
+                m_StaticShadowCaster: False
+                m_MotionVectors: (Enum)
+                m_LightProbeUsage: 1
+                m_ReflectionProbeUsage: 1
+                m_RayTracingMode: 2
+                m_RayTraceProcedural: False
+                m_RayTracingAccelStructBuildFlagsOverride: False
+                m_RayTracingAccelStructBuildFlags: 1
+                m_SmallMeshCulling: True
+                m_ForceMeshLod: -1
+                m_MeshLodSelectionBias: 0
+                m_RenderingLayerMask: 1
+                m_RendererPriority: 0
+                m_Materials: (Generic)
+                m_ProbeAnchor: NONE (reference manquante?)
+                m_LightProbeVolumeOverride: NONE (reference manquante?)
+                m_ScaleInLightmap: 1
+                m_ReceiveGI: 1
+                m_PreserveUVs: False
+                m_IgnoreNormalsForChartDetection: False
+                m_ImportantGI: False
+                m_StitchLightmapSeams: True
+                m_MinimumChartSize: 4
+                m_AutoUVMaxDistance: 0.5
+                m_AutoUVMaxAngle: 89
+                m_LightmapParameters: NONE (reference manquante?)
+                m_MaskInteraction: (Enum)
+          - Trigger [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            → MeshFilter
+              Propriétés:
+                m_Mesh: Trigger
+            → MeshRenderer
+              Propriétés:
+                m_CastShadows: (Enum)
+                m_ReceiveShadows: True
+                m_DynamicOccludee: True
+                m_StaticShadowCaster: False
+                m_MotionVectors: (Enum)
+                m_LightProbeUsage: 1
+                m_ReflectionProbeUsage: 1
+                m_RayTracingMode: 2
+                m_RayTraceProcedural: False
+                m_RayTracingAccelStructBuildFlagsOverride: False
+                m_RayTracingAccelStructBuildFlags: 1
+                m_SmallMeshCulling: True
+                m_ForceMeshLod: -1
+                m_MeshLodSelectionBias: 0
+                m_RenderingLayerMask: 1
+                m_RendererPriority: 0
+                m_Materials: (Generic)
+                m_ProbeAnchor: NONE (reference manquante?)
+                m_LightProbeVolumeOverride: NONE (reference manquante?)
+                m_ScaleInLightmap: 1
+                m_ReceiveGI: 1
+                m_PreserveUVs: False
+                m_IgnoreNormalsForChartDetection: False
+                m_ImportantGI: False
+                m_StitchLightmapSeams: True
+                m_MinimumChartSize: 4
+                m_AutoUVMaxDistance: 0.5
+                m_AutoUVMaxAngle: 89
+                m_LightmapParameters: NONE (reference manquante?)
+                m_MaskInteraction: (Enum)
+          - XRController_Thumbstick_Buttons [ACTIF]
+            → Transform
+              Propriétés:
+                m_LocalRotation: (Quaternion)
+                m_LocalPosition: (Vector3)
+                m_LocalScale: (Vector3)
+                m_ConstrainProportionsScale: False
+            - Button_A [ACTIF]
+              → Transform
+                Propriétés:
+                  m_LocalRotation: (Quaternion)
+                  m_LocalPosition: (Vector3)
+                  m_LocalScale: (Vector3)
+                  m_ConstrainProportionsScale: False
+              → MeshFilter
+                Propriétés:
+                  m_Mesh: Button_A
+              → MeshRenderer
+                Propriétés:
+                  m_CastShadows: (Enum)
+                  m_ReceiveShadows: True
+                  m_DynamicOccludee: True
+                  m_StaticShadowCaster: False
+                  m_MotionVectors: (Enum)
+                  m_LightProbeUsage: 1
+                  m_ReflectionProbeUsage: 1
+                  m_RayTracingMode: 2
+                  m_RayTraceProcedural: False
+                  m_RayTracingAccelStructBuildFlagsOverride: False
+                  m_RayTracingAccelStructBuildFlags: 1
+                  m_SmallMeshCulling: True
+                  m_ForceMeshLod: -1
+                  m_MeshLodSelectionBias: 0
+                  m_RenderingLayerMask: 1
+                  m_RendererPriority: 0
+                  m_Materials: (Generic)
+                  m_ProbeAnchor: NONE (reference manquante?)
+                  m_LightProbeVolumeOverride: NONE (reference manquante?)
+                  m_ScaleInLightmap: 1
+                  m_ReceiveGI: 1
+                  m_PreserveUVs: False
+                  m_IgnoreNormalsForChartDetection: False
+                  m_ImportantGI: False
+                  m_StitchLightmapSeams: True
+                  m_MinimumChartSize: 4
+                  m_AutoUVMaxDistance: 0.5
+                  m_AutoUVMaxAngle: 89
+                  m_LightmapParameters: NONE (reference manquante?)
+                  m_MaskInteraction: (Enum)
+            - Button_B [ACTIF]
+              → Transform
+                Propriétés:
+                  m_LocalRotation: (Quaternion)
+                  m_LocalPosition: (Vector3)
+                  m_LocalScale: (Vector3)
+                  m_ConstrainProportionsScale: False
+              → MeshFilter
+                Propriétés:
+                  m_Mesh: Button_B
+              → MeshRenderer
+                Propriétés:
+                  m_CastShadows: (Enum)
+                  m_ReceiveShadows: True
+                  m_DynamicOccludee: True
+                  m_StaticShadowCaster: False
+                  m_MotionVectors: (Enum)
+                  m_LightProbeUsage: 1
+                  m_ReflectionProbeUsage: 1
+                  m_RayTracingMode: 2
+                  m_RayTraceProcedural: False
+                  m_RayTracingAccelStructBuildFlagsOverride: False
+                  m_RayTracingAccelStructBuildFlags: 1
+                  m_SmallMeshCulling: True
+                  m_ForceMeshLod: -1
+                  m_MeshLodSelectionBias: 0
+                  m_RenderingLayerMask: 1
+                  m_RendererPriority: 0
+                  m_Materials: (Generic)
+                  m_ProbeAnchor: NONE (reference manquante?)
+                  m_LightProbeVolumeOverride: NONE (reference manquante?)
+                  m_ScaleInLightmap: 1
+                  m_ReceiveGI: 1
+                  m_PreserveUVs: False
+                  m_IgnoreNormalsForChartDetection: False
+                  m_ImportantGI: False
+                  m_StitchLightmapSeams: True
+                  m_MinimumChartSize: 4
+                  m_AutoUVMaxDistance: 0.5
+                  m_AutoUVMaxAngle: 89
+                  m_LightmapParameters: NONE (reference manquante?)
+                  m_MaskInteraction: (Enum)
+            - ThumbStick [ACTIF]
+              → Transform
+                Propriétés:
+                  m_LocalRotation: (Quaternion)
+                  m_LocalPosition: (Vector3)
+                  m_LocalScale: (Vector3)
+                  m_ConstrainProportionsScale: False
+              → MeshFilter
+                Propriétés:
+                  m_Mesh: ThumbStick
+              → MeshRenderer
+                Propriétés:
+                  m_CastShadows: (Enum)
+                  m_ReceiveShadows: True
+                  m_DynamicOccludee: True
+                  m_StaticShadowCaster: False
+                  m_MotionVectors: (Enum)
+                  m_LightProbeUsage: 1
+                  m_ReflectionProbeUsage: 1
+                  m_RayTracingMode: 2
+                  m_RayTraceProcedural: False
+                  m_RayTracingAccelStructBuildFlagsOverride: False
+                  m_RayTracingAccelStructBuildFlags: 1
+                  m_SmallMeshCulling: True
+                  m_ForceMeshLod: -1
+                  m_MeshLodSelectionBias: 0
+                  m_RenderingLayerMask: 1
+                  m_RendererPriority: 0
+                  m_Materials: (Generic)
+                  m_ProbeAnchor: NONE (reference manquante?)
+                  m_LightProbeVolumeOverride: NONE (reference manquante?)
+                  m_ScaleInLightmap: 1
+                  m_ReceiveGI: 1
+                  m_PreserveUVs: False
+                  m_IgnoreNormalsForChartDetection: False
+                  m_ImportantGI: False
+                  m_StitchLightmapSeams: True
+                  m_MinimumChartSize: 4
+                  m_AutoUVMaxDistance: 0.5
+                  m_AutoUVMaxAngle: 89
+                  m_LightmapParameters: NONE (reference manquante?)
+                  m_MaskInteraction: (Enum)
+            - ThumbStick_Base [ACTIF]
+              → Transform
+                Propriétés:
+                  m_LocalRotation: (Quaternion)
+                  m_LocalPosition: (Vector3)
+                  m_LocalScale: (Vector3)
+                  m_ConstrainProportionsScale: False
+              → MeshFilter
+                Propriétés:
+                  m_Mesh: ThumbStick_Base
+              → MeshRenderer
+                Propriétés:
+                  m_CastShadows: (Enum)
+                  m_ReceiveShadows: True
+                  m_DynamicOccludee: True
+                  m_StaticShadowCaster: False
+                  m_MotionVectors: (Enum)
+                  m_LightProbeUsage: 1
+                  m_ReflectionProbeUsage: 1
+                  m_RayTracingMode: 2
+                  m_RayTraceProcedural: False
+                  m_RayTracingAccelStructBuildFlagsOverride: False
+                  m_RayTracingAccelStructBuildFlags: 1
+                  m_SmallMeshCulling: True
+                  m_ForceMeshLod: -1
+                  m_MeshLodSelectionBias: 0
+                  m_RenderingLayerMask: 1
+                  m_RendererPriority: 0
+                  m_Materials: (Generic)
+                  m_ProbeAnchor: NONE (reference manquante?)
+                  m_LightProbeVolumeOverride: NONE (reference manquante?)
+                  m_ScaleInLightmap: 1
+                  m_ReceiveGI: 1
+                  m_PreserveUVs: False
+                  m_IgnoreNormalsForChartDetection: False
+                  m_ImportantGI: False
+                  m_StitchLightmapSeams: True
+                  m_MinimumChartSize: 4
+                  m_AutoUVMaxDistance: 0.5
+                  m_AutoUVMaxAngle: 89
+                  m_LightmapParameters: NONE (reference manquante?)
+                  m_MaskInteraction: (Enum)
+    - Right Controller Teleport Stabilized Origin [ACTIF]
+      → Transform
+        Propriétés:
+          m_LocalRotation: (Quaternion)
+          m_LocalPosition: (Vector3)
+          m_LocalScale: (Vector3)
+          m_ConstrainProportionsScale: False
+      → XRTransformStabilizer
+        Propriétés:
+          m_Target: Poke Point
+          m_AimTargetObject: Teleport Interactor
+          m_UseLocalSpace: False
+          m_AngleStabilization: 20
+          m_PositionStabilization: 0.25
+      - Right Controller Stabilized Attach [ACTIF]
+        → Transform
+          Propriétés:
+            m_LocalRotation: (Quaternion)
+            m_LocalPosition: (Vector3)
+            m_LocalScale: (Vector3)
+            m_ConstrainProportionsScale: False
+  - Locomotion [ACTIF]
+    → Transform
+      Propriétés:
+        m_LocalRotation: (Quaternion)
+        m_LocalPosition: (Vector3)
+        m_LocalScale: (Vector3)
+        m_ConstrainProportionsScale: False
+    → LocomotionMediator
+    → XRBodyTransformer
+      Propriétés:
+        m_XROrigin: XR Origin (XR Rig)
+        m_BodyPositionEvaluatorObject: NONE (reference manquante?)
+        m_ConstrainedBodyManipulatorObject: NONE (reference manquante?)
+        m_UseCharacterControllerIfExists: True
+    - Turn [ACTIF]
+      → Transform
+        Propriétés:
+          m_LocalRotation: (Quaternion)
+          m_LocalPosition: (Vector3)
+          m_LocalScale: (Vector3)
+          m_ConstrainProportionsScale: False
+      → SnapTurnProvider
+        Propriétés:
+          m_Mediator: Locomotion
+          m_TransformationPriority: 0
+          m_TurnAmount: 45
+          m_DebounceTime: 0.5
+          m_EnableTurnLeftRight: True
+          m_EnableTurnAround: True
+          m_DelayTime: 0
+          m_LeftHandTurnInput: (Generic)
+          m_RightHandTurnInput: (Generic)
+      → ContinuousTurnProvider
+        Propriétés:
+          m_Mediator: Locomotion
+          m_TransformationPriority: 0
+          m_TurnSpeed: 60
+          m_EnableTurnLeftRight: True
+          m_EnableTurnAround: True
+          m_LeftHandTurnInput: (Generic)
+          m_RightHandTurnInput: (Generic)
+    - Move [ACTIF]
+      → Transform
+        Propriétés:
+          m_LocalRotation: (Quaternion)
+          m_LocalPosition: (Vector3)
+          m_LocalScale: (Vector3)
+          m_ConstrainProportionsScale: False
+      → DynamicMoveProvider
+        Propriétés:
+          m_Mediator: Locomotion
+          m_TransformationPriority: 0
+          m_MoveSpeed: 2.5
+          m_InAirControlModifier: 0.5
+          m_EnableStrafe: True
+          m_EnableFly: False
+          m_ForwardSource: Main Camera
+          m_LeftHandMoveInput: (Generic)
+          m_RightHandMoveInput: (Generic)
+          m_UseGravity: True
+          m_HeadTransform: Main Camera
+          m_LeftControllerTransform: Left Controller
+          m_RightControllerTransform: Right Controller
+          m_LeftHandMovementDirection: (Enum)
+          m_RightHandMovementDirection: (Enum)
+    - Grab Move [INACTIF]
+      → Transform
+        Propriétés:
+          m_LocalRotation: (Quaternion)
+          m_LocalPosition: (Vector3)
+          m_LocalScale: (Vector3)
+          m_ConstrainProportionsScale: False
+      → GrabMoveProvider
+        Propriétés:
+          m_Mediator: Locomotion
+          m_TransformationPriority: 0
+          m_EnableFreeXMovement: True
+          m_EnableFreeYMovement: False
+          m_EnableFreeZMovement: True
+          m_GravityApplicationMode: (Enum)
+          m_UseGravity: True
+          m_ControllerTransform: Left Controller
+          m_EnableMoveWhileSelecting: False
+          m_MoveFactor: 1
+          m_GrabMoveInput: (Generic)
+          m_GrabMoveAction: (Generic)
+      → GrabMoveProvider
+        Propriétés:
+          m_Mediator: Locomotion
+          m_TransformationPriority: 0
+          m_EnableFreeXMovement: True
+          m_EnableFreeYMovement: False
+          m_EnableFreeZMovement: True
+          m_GravityApplicationMode: (Enum)
+          m_UseGravity: True
+          m_ControllerTransform: Right Controller
+          m_EnableMoveWhileSelecting: False
+          m_MoveFactor: 1
+          m_GrabMoveInput: (Generic)
+          m_GrabMoveAction: (Generic)
+      → TwoHandedGrabMoveProvider
+        Propriétés:
+          m_Mediator: Locomotion
+          m_TransformationPriority: 0
+          m_EnableFreeXMovement: True
+          m_EnableFreeYMovement: False
+          m_EnableFreeZMovement: True
+          m_GravityApplicationMode: (Enum)
+          m_UseGravity: True
+          m_LeftGrabMoveProvider: Grab Move
+          m_RightGrabMoveProvider: Grab Move
+          m_OverrideSharedSettingsOnInit: True
+          m_MoveFactor: 1
+          m_RequireTwoHandsForTranslation: False
+          m_EnableRotation: True
+          m_EnableScaling: False
+          m_MinimumScale: 0.2
+          m_MaximumScale: 5
+    - Teleportation [ACTIF]
+      → Transform
+        Propriétés:
+          m_LocalRotation: (Quaternion)
+          m_LocalPosition: (Vector3)
+          m_LocalScale: (Vector3)
+          m_ConstrainProportionsScale: False
+      → TeleportationProvider
+        Propriétés:
+          m_Mediator: Locomotion
+          m_TransformationPriority: 20
+          m_DelayTime: 0
+    - Climb [ACTIF]
+      → Transform
+        Propriétés:
+          m_LocalRotation: (Quaternion)
+          m_LocalPosition: (Vector3)
+          m_LocalScale: (Vector3)
+          m_ConstrainProportionsScale: False
+      → ClimbProvider
+        Propriétés:
+          m_Mediator: Locomotion
+          m_TransformationPriority: 0
+          m_ProvidersToDisable: (Generic)
+          m_EnableGravityOnClimbEnd: True
+          m_ClimbSettings: (Generic)
+      - Climb Teleport [ACTIF]
+        → Transform
+          Propriétés:
+            m_LocalRotation: (Quaternion)
+            m_LocalPosition: (Vector3)
+            m_LocalScale: (Vector3)
+            m_ConstrainProportionsScale: False
+        → ClimbTeleportInteractor
+          Propriétés:
+            m_InteractionManager: NONE (reference manquante?)
+            m_InteractionLayers: (Generic)
+            m_Handedness: (Enum)
+            m_AttachTransform: NONE (reference manquante?)
+            m_KeepSelectedTargetValid: True
+            m_DisableVisualsWhenBlockedInGroup: True
+            m_StartingSelectedInteractable: NONE (reference manquante?)
+            m_StartingTargetFilter: NONE (reference manquante?)
+            m_AutoFindParentInteractableInHierarchy: False
+            m_ParentInteractableObject: NONE (reference manquante?)
+            m_HoverEntered: (Generic)
+            m_HoverExited: (Generic)
+            m_SelectEntered: (Generic)
+            m_SelectExited: (Generic)
+            m_StartingHoverFilters: (Generic)
+            m_StartingSelectFilters: (Generic)
+            m_ClimbProvider: Climb
+            m_DestinationEvaluationSettings: (Generic)
+        → ClimbTeleportDestinationIndicator
+          Propriétés:
+            m_ClimbTeleportInteractor: Climb Teleport
+            m_PointerPrefab: Climb Teleport Arrow
+            m_PointerDistance: 0.3
+    - Gravity [ACTIF]
+      → Transform
+        Propriétés:
+          m_LocalRotation: (Quaternion)
+          m_LocalPosition: (Vector3)
+          m_LocalScale: (Vector3)
+          m_ConstrainProportionsScale: False
+      → GravityProvider
+        Propriétés:
+          m_Mediator: Locomotion
+          m_TransformationPriority: 10
+          m_UseGravity: True
+          m_UseLocalSpaceGravity: True
+          m_TerminalVelocity: 90
+          m_GravityAccelerationModifier: 1
+          m_UpdateCharacterControllerCenterEachFrame: True
+          m_SphereCastRadius: 0.09
+          m_SphereCastDistanceBuffer: -0.05
+          m_SphereCastLayerMask: (LayerMask)
+          m_SphereCastTriggerInteraction: (Enum)
+          m_OnGravityLockChanged: (Generic)
+          m_OnGroundedChanged: (Generic)
+    - Jump [ACTIF]
+      → Transform
+        Propriétés:
+          m_LocalRotation: (Quaternion)
+          m_LocalPosition: (Vector3)
+          m_LocalScale: (Vector3)
+          m_ConstrainProportionsScale: False
+      → JumpProvider
+        Propriétés:
+          m_Mediator: Locomotion
+          m_TransformationPriority: 0
+          m_DisableGravityDuringJump: False
+          m_UnlimitedInAirJumps: False
+          m_InAirJumpCount: 1
+          m_JumpForgivenessWindow: 0.25
+          m_JumpHeight: 1.25
+          m_VariableHeightJump: True
+          m_MinJumpHoldTime: 0.1
+          m_MaxJumpHoldTime: 0.5
+          m_EarlyOutDecelerationSpeed: 0.1
+          m_JumpInput: (Generic)
+  - Canvas [ACTIF]
+    → RectTransform
+      Anchors: Min((0.00, 0.00)) Max((0.00, 0.00))
+      Position: (0.00, 1.67)
+      Size: (743.00, 552.00)
+    → Canvas
+      Render Mode: WorldSpace
+      Sort Order: 0
+    → CanvasScaler
+      UI Scale Mode: ConstantPixelSize
+      Reference Resolution: (800.00, 600.00)
+    → GraphicRaycaster
+      Propriétés:
+        m_IgnoreReversedGraphics: True
+        m_BlockingObjects: (Enum)
+        m_BlockingMask: (LayerMask)
+    - PanneauJeu [ACTIF]
+      → RectTransform
+        Anchors: Min((0.00, 0.00)) Max((1.00, 1.00))
+        Position: (0.00, 0.00)
+        Size: (0.00, 0.00)
+      → CanvasRenderer
+        Propriétés:
+          m_CullTransparentMesh: True
+      → Image
+        Sprite: Background
+        Raycast Target: True
+      - TexteMinuterie [ACTIF]
+        → RectTransform
+          Anchors: Min((0.50, 0.50)) Max((0.50, 0.50))
+          Position: (0.00, 111.00)
+          Size: (200.00, 50.00)
+        → CanvasRenderer
+          Propriétés:
+            m_CullTransparentMesh: True
+        → TextMeshProUGUI
+          Text: "60"
+          Font: LiberationSans SDF
+          Font Size: 36
+      - TexteScore [ACTIF]
+        → RectTransform
+          Anchors: Min((0.50, 0.50)) Max((0.50, 0.50))
+          Position: (0.00, 187.00)
+          Size: (200.00, 50.00)
+        → CanvasRenderer
+          Propriétés:
+            m_CullTransparentMesh: True
+        → TextMeshProUGUI
+          Text: "Score : 0"
+          Font: LiberationSans SDF
+          Font Size: 36
+    - PanneauFin [INACTIF]
+      → RectTransform
+        Anchors: Min((0.00, 0.00)) Max((1.00, 1.00))
+        Position: (0.00, 0.00)
+        Size: (0.00, 0.00)
+      → CanvasRenderer
+        Propriétés:
+          m_CullTransparentMesh: True
+      → Image
+        Sprite: Background
+        Raycast Target: True
+      - TexteScoreFinal [ACTIF]
+        → RectTransform
+          Anchors: Min((0.50, 0.50)) Max((0.50, 0.50))
+          Position: (0.00, 66.00)
+          Size: (200.00, 50.00)
+        → CanvasRenderer
+          Propriétés:
+            m_CullTransparentMesh: True
+        → TextMeshProUGUI
+          Text: "Score : 0"
+          Font: LiberationSans SDF
+          Font Size: 36
+      - BoutonRejouer [ACTIF]
+        → RectTransform
+          Anchors: Min((0.50, 0.50)) Max((0.50, 0.50))
+          Position: (0.00, -14.00)
+          Size: (160.00, 30.00)
+        → CanvasRenderer
+          Propriétés:
+            m_CullTransparentMesh: True
+        → Image
+          Sprite: UISprite
+          Raycast Target: True
+        → Button
+          Interactable: OUI
+          OnClick listeners: 1
+            [0] GestionnaireJeu.NouvellePartie()
+        - Text (TMP) [ACTIF]
+          → RectTransform
+            Anchors: Min((0.00, 0.00)) Max((1.00, 1.00))
+            Position: (0.00, 0.00)
+            Size: (0.00, 0.00)
+          → CanvasRenderer
+            Propriétés:
+              m_CullTransparentMesh: True
+          → TextMeshProUGUI
+            Text: "Rejouer
+"
+            Font: LiberationSans SDF
+            Font Size: 24
+    - PanneauMenu [ACTIF]
+      → RectTransform
+        Anchors: Min((0.00, 0.00)) Max((1.00, 1.00))
+        Position: (0.00, 0.00)
+        Size: (0.00, 0.00)
+      → CanvasRenderer
+        Propriétés:
+          m_CullTransparentMesh: True
+      → Image
+        Sprite: Background
+        Raycast Target: True
+      - TitreJeu [ACTIF]
+        → RectTransform
+          Anchors: Min((0.50, 0.50)) Max((0.50, 0.50))
+          Position: (-36.70, 0.00)
+          Size: (200.00, 50.00)
+        → CanvasRenderer
+          Propriétés:
+            m_CullTransparentMesh: True
+        → TextMeshProUGUI
+          Text: "Whack-a-Mole VR"
+          Font: LiberationSans SDF
+          Font Size: 36
+      - BoutonDemarrer [ACTIF]
+        → RectTransform
+          Anchors: Min((0.50, 0.50)) Max((0.50, 0.50))
+          Position: (0.00, -69.60)
+          Size: (160.00, 30.00)
+        → CanvasRenderer
+          Propriétés:
+            m_CullTransparentMesh: True
+        → Image
+          Sprite: UISprite
+          Raycast Target: True
+        → Button
+          Interactable: OUI
+          OnClick listeners: 1
+            [0] GestionnaireJeu.CommencerPartie()
+        - Text (TMP) [ACTIF]
+          → RectTransform
+            Anchors: Min((0.00, 0.00)) Max((1.00, 1.00))
+            Position: (0.00, 0.00)
+            Size: (0.00, 0.00)
+          → CanvasRenderer
+            Propriétés:
+              m_CullTransparentMesh: True
+          → TextMeshProUGUI
+            Text: "Commencer"
+            Font: LiberationSans SDF
+            Font Size: 24
+- XR Interaction Manager [ACTIF]
+  → Transform
+    Propriétés:
+      m_LocalRotation: (Quaternion)
+      m_LocalPosition: (Vector3)
+      m_LocalScale: (Vector3)
+      m_ConstrainProportionsScale: False
+  → XRInteractionManager
+    Propriétés:
+      m_StartingHoverFilters: (Generic)
+      m_StartingSelectFilters: (Generic)
+- Sol [ACTIF]
+  → Transform
+    Propriétés:
+      m_LocalRotation: (Quaternion)
+      m_LocalPosition: (Vector3)
+      m_LocalScale: (Vector3)
+      m_ConstrainProportionsScale: False
+  → MeshFilter
+    Propriétés:
+      m_Mesh: Plane
+  → MeshRenderer
+    Propriétés:
+      m_CastShadows: (Enum)
+      m_ReceiveShadows: True
+      m_DynamicOccludee: True
+      m_StaticShadowCaster: False
+      m_MotionVectors: (Enum)
+      m_LightProbeUsage: 1
+      m_ReflectionProbeUsage: 1
+      m_RayTracingMode: 2
+      m_RayTraceProcedural: False
+      m_RayTracingAccelStructBuildFlagsOverride: False
+      m_RayTracingAccelStructBuildFlags: 1
+      m_SmallMeshCulling: True
+      m_ForceMeshLod: -1
+      m_MeshLodSelectionBias: 0
+      m_RenderingLayerMask: 1
+      m_RendererPriority: 0
+      m_Materials: (Generic)
+      m_ProbeAnchor: NONE (reference manquante?)
+      m_LightProbeVolumeOverride: NONE (reference manquante?)
+      m_ScaleInLightmap: 1
+      m_ReceiveGI: 1
+      m_PreserveUVs: False
+      m_IgnoreNormalsForChartDetection: False
+      m_ImportantGI: False
+      m_StitchLightmapSeams: True
+      m_MinimumChartSize: 4
+      m_AutoUVMaxDistance: 0.5
+      m_AutoUVMaxAngle: 89
+      m_LightmapParameters: NONE (reference manquante?)
+      m_MaskInteraction: (Enum)
+  → MeshCollider
+    Propriétés:
+      m_Material: NONE (reference manquante?)
+      m_IncludeLayers: (LayerMask)
+      m_ExcludeLayers: (LayerMask)
+      m_LayerOverridePriority: 0
+      m_IsTrigger: False
+      m_ProvidesContacts: False
+      m_Convex: False
+      m_CookingOptions: 30
+      m_Mesh: Plane
+- Marteau [ACTIF]
+  → Transform
+    Propriétés:
+      m_LocalRotation: (Quaternion)
+      m_LocalPosition: (Vector3)
+      m_LocalScale: (Vector3)
+      m_ConstrainProportionsScale: False
+  → MeshFilter
+    Propriétés:
+      m_Mesh: Cube
+  → MeshRenderer
+    Propriétés:
+      m_CastShadows: (Enum)
+      m_ReceiveShadows: True
+      m_DynamicOccludee: True
+      m_StaticShadowCaster: False
+      m_MotionVectors: (Enum)
+      m_LightProbeUsage: 1
+      m_ReflectionProbeUsage: 1
+      m_RayTracingMode: 2
+      m_RayTraceProcedural: False
+      m_RayTracingAccelStructBuildFlagsOverride: False
+      m_RayTracingAccelStructBuildFlags: 1
+      m_SmallMeshCulling: True
+      m_ForceMeshLod: -1
+      m_MeshLodSelectionBias: 0
+      m_RenderingLayerMask: 1
+      m_RendererPriority: 0
+      m_Materials: (Generic)
+      m_ProbeAnchor: NONE (reference manquante?)
+      m_LightProbeVolumeOverride: NONE (reference manquante?)
+      m_ScaleInLightmap: 1
+      m_ReceiveGI: 1
+      m_PreserveUVs: False
+      m_IgnoreNormalsForChartDetection: False
+      m_ImportantGI: False
+      m_StitchLightmapSeams: True
+      m_MinimumChartSize: 4
+      m_AutoUVMaxDistance: 0.5
+      m_AutoUVMaxAngle: 89
+      m_LightmapParameters: NONE (reference manquante?)
+      m_MaskInteraction: (Enum)
+  → BoxCollider
+    Propriétés:
+      m_Material: NONE (reference manquante?)
+      m_IncludeLayers: (LayerMask)
+      m_ExcludeLayers: (LayerMask)
+      m_LayerOverridePriority: 0
+      m_IsTrigger: True
+      m_ProvidesContacts: False
+      m_Size: (Vector3)
+      m_Center: (Vector3)
+  → Rigidbody
+    Propriétés:
+      m_Mass: 1
+      m_LinearDamping: 0
+      m_AngularDamping: 0.05
+      m_CenterOfMass: (Vector3)
+      m_InertiaTensor: (Vector3)
+      m_InertiaRotation: (Quaternion)
+      m_IncludeLayers: (LayerMask)
+      m_ExcludeLayers: (LayerMask)
+      m_ImplicitCom: True
+      m_ImplicitTensor: True
+      m_UseGravity: False
+      m_IsKinematic: True
+      m_Interpolate: (Enum)
+      m_CollisionDetection: (Enum)
+  → XRGrabInteractable
+    Propriétés:
+      m_InteractionManager: NONE (reference manquante?)
+      m_Colliders: (Generic)
+      m_InteractionLayers: (Generic)
+      m_DistanceCalculationMode: (Enum)
+      m_SelectMode: (Enum)
+      m_FocusMode: (Enum)
+      m_CustomReticle: NONE (reference manquante?)
+      m_AllowGazeInteraction: False
+      m_AllowGazeSelect: False
+      m_OverrideGazeTimeToSelect: False
+      m_GazeTimeToSelect: 0.5
+      m_OverrideTimeToAutoDeselectGaze: False
+      m_TimeToAutoDeselectGaze: 3
+      m_AllowGazeAssistance: False
+      m_FirstHoverEntered: (Generic)
+      m_LastHoverExited: (Generic)
+      m_HoverEntered: (Generic)
+      m_HoverExited: (Generic)
+      m_FirstSelectEntered: (Generic)
+      m_LastSelectExited: (Generic)
+      m_SelectEntered: (Generic)
+      m_SelectExited: (Generic)
+      m_FirstFocusEntered: (Generic)
+      m_LastFocusExited: (Generic)
+      m_FocusEntered: (Generic)
+      m_FocusExited: (Generic)
+      m_Activated: (Generic)
+      m_Deactivated: (Generic)
+      m_StartingHoverFilters: (Generic)
+      m_StartingSelectFilters: (Generic)
+      m_StartingInteractionStrengthFilters: (Generic)
+      m_AutoFindParentInteractableInHierarchy: False
+      m_ParentInteractableObject: NONE (reference manquante?)
+      m_AttachTransform: NONE (reference manquante?)
+      m_SecondaryAttachTransform: NONE (reference manquante?)
+      m_UseDynamicAttach: False
+      m_MatchAttachPosition: True
+      m_MatchAttachRotation: True
+      m_SnapToColliderVolume: True
+      m_ReinitializeDynamicAttachEverySingleGrab: True
+      m_AttachEaseInTime: 0.15
+      m_MovementType: (Enum)
+      m_PredictedVisualsTransform: NONE (reference manquante?)
+      m_VelocityDamping: 1
+      m_VelocityScale: 1
+      m_AngularVelocityDamping: 1
+      m_AngularVelocityScale: 1
+      m_TrackPosition: True
+      m_SmoothPosition: False
+      m_SmoothPositionAmount: 8
+      m_TightenPosition: 0.1
+      m_TrackRotation: True
+      m_SmoothRotation: False
+      m_SmoothRotationAmount: 8
+      m_TightenRotation: 0.1
+      m_TrackScale: True
+      m_SmoothScale: False
+      m_SmoothScaleAmount: 8
+      m_TightenScale: 0.1
+      m_ThrowOnDetach: True
+      m_ThrowSmoothingDuration: 0.25
+      m_ThrowSmoothingCurve: (AnimationCurve)
+      m_ThrowVelocityScale: 1.5
+      m_ThrowAngularVelocityScale: 1
+      m_ForceGravityOnDetach: False
+      m_RetainTransformParent: True
+      m_StartingSingleGrabTransformers: (Generic)
+      m_StartingMultipleGrabTransformers: (Generic)
+      m_AddDefaultGrabTransformers: True
+      m_FarAttachMode: (Enum)
+      m_LimitLinearVelocity: False
+      m_LimitAngularVelocity: False
+      m_MaxLinearVelocityDelta: 10
+      m_MaxAngularVelocityDelta: 20
+  → FeedbackMarteau
+    Propriétés:
+      amplitudeGrab: 0.5
+      dureeGrab: 0.1
+      amplitudeImpact: 0.8
+      dureeImpact: 0.2
+      sonImpact: SFX_Pop_Bottle_Tiny_5
+  → AudioSource
+    Propriétés:
+      OutputAudioMixerGroup: NONE (reference manquante?)
+      m_audioClip: NONE (reference manquante?)
+      m_Resource: NONE (reference manquante?)
+      m_PlayOnAwake: False
+      m_Volume: 1
+      m_Pitch: 1
+      Loop: False
+      Mute: False
+      Spatialize: False
+      SpatializePostEffects: False
+      Priority: 128
+      DopplerLevel: 1
+      MinDistance: 1
+      MaxDistance: 500
+      Pan2D: 0
+      rolloffMode: (Enum)
+      BypassEffects: False
+      BypassListenerEffects: False
+      BypassReverbZones: False
+      rolloffCustomCurve: (AnimationCurve)
+      panLevelCustomCurve: (AnimationCurve)
+      spreadCustomCurve: (AnimationCurve)
+      reverbZoneMixCustomCurve: (AnimationCurve)
+  - TeteMarteau [ACTIF]
+    → Transform
+      Propriétés:
+        m_LocalRotation: (Quaternion)
+        m_LocalPosition: (Vector3)
+        m_LocalScale: (Vector3)
+        m_ConstrainProportionsScale: False
+    → MeshFilter
+      Propriétés:
+        m_Mesh: Cube
+    → MeshRenderer
+      Propriétés:
+        m_CastShadows: (Enum)
+        m_ReceiveShadows: True
+        m_DynamicOccludee: True
+        m_StaticShadowCaster: False
+        m_MotionVectors: (Enum)
+        m_LightProbeUsage: 1
+        m_ReflectionProbeUsage: 1
+        m_RayTracingMode: 2
+        m_RayTraceProcedural: False
+        m_RayTracingAccelStructBuildFlagsOverride: False
+        m_RayTracingAccelStructBuildFlags: 1
+        m_SmallMeshCulling: True
+        m_ForceMeshLod: -1
+        m_MeshLodSelectionBias: 0
+        m_RenderingLayerMask: 1
+        m_RendererPriority: 0
+        m_Materials: (Generic)
+        m_ProbeAnchor: NONE (reference manquante?)
+        m_LightProbeVolumeOverride: NONE (reference manquante?)
+        m_ScaleInLightmap: 1
+        m_ReceiveGI: 1
+        m_PreserveUVs: False
+        m_IgnoreNormalsForChartDetection: False
+        m_ImportantGI: False
+        m_StitchLightmapSeams: True
+        m_MinimumChartSize: 4
+        m_AutoUVMaxDistance: 0.5
+        m_AutoUVMaxAngle: 89
+        m_LightmapParameters: NONE (reference manquante?)
+        m_MaskInteraction: (Enum)
+    → BoxCollider
+      Propriétés:
+        m_Material: NONE (reference manquante?)
+        m_IncludeLayers: (LayerMask)
+        m_ExcludeLayers: (LayerMask)
+        m_LayerOverridePriority: 0
+        m_IsTrigger: False
+        m_ProvidesContacts: False
+        m_Size: (Vector3)
+        m_Center: (Vector3)
+- GestionnaireSpawn [ACTIF]
+  → Transform
+    Propriétés:
+      m_LocalRotation: (Quaternion)
+      m_LocalPosition: (Vector3)
+      m_LocalScale: (Vector3)
+      m_ConstrainProportionsScale: False
+  → GestionnaireSpawn
+    Propriétés:
+      ciblePrefab: Cible
+      tempsAvantDisparition: 2
+      delaiEntreSpawns: 1.5
+      pointsDeSpawn: (Generic)
+- SpawnPoint1 [ACTIF]
+  → Transform
+    Propriétés:
+      m_LocalRotation: (Quaternion)
+      m_LocalPosition: (Vector3)
+      m_LocalScale: (Vector3)
+      m_ConstrainProportionsScale: False
+- SpawnPoint2 [ACTIF]
+  → Transform
+    Propriétés:
+      m_LocalRotation: (Quaternion)
+      m_LocalPosition: (Vector3)
+      m_LocalScale: (Vector3)
+      m_ConstrainProportionsScale: False
+- SpawnPoint3 [ACTIF]
+  → Transform
+    Propriétés:
+      m_LocalRotation: (Quaternion)
+      m_LocalPosition: (Vector3)
+      m_LocalScale: (Vector3)
+      m_ConstrainProportionsScale: False
+- SpawnPoint4 [ACTIF]
+  → Transform
+    Propriétés:
+      m_LocalRotation: (Quaternion)
+      m_LocalPosition: (Vector3)
+      m_LocalScale: (Vector3)
+      m_ConstrainProportionsScale: False
+- EventSystem [ACTIF]
+  → Transform
+    Propriétés:
+      m_LocalRotation: (Quaternion)
+      m_LocalPosition: (Vector3)
+      m_LocalScale: (Vector3)
+      m_ConstrainProportionsScale: False
+  → EventSystem
+    Propriétés:
+      m_FirstSelected: NONE (reference manquante?)
+      m_sendNavigationEvents: True
+      m_DragThreshold: 10
+  → InputSystemUIInputModule
+    Propriétés:
+      m_SendPointerHoverToParent: True
+      m_MoveRepeatDelay: 0.5
+      m_MoveRepeatRate: 0.1
+      m_XRTrackingOrigin: NONE (reference manquante?)
+      m_DeselectOnBackgroundClick: True
+      m_PointerBehavior: (Enum)
+      m_ScrollDeltaPerTick: 6
+- GestionnaireJeu [ACTIF]
+  → Transform
+    Propriétés:
+      m_LocalRotation: (Quaternion)
+      m_LocalPosition: (Vector3)
+      m_LocalScale: (Vector3)
+      m_ConstrainProportionsScale: False
+  → GestionnaireJeu
+    Propriétés:
+      dureePartie: 60
+      texteScore: TexteScore
+      texteMinuterie: TexteMinuterie
+      panneauJeu: PanneauJeu
+      panneauFin: PanneauFin
+      texteScoreFinal: TexteScoreFinal
+      panneauMenu: PanneauMenu

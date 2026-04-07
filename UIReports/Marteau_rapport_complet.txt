@@ -1,0 +1,511 @@
+=== RAPPORT COMPLET ===
+Date: 27/03/2026 2:17:04 PM
+Scene: VRQuest
+
+--- Marteau ---
+Actif: True
+Tag: Marteau
+Layer: Default
+Position locale: (1.53, 1.65, 1.45)
+Rotation locale: (0.00, 0.00, 0.00)
+Scale locale:    (0.15, 0.70, 0.15)
+Components (8):
+  MeshFilter
+    [prop] transform: Marteau (Transform)
+    [prop] transformHandle: UnityEngine.TransformHandle
+    [prop] gameObject: Marteau (GameObject)
+    [prop] tag: Marteau
+    [prop] name: Marteau
+    [prop] hideFlags: None
+  MeshRenderer
+    [prop] additionalVertexStreams: NULL
+    [prop] enlightenVertexStream: NULL
+    [prop] subMeshStartIndex: 0
+    [prop] scaleInLightmap: 1
+    [prop] receiveGI: Lightmaps
+    [prop] stitchLightmapSeams: True
+    [prop] globalIlluminationMeshLod: 0
+    [prop] lightmapTilingOffset: (0.00, 0.00, 0.00, 0.00)
+    [prop] lightProbeAnchor: NULL
+    [prop] castShadows: True
+    [prop] motionVectors: True
+    [prop] useLightProbes: True
+    [prop] bounds: Center: (1.53, 1.65, 1.45), Extents: (0.08, 0.35, 0.08)
+    [prop] localBounds: Center: (0.00, 0.00, 0.00), Extents: (0.50, 0.50, 0.50)
+    [prop] enabled: True
+    [prop] isVisible: True
+    [prop] shadowCastingMode: On
+    [prop] receiveShadows: True
+    [prop] forceRenderingOff: False
+    [prop] staticShadowCaster: False
+    [prop] motionVectorGenerationMode: Object
+    [prop] lightProbeUsage: BlendProbes
+    [prop] reflectionProbeUsage: BlendProbes
+    [prop] renderingLayerMask: 1
+    [prop] rendererPriority: 0
+    [prop] rayTracingMode: DynamicTransform
+    [prop] rayTracingAccelerationStructureBuildFlags: PreferFastTrace
+    [prop] rayTracingAccelerationStructureBuildFlagsOverride: False
+    [prop] sortingLayerName: Default
+    [prop] sortingLayerID: 0
+    [prop] sortingOrder: 0
+    [prop] isLOD0: True
+    [prop] allowOcclusionWhenDynamic: True
+    [prop] forceMeshLod: -1
+    [prop] meshLodSelectionBias: 0
+    [prop] isPartOfStaticBatch: False
+    [prop] worldToLocalMatrix: 6.66667	0.00000	0.00000	-10.20467
+0.00000	1.42857	0.00000	-2.35714
+0.00000	0.00000	6.66667	-9.66727
+0.00000	0.00000	0.00000	1.00000
+
+    [prop] localToWorldMatrix: 0.15000	0.00000	0.00000	1.53070
+0.00000	0.70000	0.00000	1.65000
+0.00000	0.00000	0.15000	1.45009
+0.00000	0.00000	0.00000	1.00000
+
+    [prop] lightProbeProxyVolumeOverride: NULL
+    [prop] probeAnchor: NULL
+    [prop] lightmapIndex: -1
+    [prop] realtimeLightmapIndex: -1
+    [prop] lightmapScaleOffset: (1.00, 1.00, 0.00, 0.00)
+    [prop] realtimeLightmapScaleOffset: (1.00, 1.00, 0.00, 0.00)
+    [prop] LODGroup: NULL
+    [prop] transform: Marteau (Transform)
+    [prop] transformHandle: UnityEngine.TransformHandle
+    [prop] gameObject: Marteau (GameObject)
+    [prop] tag: Marteau
+    [prop] name: Marteau
+    [prop] hideFlags: None
+  BoxCollider
+    [prop] center: (0.00, 0.00, 0.00)
+    [prop] size: (1.00, 1.00, 1.00)
+    [prop] enabled: True
+    [prop] attachedRigidbody: Marteau (Rigidbody)
+    [prop] attachedArticulationBody: NULL
+    [prop] isTrigger: True
+    [prop] contactOffset: 0.01
+    [prop] bounds: Center: (1.53, 1.65, 1.45), Extents: (0.08, 0.35, 0.08)
+    [prop] hasModifiableContacts: False
+    [prop] providesContacts: False
+    [prop] layerOverridePriority: 0
+    [prop] excludeLayers: UnityEngine.LayerMask
+    [prop] includeLayers: UnityEngine.LayerMask
+    [prop] GeometryHolder: UnityEngine.LowLevelPhysics.GeometryHolder
+    [prop] transform: Marteau (Transform)
+    [prop] transformHandle: UnityEngine.TransformHandle
+    [prop] gameObject: Marteau (GameObject)
+    [prop] tag: Marteau
+    [prop] name: Marteau
+    [prop] hideFlags: None
+  Rigidbody
+    [prop] linearVelocity: (0.00, 0.00, 0.00)
+    [prop] angularVelocity: (0.00, 0.00, 0.00)
+    [prop] linearDamping: 0
+    [prop] angularDamping: 0.05
+    [prop] mass: 1
+    [prop] useGravity: False
+    [prop] maxDepenetrationVelocity: 10
+    [prop] isKinematic: True
+    [prop] freezeRotation: False
+    [prop] constraints: None
+    [prop] collisionDetectionMode: Discrete
+    [prop] automaticCenterOfMass: True
+    [prop] centerOfMass: (0.00, 0.00, 0.00)
+    [prop] worldCenterOfMass: (1.53, 1.65, 1.45)
+    [prop] automaticInertiaTensor: True
+    [prop] inertiaTensorRotation: (0.00, 0.00, 0.00)
+    [prop] inertiaTensor: (1.00, 1.00, 1.00)
+    [prop] detectCollisions: True
+    [prop] position: (1.53, 1.65, 1.45)
+    [prop] rotation: (0.00, 0.00, 0.00)
+    [prop] interpolation: None
+    [prop] solverIterations: 6
+    [prop] sleepThreshold: 0.005
+    [prop] maxAngularVelocity: 50
+    [prop] maxLinearVelocity: 1E+16
+    [prop] solverVelocityIterations: 1
+    [prop] excludeLayers: UnityEngine.LayerMask
+    [prop] includeLayers: UnityEngine.LayerMask
+    [prop] drag: 0
+    [prop] angularDrag: 0.05
+    [prop] velocity: (0.00, 0.00, 0.00)
+    [prop] transform: Marteau (Transform)
+    [prop] transformHandle: UnityEngine.TransformHandle
+    [prop] gameObject: Marteau (GameObject)
+    [prop] tag: Marteau
+    [prop] name: Marteau
+    [prop] hideFlags: None
+  XRGrabInteractable
+    m_AttachTransform: NULL (reference manquante)
+    m_SecondaryAttachTransform: NULL (reference manquante)
+    m_UseDynamicAttach: False
+    m_MatchAttachPosition: True
+    m_MatchAttachRotation: True
+    m_SnapToColliderVolume: True
+    m_ReinitializeDynamicAttachEverySingleGrab: True
+    m_AttachEaseInTime: 0.15
+    m_MovementType: Kinematic
+    m_PredictedVisualsTransform: NULL (reference manquante)
+    m_VelocityDamping: 1
+    m_VelocityScale: 1
+    m_AngularVelocityDamping: 1
+    m_AngularVelocityScale: 1
+    m_TrackPosition: True
+    m_SmoothPosition: False
+    m_SmoothPositionAmount: 8
+    m_TightenPosition: 0.1
+    m_TrackRotation: True
+    m_SmoothRotation: False
+    m_SmoothRotationAmount: 8
+    m_TightenRotation: 0.1
+    m_TrackScale: True
+    m_SmoothScale: False
+    m_SmoothScaleAmount: 8
+    m_TightenScale: 0.1
+    m_ThrowOnDetach: True
+    m_ThrowSmoothingDuration: 0.25
+    m_ThrowSmoothingCurve: UnityEngine.AnimationCurve
+    m_ThrowVelocityScale: 1.5
+    m_ThrowAngularVelocityScale: 1
+    m_ForceGravityOnDetach: False
+    m_RetainTransformParent: True
+    m_StartingSingleGrabTransformers: System.Collections.Generic.List`1[UnityEngine.XR.Interaction.Toolkit.Transformers.XRBaseGrabTransformer]
+    m_StartingMultipleGrabTransformers: System.Collections.Generic.List`1[UnityEngine.XR.Interaction.Toolkit.Transformers.XRBaseGrabTransformer]
+    m_AddDefaultGrabTransformers: True
+    m_FarAttachMode: DeferToInteractor
+    m_LimitLinearVelocity: False
+    m_LimitAngularVelocity: False
+    m_MaxLinearVelocityDelta: 10
+    m_MaxAngularVelocityDelta: 20
+    <allowVisualAttachTransform>k__BackingField: False
+    m_SingleGrabTransformers: UnityEngine.XR.Interaction.Toolkit.Utilities.Registration.SmallRegistrationList`1[UnityEngine.XR.Interaction.Toolkit.Transformers.IXRGrabTransformer]
+    m_MultipleGrabTransformers: UnityEngine.XR.Interaction.Toolkit.Utilities.Registration.SmallRegistrationList`1[UnityEngine.XR.Interaction.Toolkit.Transformers.IXRGrabTransformer]
+    m_GrabTransformersAddedWhenGrabbed: NULL
+    m_GrabCountChanged: False
+    m_GrabCountBeforeAndAfterChange: (0, 0)
+    m_IsProcessingGrabTransformers: False
+    m_DropTransformersCount: 0
+    m_TargetPose: ((0.00, 0.00, 0.00), (0.00000, 0.00000, 0.00000, 0.00000))
+    m_TargetLocalScale: (0.00, 0.00, 0.00)
+    m_IsTargetPoseDirty: False
+    m_IsTargetLocalScaleDirty: False
+    m_Transform: NULL (reference manquante)
+    m_CurrentAttachEaseTime: 0
+    m_CurrentMovementType: VelocityTracking
+    m_DetachInLateUpdate: False
+    m_DetachLinearVelocity: (0.00, 0.00, 0.00)
+    m_DetachAngularVelocity: (0.00, 0.00, 0.00)
+    m_ThrowSmoothingCurrentFrame: 0
+    m_ThrowSmoothingFrameTimes: [Array Single, Count: 20]
+    m_ThrowSmoothingLinearVelocityFrames: [Array Vector3, Count: 20]
+    m_ThrowSmoothingAngularVelocityFrames: [Array Vector3, Count: 20]
+    m_ThrowSmoothingFirstUpdate: False
+    m_LastThrowReferencePose: ((0.00, 0.00, 0.00), (0.00000, 0.00000, 0.00000, 0.00000))
+    m_ThrowAssist: NULL
+    m_Rigidbody: NULL (reference manquante)
+    m_RigidbodyColliding: False
+    m_RigidbodySetupActive: False
+    m_WasKinematic: False
+    m_UsedGravity: False
+    m_InterpolationOnGrab: None
+    m_LinearDampingOnGrab: 0
+    m_AngularDampingOnGrab: 0
+    m_LastFixedFrame: 0
+    m_LastFixedDynamicTime: 0
+    m_InitialVisualsTransformLocalPose: ((0.00, 0.00, 0.00), (0.00000, 0.00000, 0.00000, 0.00000))
+    m_InitialVisualsTransformLocalPoseIsIdentity: True
+    m_InitialVisualsTransformLocalScale: (0.00, 0.00, 0.00)
+    m_IgnoringCharacterCollision: False
+    m_StopIgnoringCollisionInLateUpdate: False
+    m_SelectingCharacterController: NULL (reference manquante)
+    m_SelectingCharacterInteractors: System.Collections.Generic.HashSet`1[UnityEngine.XR.Interaction.Toolkit.Interactors.IXRSelectInteractor]
+    m_RigidbodyColliders: System.Collections.Generic.List`1[UnityEngine.Collider]
+    m_CollidersThatAllowedCharacterCollision: System.Collections.Generic.HashSet`1[UnityEngine.Collider]
+    m_OriginalSceneParent: NULL (reference manquante)
+    m_TeleportationMonitor: NULL
+    m_DynamicAttachTransforms: System.Collections.Generic.Dictionary`2[UnityEngine.XR.Interaction.Toolkit.Interactors.IXRSelectInteractor,UnityEngine.Transform]
+    m_VisualAttachTransforms: System.Collections.Generic.Dictionary`2[UnityEngine.XR.Interaction.Toolkit.Interactors.IXRSelectInteractor,UnityEngine.Transform]
+    [prop] attachTransform: NULL (reference manquante)
+    [prop] secondaryAttachTransform: NULL (reference manquante)
+    [prop] useDynamicAttach: False
+    [prop] matchAttachPosition: True
+    [prop] matchAttachRotation: True
+    [prop] snapToColliderVolume: True
+    [prop] reinitializeDynamicAttachEverySingleGrab: True
+    [prop] attachEaseInTime: 0.15
+    [prop] movementType: Kinematic
+    [prop] predictedVisualsTransform: NULL (reference manquante)
+    [prop] velocityDamping: 1
+    [prop] velocityScale: 1
+    [prop] angularVelocityDamping: 1
+    [prop] angularVelocityScale: 1
+    [prop] trackPosition: True
+    [prop] smoothPosition: False
+    [prop] smoothPositionAmount: 8
+    [prop] tightenPosition: 0.1
+    [prop] trackRotation: True
+    [prop] smoothRotation: False
+    [prop] smoothRotationAmount: 8
+    [prop] tightenRotation: 0.1
+    [prop] trackScale: True
+    [prop] smoothScale: False
+    [prop] smoothScaleAmount: 8
+    [prop] tightenScale: 0.1
+    [prop] throwOnDetach: True
+    [prop] throwSmoothingDuration: 0.25
+    [prop] throwSmoothingCurve: UnityEngine.AnimationCurve
+    [prop] throwVelocityScale: 1.5
+    [prop] throwAngularVelocityScale: 1
+    [prop] forceGravityOnDetach: False
+    [prop] retainTransformParent: True
+    [prop] startingSingleGrabTransformers: System.Collections.Generic.List`1[UnityEngine.XR.Interaction.Toolkit.Transformers.XRBaseGrabTransformer]
+    [prop] startingMultipleGrabTransformers: System.Collections.Generic.List`1[UnityEngine.XR.Interaction.Toolkit.Transformers.XRBaseGrabTransformer]
+    [prop] addDefaultGrabTransformers: True
+    [prop] farAttachMode: DeferToInteractor
+    [prop] limitLinearVelocity: False
+    [prop] limitAngularVelocity: False
+    [prop] maxLinearVelocityDelta: 10
+    [prop] maxAngularVelocityDelta: 20
+    [prop] singleGrabTransformersCount: 0
+    [prop] multipleGrabTransformersCount: 0
+    [prop] getDistanceOverride: NULL
+    [prop] interactionManager: NULL
+    [prop] colliders: System.Collections.Generic.List`1[UnityEngine.Collider]
+    [prop] interactionLayers: UnityEngine.XR.Interaction.Toolkit.InteractionLayerMask
+    [prop] distanceCalculationMode: ColliderPosition
+    [prop] selectMode: Single
+    [prop] focusMode: Single
+    [prop] customReticle: NULL (reference manquante)
+    [prop] allowGazeInteraction: False
+    [prop] allowGazeSelect: False
+    [prop] overrideGazeTimeToSelect: False
+    [prop] gazeTimeToSelect: 0.5
+    [prop] overrideTimeToAutoDeselectGaze: False
+    [prop] timeToAutoDeselectGaze: 3
+    [prop] allowGazeAssistance: False
+    [prop] firstHoverEntered: UnityEngine.XR.Interaction.Toolkit.HoverEnterEvent UnityEngine.XR.Interaction.Toolkit.HoverEnterEvent
+    [prop] lastHoverExited: UnityEngine.XR.Interaction.Toolkit.HoverExitEvent UnityEngine.XR.Interaction.Toolkit.HoverExitEvent
+    [prop] hoverEntered: UnityEngine.XR.Interaction.Toolkit.HoverEnterEvent UnityEngine.XR.Interaction.Toolkit.HoverEnterEvent
+    [prop] hoverExited: UnityEngine.XR.Interaction.Toolkit.HoverExitEvent UnityEngine.XR.Interaction.Toolkit.HoverExitEvent
+    [prop] firstSelectEntered: UnityEngine.XR.Interaction.Toolkit.SelectEnterEvent UnityEngine.XR.Interaction.Toolkit.SelectEnterEvent
+    [prop] lastSelectExited: UnityEngine.XR.Interaction.Toolkit.SelectExitEvent UnityEngine.XR.Interaction.Toolkit.SelectExitEvent
+    [prop] selectEntered: UnityEngine.XR.Interaction.Toolkit.SelectEnterEvent UnityEngine.XR.Interaction.Toolkit.SelectEnterEvent
+    [prop] selectExited: UnityEngine.XR.Interaction.Toolkit.SelectExitEvent UnityEngine.XR.Interaction.Toolkit.SelectExitEvent
+    [prop] firstFocusEntered: UnityEngine.XR.Interaction.Toolkit.FocusEnterEvent UnityEngine.XR.Interaction.Toolkit.FocusEnterEvent
+    [prop] lastFocusExited: UnityEngine.XR.Interaction.Toolkit.FocusExitEvent UnityEngine.XR.Interaction.Toolkit.FocusExitEvent
+    [prop] focusEntered: UnityEngine.XR.Interaction.Toolkit.FocusEnterEvent UnityEngine.XR.Interaction.Toolkit.FocusEnterEvent
+    [prop] focusExited: UnityEngine.XR.Interaction.Toolkit.FocusExitEvent UnityEngine.XR.Interaction.Toolkit.FocusExitEvent
+    [prop] activated: UnityEngine.XR.Interaction.Toolkit.ActivateEvent UnityEngine.XR.Interaction.Toolkit.ActivateEvent
+    [prop] deactivated: UnityEngine.XR.Interaction.Toolkit.DeactivateEvent UnityEngine.XR.Interaction.Toolkit.DeactivateEvent
+    [prop] interactorsHovering: System.Collections.Generic.List`1[UnityEngine.XR.Interaction.Toolkit.Interactors.IXRHoverInteractor]
+    [prop] isHovered: False
+    [prop] interactorsSelecting: System.Collections.Generic.List`1[UnityEngine.XR.Interaction.Toolkit.Interactors.IXRSelectInteractor]
+    [prop] firstInteractorSelecting: NULL
+    [prop] isSelected: False
+    [prop] interactionGroupsFocusing: System.Collections.Generic.List`1[UnityEngine.XR.Interaction.Toolkit.Interactors.IXRInteractionGroup]
+    [prop] firstInteractionGroupFocusing: NULL
+    [prop] isFocused: False
+    [prop] canFocus: True
+    [prop] startingHoverFilters: System.Collections.Generic.List`1[UnityEngine.Object]
+    [prop] hoverFilters: UnityEngine.XR.Interaction.Toolkit.Utilities.Registration.ExposedRegistrationList`1[UnityEngine.XR.Interaction.Toolkit.Filtering.IXRHoverFilter]
+    [prop] startingSelectFilters: System.Collections.Generic.List`1[UnityEngine.Object]
+    [prop] selectFilters: UnityEngine.XR.Interaction.Toolkit.Utilities.Registration.ExposedRegistrationList`1[UnityEngine.XR.Interaction.Toolkit.Filtering.IXRSelectFilter]
+    [prop] startingInteractionStrengthFilters: System.Collections.Generic.List`1[UnityEngine.Object]
+    [prop] autoFindParentInteractableInHierarchy: False
+    [prop] parentInteractable: NULL
+    [prop] interactionStrengthFilters: UnityEngine.XR.Interaction.Toolkit.Utilities.Registration.ExposedRegistrationList`1[UnityEngine.XR.Interaction.Toolkit.Filtering.IXRInteractionStrengt...
+    [prop] largestInteractionStrength: Unity.XR.CoreUtils.Bindings.Variables.BindableVariable`1[System.Single]
+    [prop] onFirstHoverEntered: NULL
+    [prop] onLastHoverExited: NULL
+    [prop] onHoverEntered: NULL
+    [prop] onHoverExited: NULL
+    [prop] onSelectEntered: NULL
+    [prop] onSelectExited: NULL
+    [prop] onSelectCanceled: NULL
+    [prop] onActivate: NULL
+    [prop] onDeactivate: NULL
+    [prop] onFirstHoverEnter: NULL
+    [prop] onHoverEnter: NULL
+    [prop] onHoverExit: NULL
+    [prop] onLastHoverExit: NULL
+    [prop] onSelectEnter: NULL
+    [prop] onSelectExit: NULL
+    [prop] onSelectCancel: NULL
+    [prop] destroyCancellationToken: System.Threading.CancellationToken
+    [prop] useGUILayout: True
+    [prop] didStart: False
+    [prop] didAwake: False
+    [prop] runInEditMode: False
+    [prop] enabled: True
+    [prop] isActiveAndEnabled: True
+    [prop] transform: Marteau (Transform)
+    [prop] transformHandle: UnityEngine.TransformHandle
+    [prop] gameObject: Marteau (GameObject)
+    [prop] tag: Marteau
+    [prop] name: Marteau
+    [prop] hideFlags: None
+  FeedbackMarteau
+    amplitudeGrab: 0.5
+    dureeGrab: 0.1
+    amplitudeImpact: 0.8
+    dureeImpact: 0.2
+    sonImpact: SFX_Pop_Bottle_Tiny_5 (AudioClip)
+    grabInteractable: NULL
+    audioSource: NULL (reference manquante)
+    [prop] destroyCancellationToken: System.Threading.CancellationToken
+    [prop] useGUILayout: True
+    [prop] didStart: False
+    [prop] didAwake: False
+    [prop] runInEditMode: False
+    [prop] enabled: True
+    [prop] isActiveAndEnabled: True
+    [prop] transform: Marteau (Transform)
+    [prop] transformHandle: UnityEngine.TransformHandle
+    [prop] gameObject: Marteau (GameObject)
+    [prop] tag: Marteau
+    [prop] name: Marteau
+    [prop] hideFlags: None
+  AudioSource
+    [prop] panLevel: 1
+    [prop] pan: 0
+    [prop] volume: 1
+    [prop] pitch: 1
+    [prop] time: 0
+    [prop] timeSamples: 0
+    [prop] resource: NULL
+    [prop] generator: NULL
+    [prop] generatorInstance: UnityEngine.Audio.ProcessorInstance
+    [prop] outputAudioMixerGroup: NULL
+    [prop] gamepadSpeakerOutputType: Speaker
+    [prop] isPlaying: False
+    [prop] isVirtual: False
+    [prop] loop: False
+    [prop] ignoreListenerVolume: False
+    [prop] playOnAwake: False
+    [prop] ignoreListenerPause: False
+    [prop] velocityUpdateMode: Auto
+    [prop] panStereo: 0
+    [prop] spatialBlend: 1
+    [prop] spatialize: False
+    [prop] spatializePostEffects: False
+    [prop] reverbZoneMix: 1
+    [prop] bypassEffects: False
+    [prop] bypassListenerEffects: False
+    [prop] bypassReverbZones: False
+    [prop] dopplerLevel: 1
+    [prop] spread: 0
+    [prop] priority: 128
+    [prop] mute: False
+    [prop] minDistance: 1
+    [prop] maxDistance: 500
+    [prop] rolloffMode: Logarithmic
+    [prop] minVolume: 0
+    [prop] maxVolume: 0
+    [prop] rolloffFactor: 0
+    [prop] enabled: True
+    [prop] isActiveAndEnabled: True
+    [prop] transform: Marteau (Transform)
+    [prop] transformHandle: UnityEngine.TransformHandle
+    [prop] gameObject: Marteau (GameObject)
+    [prop] tag: Marteau
+    [prop] name: Marteau
+    [prop] hideFlags: None
+  --- TeteMarteau ---
+  Actif: True
+  Tag: Untagged
+  Layer: Default
+  Position locale: (0.21, 0.64, -0.13)
+  Rotation locale: (0.00, 0.00, 0.00)
+  Scale locale:    (1.66, 0.28, 2.66)
+  Components (4):
+    MeshFilter
+      [prop] transform: TeteMarteau (Transform)
+      [prop] transformHandle: UnityEngine.TransformHandle
+      [prop] gameObject: TeteMarteau (GameObject)
+      [prop] tag: Untagged
+      [prop] name: TeteMarteau
+      [prop] hideFlags: None
+    MeshRenderer
+      [prop] additionalVertexStreams: NULL
+      [prop] enlightenVertexStream: NULL
+      [prop] subMeshStartIndex: 0
+      [prop] scaleInLightmap: 1
+      [prop] receiveGI: Lightmaps
+      [prop] stitchLightmapSeams: True
+      [prop] globalIlluminationMeshLod: 0
+      [prop] lightmapTilingOffset: (0.00, 0.00, 0.00, 0.00)
+      [prop] lightProbeAnchor: NULL
+      [prop] castShadows: True
+      [prop] motionVectors: True
+      [prop] useLightProbes: True
+      [prop] bounds: Center: (1.56, 2.10, 1.43), Extents: (0.12, 0.10, 0.20)
+      [prop] localBounds: Center: (0.00, 0.00, 0.00), Extents: (0.50, 0.50, 0.50)
+      [prop] enabled: True
+      [prop] isVisible: True
+      [prop] shadowCastingMode: On
+      [prop] receiveShadows: True
+      [prop] forceRenderingOff: False
+      [prop] staticShadowCaster: False
+      [prop] motionVectorGenerationMode: Object
+      [prop] lightProbeUsage: BlendProbes
+      [prop] reflectionProbeUsage: BlendProbes
+      [prop] renderingLayerMask: 1
+      [prop] rendererPriority: 0
+      [prop] rayTracingMode: DynamicTransform
+      [prop] rayTracingAccelerationStructureBuildFlags: PreferFastTrace
+      [prop] rayTracingAccelerationStructureBuildFlagsOverride: False
+      [prop] sortingLayerName: Default
+      [prop] sortingLayerID: 0
+      [prop] sortingOrder: 0
+      [prop] isLOD0: True
+      [prop] allowOcclusionWhenDynamic: True
+      [prop] forceMeshLod: -1
+      [prop] meshLodSelectionBias: 0
+      [prop] isPartOfStaticBatch: False
+      [prop] worldToLocalMatrix: 4.01606	0.00000	0.00000	-6.27121
+0.00000	5.10204	0.00000	-10.70408
+0.00000	0.00000	2.50627	-3.58544
+0.00000	0.00000	0.00000	1.00000
+
+      [prop] localToWorldMatrix: 0.24900	0.00000	0.00000	1.56153
+0.00000	0.19600	0.00000	2.09800
+0.00000	0.00000	0.39900	1.43059
+0.00000	0.00000	0.00000	1.00000
+
+      [prop] lightProbeProxyVolumeOverride: NULL
+      [prop] probeAnchor: NULL
+      [prop] lightmapIndex: -1
+      [prop] realtimeLightmapIndex: -1
+      [prop] lightmapScaleOffset: (1.00, 1.00, 0.00, 0.00)
+      [prop] realtimeLightmapScaleOffset: (1.00, 1.00, 0.00, 0.00)
+      [prop] LODGroup: NULL
+      [prop] transform: TeteMarteau (Transform)
+      [prop] transformHandle: UnityEngine.TransformHandle
+      [prop] gameObject: TeteMarteau (GameObject)
+      [prop] tag: Untagged
+      [prop] name: TeteMarteau
+      [prop] hideFlags: None
+    BoxCollider
+      [prop] center: (0.00, 0.00, 0.00)
+      [prop] size: (1.00, 1.00, 1.00)
+      [prop] enabled: True
+      [prop] attachedRigidbody: Marteau (Rigidbody)
+      [prop] attachedArticulationBody: NULL
+      [prop] isTrigger: False
+      [prop] contactOffset: 0.01
+      [prop] bounds: Center: (1.56, 2.10, 1.43), Extents: (0.12, 0.10, 0.20)
+      [prop] hasModifiableContacts: False
+      [prop] providesContacts: False
+      [prop] layerOverridePriority: 0
+      [prop] excludeLayers: UnityEngine.LayerMask
+      [prop] includeLayers: UnityEngine.LayerMask
+      [prop] GeometryHolder: UnityEngine.LowLevelPhysics.GeometryHolder
+      [prop] transform: TeteMarteau (Transform)
+      [prop] transformHandle: UnityEngine.TransformHandle
+      [prop] gameObject: TeteMarteau (GameObject)
+      [prop] tag: Untagged
+      [prop] name: TeteMarteau
+      [prop] hideFlags: None
+
+=== FIN DU RAPPORT ===

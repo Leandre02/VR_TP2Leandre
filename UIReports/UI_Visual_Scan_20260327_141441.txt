@@ -1,0 +1,231 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    UI VISUAL SCANNER - RAPPORT COMPLET                     ║
+║                    RECTTRANSFORM + ANOMALIES + ASCII                       ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+Scène: VRQuest
+Date: 27/03/2026 2:14:41 PM
+Résolution écran: 321x578
+
+════════════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  PARTIE 1 : TOUS LES CANVAS
+╚══════════════════════════════════════════════════════════════════════════╝
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ CANVAS: Canvas
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+  Actif: True
+  Render Mode: WorldSpace
+  Sort Order: 0
+  World Camera: ⚠️  NULL
+
+  [CANVAS SCALER]
+    UI Scale Mode: ConstantPixelSize
+
+─────────────────────────────────────────────────────────────────────────────
+
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  PARTIE 2 : PANELS PRIORITAIRES (ANALYSE DÉTAILLÉE)
+╚══════════════════════════════════════════════════════════════════════════╝
+
+⚠️  PANEL NON TROUVÉ: GestionnaireCanvas/FinDePartie
+
+⚠️  PANEL NON TROUVÉ: FinDePartie/PanelVictoire
+
+⚠️  PANEL NON TROUVÉ: FinDePartie/PanelDefaite
+
+⚠️  PANEL NON TROUVÉ: GestionnaireCanvas/Minuteur
+
+⚠️  PANEL NON TROUVÉ: GestionnaireCanvas/FenetreQuete
+
+⚠️  PANEL NON TROUVÉ: MenuPrincipal/FenetreMenu
+
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  PARTIE 3 : HIÉRARCHIE UI (SCHÉMA ASCII)
+╚══════════════════════════════════════════════════════════════════════════╝
+
+Canvas 
+├─ 🖼️  PanneauJeu
+   ├─ 📝 TexteMinuterie
+   └─ 📝 TexteScore
+├─ 🖼️  PanneauFin [OFF]
+   ├─ 📝 TexteScoreFinal
+   └─ 🔘 BoutonRejouer
+   │  └─ 📝 Text (TMP)
+└─ 🖼️  PanneauMenu
+   ├─ 📝 TitreJeu
+   └─ 🔘 BoutonDemarrer
+      └─ 📝 Text (TMP)
+
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  PARTIE 4 : TOUS LES TEXTMESHPRO (DÉTAILS COMPLETS)
+╚══════════════════════════════════════════════════════════════════════════╝
+
+Total TextMeshPro trouvés: 6
+
+┌─ TitreJeu
+│  Chemin: XR Origin (XR Rig)/Canvas/PanneauMenu/TitreJeu
+│  Actif: True
+│
+│  Texte: "Whack-a-Mole VR"
+│  Font: LiberationSans SDF
+│  Font Size: 36
+│  Auto Size: False 
+│  Alignment: TopLeft
+│  Color: RGBA(1.000, 1.000, 1.000, 1.000)
+│  Overflow Mode: Overflow
+│  Margins: L:0.0 R:0.0 T:-101.1 B:-23.3
+│  Raycast Target: True
+│
+│  Size: 200.0 x 50.0
+└─
+
+┌─ Text (TMP)
+│  Chemin: XR Origin (XR Rig)/Canvas/PanneauFin/BoutonRejouer/Text (TMP)
+│  Actif: True
+│
+│  Texte: "Rejouer
+"
+│  Font: LiberationSans SDF
+│  Font Size: 24
+│  Auto Size: False 
+│  Alignment: Center
+│  Color: RGBA(0.196, 0.196, 0.196, 1.000)
+│  Overflow Mode: Overflow
+│  Margins: L:0.0 R:0.0 T:0.0 B:0.0
+│  Raycast Target: True
+│
+│  Size: 0.0 x 0.0
+└─
+
+┌─ Text (TMP)
+│  Chemin: XR Origin (XR Rig)/Canvas/PanneauMenu/BoutonDemarrer/Text (TMP)
+│  Actif: True
+│
+│  Texte: "Commencer"
+│  Font: LiberationSans SDF
+│  Font Size: 24
+│  Auto Size: False 
+│  Alignment: Center
+│  Color: RGBA(0.196, 0.196, 0.196, 1.000)
+│  Overflow Mode: Overflow
+│  Margins: L:0.0 R:0.0 T:0.0 B:0.0
+│  Raycast Target: True
+│
+│  Size: 0.0 x 0.0
+└─
+
+┌─ TexteMinuterie
+│  Chemin: XR Origin (XR Rig)/Canvas/PanneauJeu/TexteMinuterie
+│  Actif: True
+│
+│  Texte: "60"
+│  Font: LiberationSans SDF
+│  Font Size: 36
+│  Auto Size: False 
+│  Alignment: Top
+│  Color: RGBA(1.000, 1.000, 1.000, 1.000)
+│  Overflow Mode: Overflow
+│  Margins: L:0.0 R:0.0 T:0.0 B:0.0
+│  Raycast Target: True
+│
+│  Size: 200.0 x 50.0
+└─
+
+┌─ TexteScore
+│  Chemin: XR Origin (XR Rig)/Canvas/PanneauJeu/TexteScore
+│  Actif: True
+│
+│  Texte: "Score : 0"
+│  Font: LiberationSans SDF
+│  Font Size: 36
+│  Auto Size: False 
+│  Alignment: Top
+│  Color: RGBA(1.000, 1.000, 1.000, 1.000)
+│  Overflow Mode: Overflow
+│  Margins: L:0.0 R:0.0 T:0.0 B:0.0
+│  Raycast Target: True
+│
+│  Size: 200.0 x 50.0
+└─
+
+┌─ TexteScoreFinal
+│  Chemin: XR Origin (XR Rig)/Canvas/PanneauFin/TexteScoreFinal
+│  Actif: True
+│
+│  Texte: "Score : 0"
+│  Font: LiberationSans SDF
+│  Font Size: 36
+│  Auto Size: False 
+│  Alignment: Top
+│  Color: RGBA(1.000, 1.000, 1.000, 1.000)
+│  Overflow Mode: Overflow
+│  Margins: L:0.0 R:0.0 T:0.0 B:0.0
+│  Raycast Target: True
+│
+│  Size: 200.0 x 50.0
+└─
+
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  PARTIE 5 : TOUS LES BOUTONS (AVEC ONCLICK)
+╚══════════════════════════════════════════════════════════════════════════╝
+
+Total boutons trouvés: 2
+
+┌─ BOUTON: BoutonDemarrer
+│  Chemin: XR Origin (XR Rig)/Canvas/PanneauMenu/BoutonDemarrer
+│  Actif: True
+│  Interactable: True
+│  Texte: "Commencer"
+│  OnClick Events: 1
+│    → GestionnaireJeu.GestionnaireJeu.CommencerPartie()
+└─
+
+┌─ BOUTON: BoutonRejouer
+│  Chemin: XR Origin (XR Rig)/Canvas/PanneauFin/BoutonRejouer
+│  Actif: True
+│  Interactable: True
+│  Texte: "Rejouer
+"
+│  OnClick Events: 1
+│    → GestionnaireJeu.GestionnaireJeu.NouvellePartie()
+└─
+
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  PARTIE 6 : ⚠️  ANOMALIES DÉTECTÉES
+╚══════════════════════════════════════════════════════════════════════════╝
+
+⚠️  Canvas 'Canvas' : Render Mode = WorldSpace mais World Camera = NULL
+⚠️  Panel prioritaire introuvable: GestionnaireCanvas/FinDePartie
+⚠️  Panel prioritaire introuvable: FinDePartie/PanelVictoire
+⚠️  Panel prioritaire introuvable: FinDePartie/PanelDefaite
+⚠️  Panel prioritaire introuvable: GestionnaireCanvas/Minuteur
+⚠️  Panel prioritaire introuvable: GestionnaireCanvas/FenetreQuete
+⚠️  Panel prioritaire introuvable: MenuPrincipal/FenetreMenu
+⚠️  TextMeshPro 'Text (TMP)' : Taille 0 ou négative
+⚠️  TextMeshPro 'Text (TMP)' : Taille 0 ou négative
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  PARTIE 7 : STATISTIQUES FINALES
+╚══════════════════════════════════════════════════════════════════════════╝
+
+Canvas:                1
+TextMeshPro:           6
+Text (Legacy):         0
+Boutons:               2
+Sliders:               0
+Images:                5
+
+Anomalies détectées:   9
+
+════════════════════════════════════════════════════════════════════════════
+FIN DU SCAN - 27/03/2026 2:14:41 PM
+════════════════════════════════════════════════════════════════════════════

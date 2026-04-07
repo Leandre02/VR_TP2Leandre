@@ -1,0 +1,102 @@
+=== RAPPORT COMPLET ===
+Date: 27/03/2026 2:16:47 PM
+Scene: VRQuest
+
+--- Sol ---
+Actif: True
+Tag: Untagged
+Layer: Default
+Position locale: (1.51, 1.06, 1.51)
+Rotation locale: (0.00, 0.00, 0.00)
+Scale locale:    (5.00, 1.00, 5.00)
+Components (4):
+  MeshFilter
+    [prop] transform: Sol (Transform)
+    [prop] transformHandle: UnityEngine.TransformHandle
+    [prop] gameObject: Sol (GameObject)
+    [prop] tag: Untagged
+    [prop] name: Sol
+    [prop] hideFlags: None
+  MeshRenderer
+    [prop] additionalVertexStreams: NULL
+    [prop] enlightenVertexStream: NULL
+    [prop] subMeshStartIndex: 0
+    [prop] scaleInLightmap: 1
+    [prop] receiveGI: Lightmaps
+    [prop] stitchLightmapSeams: True
+    [prop] globalIlluminationMeshLod: 0
+    [prop] lightmapTilingOffset: (0.00, 0.00, 0.00, 0.00)
+    [prop] lightProbeAnchor: NULL
+    [prop] castShadows: True
+    [prop] motionVectors: True
+    [prop] useLightProbes: True
+    [prop] bounds: Center: (1.51, 1.06, 1.51), Extents: (25.00, 0.00, 25.00)
+    [prop] localBounds: Center: (0.00, 0.00, 0.00), Extents: (5.00, 0.00, 5.00)
+    [prop] enabled: True
+    [prop] isVisible: True
+    [prop] shadowCastingMode: On
+    [prop] receiveShadows: True
+    [prop] forceRenderingOff: False
+    [prop] staticShadowCaster: False
+    [prop] motionVectorGenerationMode: Object
+    [prop] lightProbeUsage: BlendProbes
+    [prop] reflectionProbeUsage: BlendProbes
+    [prop] renderingLayerMask: 1
+    [prop] rendererPriority: 0
+    [prop] rayTracingMode: DynamicTransform
+    [prop] rayTracingAccelerationStructureBuildFlags: PreferFastTrace
+    [prop] rayTracingAccelerationStructureBuildFlagsOverride: False
+    [prop] sortingLayerName: Default
+    [prop] sortingLayerID: 0
+    [prop] sortingOrder: 0
+    [prop] isLOD0: True
+    [prop] allowOcclusionWhenDynamic: True
+    [prop] forceMeshLod: -1
+    [prop] meshLodSelectionBias: 0
+    [prop] isPartOfStaticBatch: False
+    [prop] worldToLocalMatrix: 0.20000	0.00000	0.00000	-0.30144
+0.00000	1.00000	0.00000	-1.05506
+0.00000	0.00000	0.20000	-0.30144
+0.00000	0.00000	0.00000	1.00000
+
+    [prop] localToWorldMatrix: 5.00000	0.00000	0.00000	1.50722
+0.00000	1.00000	0.00000	1.05506
+0.00000	0.00000	5.00000	1.50722
+0.00000	0.00000	0.00000	1.00000
+
+    [prop] lightProbeProxyVolumeOverride: NULL
+    [prop] probeAnchor: NULL
+    [prop] lightmapIndex: -1
+    [prop] realtimeLightmapIndex: -1
+    [prop] lightmapScaleOffset: (1.00, 1.00, 0.00, 0.00)
+    [prop] realtimeLightmapScaleOffset: (1.00, 1.00, 0.00, 0.00)
+    [prop] LODGroup: NULL
+    [prop] transform: Sol (Transform)
+    [prop] transformHandle: UnityEngine.TransformHandle
+    [prop] gameObject: Sol (GameObject)
+    [prop] tag: Untagged
+    [prop] name: Sol
+    [prop] hideFlags: None
+  MeshCollider
+    [prop] convex: False
+    [prop] cookingOptions: CookForFasterSimulation, EnableMeshCleaning, WeldColocatedVertices, UseFastMidphase
+    [prop] enabled: True
+    [prop] attachedRigidbody: NULL
+    [prop] attachedArticulationBody: NULL
+    [prop] isTrigger: False
+    [prop] contactOffset: 0.01
+    [prop] bounds: Center: (1.51, 1.06, 1.51), Extents: (25.00, 0.00, 25.00)
+    [prop] hasModifiableContacts: False
+    [prop] providesContacts: False
+    [prop] layerOverridePriority: 0
+    [prop] excludeLayers: UnityEngine.LayerMask
+    [prop] includeLayers: UnityEngine.LayerMask
+    [prop] GeometryHolder: UnityEngine.LowLevelPhysics.GeometryHolder
+    [prop] transform: Sol (Transform)
+    [prop] transformHandle: UnityEngine.TransformHandle
+    [prop] gameObject: Sol (GameObject)
+    [prop] tag: Untagged
+    [prop] name: Sol
+    [prop] hideFlags: None
+
+=== FIN DU RAPPORT ===

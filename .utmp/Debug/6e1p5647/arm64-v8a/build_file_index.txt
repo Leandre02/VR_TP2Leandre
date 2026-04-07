@@ -1,0 +1,2 @@
+C:\Coding\Environ_immers\TP_tictactoe\VRproject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Coding\Environ_immers\TP_tictactoe\VRproject\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

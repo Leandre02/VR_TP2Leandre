@@ -1,0 +1,184 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                       RAPPORT COMPLET UI - SCÈNE UNITY                     ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+Scène: VRQuest
+Date: 27/03/2026 2:19:14 PM
+Inclure inactifs: True
+
+════════════════════════════════════════════════════════════════════════════
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  CANVAS TROUVÉS: 1
+╚══════════════════════════════════════════════════════════════════════════╝
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│ CANVAS: Canvas
+│ Actif: True
+└───────────────────────────────────────────────────────────────────────────┘
+
+  [CANVAS]
+    • Render Mode: WorldSpace
+    • Sort Order: 0
+    • Override Sorting: False
+    • World Camera: NULL
+    • Sorting Layer: Default
+
+  [CANVAS SCALER]
+    • UI Scale Mode: ConstantPixelSize
+    • Scale Factor: 1
+    • Reference Pixels Per Unit: 100
+
+  [GRAPHIC RAYCASTER]
+    • Ignore Reversed Graphics: True
+    • Blocking Objects: None
+
+  [PANELS IMPORTANTS]
+    ┌─ PanneauFin
+    │  Actif: False
+    │  Position: (0.00, 0.00)
+    │  Size: 0 x 0
+    │  Anchors: Min(0.00, 0.00) Max(1.00, 1.00)
+    │  Pivot: (0.50, 0.50)
+    │  Scale: (1.00, 1.00, 1.00)
+    │  Image: Background
+    │  Color: RGBA(1.000, 1.000, 1.000, 0.392)
+    │  Raycast Target: True
+    └─
+
+    ┌─ PanneauMenu
+    │  Actif: True
+    │  Position: (0.00, 0.00)
+    │  Size: 0 x 0
+    │  Anchors: Min(0.00, 0.00) Max(1.00, 1.00)
+    │  Pivot: (0.50, 0.50)
+    │  Scale: (1.00, 1.00, 1.00)
+    │  Image: Background
+    │  Color: RGBA(1.000, 1.000, 1.000, 0.392)
+    │  Raycast Target: True
+    └─
+
+
+
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  TOUS LES TEXTES (UI Text + TextMeshPro)
+╚══════════════════════════════════════════════════════════════════════════╝
+
+━━ UI TEXT (Legacy): 0 trouvé(s) ━━
+
+━━ TEXTMESHPRO: 6 trouvé(s) ━━
+
+  • TitreJeu
+    Chemin: XR Origin (XR Rig)/Canvas/PanneauMenu/TitreJeu
+    Texte: "Whack-a-Mole VR"
+    Font: LiberationSans SDF
+    Font Size: 36
+    Alignment: TopLeft
+    Color: RGBA(1.000, 1.000, 1.000, 1.000)
+    Raycast Target: True
+    Auto Size: False
+    Actif: True
+
+  • Text (TMP)
+    Chemin: XR Origin (XR Rig)/Canvas/PanneauFin/BoutonRejouer/Text (TMP)
+    Texte: "Rejouer
+"
+    Font: LiberationSans SDF
+    Font Size: 24
+    Alignment: Center
+    Color: RGBA(0.196, 0.196, 0.196, 1.000)
+    Raycast Target: True
+    Auto Size: False
+    Actif: True
+
+  • Text (TMP)
+    Chemin: XR Origin (XR Rig)/Canvas/PanneauMenu/BoutonDemarrer/Text (TMP)
+    Texte: "Commencer"
+    Font: LiberationSans SDF
+    Font Size: 24
+    Alignment: Center
+    Color: RGBA(0.196, 0.196, 0.196, 1.000)
+    Raycast Target: True
+    Auto Size: False
+    Actif: True
+
+  • TexteMinuterie
+    Chemin: XR Origin (XR Rig)/Canvas/PanneauJeu/TexteMinuterie
+    Texte: "60"
+    Font: LiberationSans SDF
+    Font Size: 36
+    Alignment: Top
+    Color: RGBA(1.000, 1.000, 1.000, 1.000)
+    Raycast Target: True
+    Auto Size: False
+    Actif: True
+
+  • TexteScore
+    Chemin: XR Origin (XR Rig)/Canvas/PanneauJeu/TexteScore
+    Texte: "Score : 0"
+    Font: LiberationSans SDF
+    Font Size: 36
+    Alignment: Top
+    Color: RGBA(1.000, 1.000, 1.000, 1.000)
+    Raycast Target: True
+    Auto Size: False
+    Actif: True
+
+  • TexteScoreFinal
+    Chemin: XR Origin (XR Rig)/Canvas/PanneauFin/TexteScoreFinal
+    Texte: "Score : 0"
+    Font: LiberationSans SDF
+    Font Size: 36
+    Alignment: Top
+    Color: RGBA(1.000, 1.000, 1.000, 1.000)
+    Raycast Target: True
+    Auto Size: False
+    Actif: True
+
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  TOUS LES BOUTONS
+╚══════════════════════════════════════════════════════════════════════════╝
+
+Nombre total de boutons: 2
+
+┌─ BOUTON: BoutonDemarrer
+│  Chemin: XR Origin (XR Rig)/Canvas/PanneauMenu/BoutonDemarrer
+│  Panel parent: PanneauMenu
+│  Actif: True
+│  Interactable: True
+│  Texte affiché: "Commencer"
+│  OnClick Events: 1
+│    [0] GestionnaireJeu.GestionnaireJeu.CommencerPartie()
+└─
+
+┌─ BOUTON: BoutonRejouer
+│  Chemin: XR Origin (XR Rig)/Canvas/PanneauFin/BoutonRejouer
+│  Panel parent: PanneauFin
+│  Actif: True
+│  Interactable: True
+│  Texte affiché: "Rejouer
+"
+│  OnClick Events: 1
+│    [0] GestionnaireJeu.GestionnaireJeu.NouvellePartie()
+└─
+
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  TOUS LES SLIDERS
+╚══════════════════════════════════════════════════════════════════════════╝
+
+Nombre total de sliders: 0
+
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║  SCRIPTS UI ET LEURS RÉFÉRENCES
+╚══════════════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+AUTRES SCRIPTS AVEC RÉFÉRENCES UI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+▸ XRInputModalityManager (sur XR Origin (XR Rig))
+  • m_LeftHand (GameObject)
