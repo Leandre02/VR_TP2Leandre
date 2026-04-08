@@ -3,6 +3,11 @@ using System.Collections;
 
 /// <summary>
 /// Classe pour gérer le spawn des cibles à des points aléatoires, avec un délai entre chaque spawn, et les faire disparaître après un certain temps
+////// Inspirée des exercices de peinture et de VR où des objets sont instanciés/détruits dynamiquement via des coroutines,
+/// adaptée ici au contexte du Whack-a-Mole (cibles temporaires qui apparaissent et disparaissent).
+/// Références :
+///  - Cégep de Victoriaville. Exercice 3 — Peinture VR. Environnements Immersifs, 2026. https://envimmersif-cegepvicto.github.io/exercice_peinture_vr/
+///  - Cégep de Victoriaville. Travail pratique — Whack-a-Mole VR. Environnements Immersifs, 2026. https://envimmersif-cegepvicto.github.io/tp_sommatif1_vr/
 /// </summary>
 public class GestionnaireSpawn : MonoBehaviour
 {

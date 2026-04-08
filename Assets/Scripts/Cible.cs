@@ -3,6 +3,12 @@ using System;
 
 /// <summary>
 /// Classe attachée à chaque cible pour gérer les points attribués lors de l'impact avec le marteau, ainsi que le son d'apparition
+/// Inspiré des patterns d'événements C# et de communication GameManager vus dans les exercices d’UI VR / GameManager
+/// et de feedback VR (haptiques et audio spatial), ainsi que des consignes du travail pratique Whack-a-Mole VR.
+/// Références :
+///  - Cégep de Victoriaville. Exercice 4.1 — Feedback VR : haptiques et audio spatial. Environnements Immersifs, 2026. https://envimmersif-cegepvicto.github.io/exercice_feedback_vr/
+///  - Cégep de Victoriaville. Exercice 4.2 — UI VR et GameManager. Environnements Immersifs, 2026. https://envimmersif-cegepvicto.github.io/exercice_ui_jeu_tri/
+///  - Cégep de Victoriaville. Travail pratique — Whack-a-Mole VR. Environnements Immersifs, 2026. https://envimmersif-cegepvicto.github.io/tp_sommatif1_vr/
 /// </summary>
 public class Cible : MonoBehaviour
 {

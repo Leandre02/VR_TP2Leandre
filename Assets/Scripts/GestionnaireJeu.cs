@@ -3,6 +3,12 @@ using TMPro;
 
 /// <summary>
 /// Classe centrale pour gérer le déroulement du jeu : démarrage, fin, score, minuterie, et transitions entre les différents panneaux UI
+/// S’appuie sur les patterns de GameManager et d’UI en World Space vus dans les notes et exercices (UI VR, GameManager)
+/// et sur les consignes du travail pratique Whack-a-Mole VR.
+/// Références :
+///  - Cégep de Victoriaville. UI en VR. Environnements Immersifs, 2026.
+///  - Cégep de Victoriaville. Exercice 4.2 — UI VR et GameManager. Environnements Immersifs, 2026. https://envimmersif-cegepvicto.github.io/exercice_ui_jeu_tri/
+///  - Cégep de Victoriaville. Travail pratique — Whack-a-Mole VR. Environnements Immersifs, 2026. https://envimmersif-cegepvicto.github.io/tp_sommatif1_vr/
 /// </summary>
 public class GestionnaireJeu : MonoBehaviour
 {

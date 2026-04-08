@@ -5,6 +5,12 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 /// <summary>
 /// Classe attachée au marteau pour gérer les feedbacks haptique et audio lors de la prise en main et de l'impact avec une cible
+/// S’inspire de l’exercice sur les feedbacks VR (haptiques et audio spatial) et de l’utilisation du XR Grab Interactable / événements
+/// du XR Interaction Toolkit (selectEntered / selectExited).
+/// Références :
+///  - Cégep de Victoriaville. Exercice 4.1 — Feedback VR : haptiques et audio spatial. Environnements Immersifs, 2026. https://envimmersif-cegepvicto.github.io/exercice_feedback_vr/
+///  - Cégep de Victoriaville. Exercice 4 — Tri spatial VR : Grab & Socket. Environnements Immersifs, 2026. https://envimmersif-cegepvicto.github.io/exercice_tri_vr/
+///  - Unity Technologies. XR Interaction Toolkit Documentation. https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.0/api/UnityEngine.XR.Interaction.Toolkit.Interactors.html
 /// </summary>
 public class FeedbackMarteau : MonoBehaviour
 {
