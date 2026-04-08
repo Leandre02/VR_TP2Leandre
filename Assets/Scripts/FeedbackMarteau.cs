@@ -1,54 +1,73 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
+/// <summary>
+/// Classe attachée au marteau pour gérer les feedbacks haptique et audio lors de la prise en main et de l'impact avec une cible
+/// </summary>
 public class FeedbackMarteau : MonoBehaviour
 {
-    [Header("Haptique")]
-    public float amplitudeGrab = 0.5f;
-    public float dureeGrab = 0.1f;
-    public float amplitudeImpact = 0.8f;
-    public float dureeImpact = 0.2f;
+    [Header("Haptique - Grab")]
+    [SerializeField] private float amplitudeGrab = 0.5f;
+    [SerializeField] private float dureeGrab = 0.1f;
+
+    [Header("Haptique - Impact")]
+    [SerializeField] private float amplitudeImpact = 0.8f;
+    [SerializeField] private float dureeImpact = 0.2f;
 
     [Header("Audio")]
-    public AudioClip sonImpact;
+    [SerializeField] private AudioClip sonImpact;
 
     private XRGrabInteractable grabInteractable;
     private AudioSource audioSource;
+    private XRBaseInputInteractor interactorActuel; // garde en mémoire qui tient le marteau
 
     void Awake()
     {
         grabInteractable = GetComponent<XRGrabInteractable>();
         audioSource = GetComponent<AudioSource>();
-        audioSource.spatialBlend = 1f; // son spatial
+        audioSource.spatialBlend = 1f; // son spatial en VR
     }
 
     void OnEnable()
     {
         grabInteractable.selectEntered.AddListener(OnGrab);
+        grabInteractable.selectExited.AddListener(OnRelache);
     }
 
     void OnDisable()
     {
         grabInteractable.selectEntered.RemoveListener(OnGrab);
+        grabInteractable.selectExited.RemoveListener(OnRelache);
     }
 
     private void OnGrab(SelectEnterEventArgs args)
     {
-        var interactor = args.interactorObject as UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor;
-        if (interactor != null)
+        // Garde une référence au contrôleur qui tient le marteau
+        interactorActuel = args.interactorObject as XRBaseInputInteractor;
+
+        if (interactorActuel != null)
         {
-            interactor.SendHapticImpulse(amplitudeGrab, dureeGrab);
+            interactorActuel.SendHapticImpulse(amplitudeGrab, dureeGrab); //  vibration Haptique
         }
     }
 
-    // Appel�e par le script Cible quand impact d�tect�
-    public void DeclencherImpact(UnityEngine.XR.Interaction.Toolkit.Interactors.XRBaseInputInteractor interactor)
+    private void OnRelache(SelectExitEventArgs args)
     {
-        if (interactor != null)
+        interactorActuel = null;
+    }
+
+    // Appelée par Cible.cs quand le marteau touche une cible
+    public void DeclencherImpact()
+    {
+        // Vibration sur le contrôleur qui tient le marteau
+        if (interactorActuel != null)
         {
-            interactor.SendHapticImpulse(amplitudeImpact, dureeImpact);
+            interactorActuel.SendHapticImpulse(amplitudeImpact, dureeImpact);
         }
+
+        // Son d'impact à la position du marteau
         if (sonImpact != null)
         {
             audioSource.PlayOneShot(sonImpact);

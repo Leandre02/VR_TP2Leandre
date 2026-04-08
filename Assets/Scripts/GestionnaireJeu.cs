@@ -1,18 +1,31 @@
 using UnityEngine;
 using TMPro;
 
+/// <summary>
+/// Classe centrale pour gérer le déroulement du jeu : démarrage, fin, score, minuterie, et transitions entre les différents panneaux UI
+/// </summary>
 public class GestionnaireJeu : MonoBehaviour
 {
+    // Singleton de GestionnaireJeu pour permettre à d'autres scripts d'y accéder facilement
     public static GestionnaireJeu instance;
 
-    public float dureePartie = 60f;
-    public TextMeshProUGUI texteScore;
-    public TextMeshProUGUI texteMinuterie;
-    public GameObject panneauJeu;
-    public GameObject panneauFin;
-    public TextMeshProUGUI texteScoreFinal;
-    public GameObject panneauMenu;
-    public GestionnaireSpawn gestionnaireSpawn;
+    [Header("Durée")]
+    [SerializeField] private float dureePartie = 60f;
+
+    [Header("UI - Panneau Jeu")]
+    [SerializeField] private TextMeshProUGUI texteScore;
+    [SerializeField] private TextMeshProUGUI texteMinuterie;
+
+    [Header("UI - Panneaux")]
+    [SerializeField] private GameObject panneauMenu;
+    [SerializeField] private GameObject panneauJeu;
+    [SerializeField] private GameObject panneauFin;
+
+    [Header("UI - Fin de partie")]
+    [SerializeField] private TextMeshProUGUI texteScoreFinal;
+
+    [Header("Références")]
+    [SerializeField] private GestionnaireSpawn gestionnaireSpawn;
 
     private int score = 0;
     private float tempsRestant;
@@ -21,6 +34,8 @@ public class GestionnaireJeu : MonoBehaviour
     void Awake()
     {
         instance = this;
+
+        // État initial — on montre le menu
         panneauMenu.SetActive(true);
         panneauJeu.SetActive(false);
         panneauFin.SetActive(false);
@@ -28,23 +43,30 @@ public class GestionnaireJeu : MonoBehaviour
 
     void OnEnable()
     {
+        // S'abonne à l'event C# de Cible
         Cible.OnCibleTouchee += AjouterPoints;
     }
 
     void OnDisable()
     {
+        // Se désabonne pour éviter les fuites mémoire
         Cible.OnCibleTouchee -= AjouterPoints;
     }
 
+    /// <summary>
+    /// Méthode pour démarrer la partie, appelée par le bouton "Jouer" du menu
+    /// </summary>
     public void CommencerPartie()
     {
-        gestionnaireSpawn.DemarrerSpawn();
-        panneauMenu.SetActive(false);
         score = 0;
         tempsRestant = dureePartie;
         partieEnCours = true;
+
+        panneauMenu.SetActive(false);
         panneauJeu.SetActive(true);
         panneauFin.SetActive(false);
+
+        gestionnaireSpawn.DemarrerSpawn();
         MettreAJourUI();
     }
 
@@ -61,27 +83,43 @@ public class GestionnaireJeu : MonoBehaviour
         }
     }
 
-    public void AjouterPoints(int points)
+    /// <summary>
+    /// Appelée via l'event OnCibleTouchee
+    /// Permet d'ajouter les points gagnés à chaque fois qu'une cible est touchée, et de mettre à jour l'UI
+    /// </summary>
+    /// <param name="pointsGagnes"></param>
+    public void AjouterPoints(int pointsGagnes)
     {
         if (!partieEnCours) return;
-        score += points;
+
+        score += pointsGagnes;
         MettreAJourUI();
     }
 
+    /// <summary>
+    /// Permet de terminer la partie, appelée quand le temps est écoulé
+    /// </summary>
     void TerminerPartie()
     {
-        gestionnaireSpawn.ArreterSpawn();
         partieEnCours = false;
+        gestionnaireSpawn.ArreterSpawn();
+
         panneauJeu.SetActive(false);
         panneauFin.SetActive(true);
         texteScoreFinal.text = "Score : " + score;
     }
 
+    /// <summary>
+    /// Permet de recommencer une nouvelle partie, appelée par le bouton "Rejouer" du panneau de fin
+    /// </summary>
     public void NouvellePartie()
     {
         CommencerPartie();
     }
 
+    /// <summary>
+    /// Permet de mettre à jour l'affichage du score et du temps restant dans l'UI pendant la partie
+    /// </summary>
     void MettreAJourUI()
     {
         texteScore.text = "Score : " + score;
