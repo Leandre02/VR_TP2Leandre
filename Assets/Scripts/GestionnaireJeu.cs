@@ -1,21 +1,25 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
+
+
 
 /// <summary>
-/// Classe centrale pour gérer le déroulement du jeu : démarrage, fin, score, minuterie, et transitions entre les différents panneaux UI
-/// S’appuie sur les patterns de GameManager et d’UI en World Space vus dans les notes et exercices (UI VR, GameManager)
+/// Classe centrale pour gï¿½rer le dï¿½roulement du jeu : dï¿½marrage, fin, score, minuterie, et transitions entre les diffï¿½rents panneaux UI
+/// Sï¿½appuie sur les patterns de GameManager et dï¿½UI en World Space vus dans les notes et exercices (UI VR, GameManager)
 /// et sur les consignes du travail pratique Whack-a-Mole VR.
-/// Références :
-///  - Cégep de Victoriaville. UI en VR. Environnements Immersifs, 2026.
-///  - Cégep de Victoriaville. Exercice 4.2 — UI VR et GameManager. Environnements Immersifs, 2026. https://envimmersif-cegepvicto.github.io/exercice_ui_jeu_tri/
-///  - Cégep de Victoriaville. Travail pratique — Whack-a-Mole VR. Environnements Immersifs, 2026. https://envimmersif-cegepvicto.github.io/tp_sommatif1_vr/
+/// Rï¿½fï¿½rences :
+///  - Cï¿½gep de Victoriaville. UI en VR. Environnements Immersifs, 2026.
+///  - Cï¿½gep de Victoriaville. Exercice 4.2 ï¿½ UI VR et GameManager. Environnements Immersifs, 2026. https://envimmersif-cegepvicto.github.io/exercice_ui_jeu_tri/
+///  - Cï¿½gep de Victoriaville. Travail pratique ï¿½ Whack-a-Mole VR. Environnements Immersifs, 2026. https://envimmersif-cegepvicto.github.io/tp_sommatif1_vr/
 /// </summary>
 public class GestionnaireJeu : MonoBehaviour
 {
-    // Singleton de GestionnaireJeu pour permettre à d'autres scripts d'y accéder facilement
+    // Singleton de GestionnaireJeu pour permettre ï¿½ d'autres scripts d'y accï¿½der facilement
     public static GestionnaireJeu instance;
 
-    [Header("Durée")]
+    [Header("Duree")]
     [SerializeField] private float dureePartie = 60f;
 
     [Header("UI - Panneau Jeu")]
@@ -30,8 +34,12 @@ public class GestionnaireJeu : MonoBehaviour
     [Header("UI - Fin de partie")]
     [SerializeField] private TextMeshProUGUI texteScoreFinal;
 
-    [Header("Références")]
+    [Header("Rï¿½ferences")]
     [SerializeField] private GestionnaireSpawn gestionnaireSpawn;
+
+    [Header("Controleurs pour vibration victoire")]
+    [SerializeField] private XRBaseInputInteractor controleurGauche;
+    [SerializeField] private XRBaseInputInteractor controleurDroit;
 
     private int score = 0;
     private float tempsRestant;
@@ -41,7 +49,7 @@ public class GestionnaireJeu : MonoBehaviour
     {
         instance = this;
 
-        // État initial — on montre le menu
+        // ï¿½tat initial ï¿½ on montre le menu
         panneauMenu.SetActive(true);
         panneauJeu.SetActive(false);
         panneauFin.SetActive(false);
@@ -49,18 +57,18 @@ public class GestionnaireJeu : MonoBehaviour
 
     void OnEnable()
     {
-        // S'abonne à l'event C# de Cible
+        // S'abonne ï¿½ l'event C# de Cible
         Cible.OnCibleTouchee += AjouterPoints;
     }
 
     void OnDisable()
     {
-        // Se désabonne pour éviter les fuites mémoire
+        // Se dï¿½sabonne pour ï¿½viter les fuites mï¿½moire
         Cible.OnCibleTouchee -= AjouterPoints;
     }
 
     /// <summary>
-    /// Méthode pour démarrer la partie, appelée par le bouton "Jouer" du menu
+    /// Mï¿½thode pour demarrer la partie, appelï¿½e par le bouton "Jouer" du menu
     /// </summary>
     public void CommencerPartie()
     {
@@ -90,8 +98,8 @@ public class GestionnaireJeu : MonoBehaviour
     }
 
     /// <summary>
-    /// Appelée via l'event OnCibleTouchee
-    /// Permet d'ajouter les points gagnés à chaque fois qu'une cible est touchée, et de mettre à jour l'UI
+    /// Appelee via l'event OnCibleTouchee
+    /// Permet d'ajouter les points gagnes a chaque fois qu'une cible est touchï¿½e, et de mettre ï¿½ jour l'UI
     /// </summary>
     /// <param name="pointsGagnes"></param>
     public void AjouterPoints(int pointsGagnes)
@@ -103,10 +111,16 @@ public class GestionnaireJeu : MonoBehaviour
     }
 
     /// <summary>
-    /// Permet de terminer la partie, appelée quand le temps est écoulé
+    /// Permet de terminer la partie, appelï¿½e quand le temps est ï¿½coulï¿½
     /// </summary>
     void TerminerPartie()
     {
+        // Ajout d'une vibration haptique au moment de la victoire
+        if (controleurGauche != null)
+            controleurGauche.SendHapticImpulse(1f, 0.5f);
+        if (controleurDroit != null)
+            controleurDroit.SendHapticImpulse(1f, 0.5f);
+
         partieEnCours = false;
         gestionnaireSpawn.ArreterSpawn();
 
@@ -116,7 +130,7 @@ public class GestionnaireJeu : MonoBehaviour
     }
 
     /// <summary>
-    /// Permet de recommencer une nouvelle partie, appelée par le bouton "Rejouer" du panneau de fin
+    /// Permet de recommencer une nouvelle partie, appelï¿½e par le bouton "Rejouer" du panneau de fin
     /// </summary>
     public void NouvellePartie()
     {
@@ -124,7 +138,7 @@ public class GestionnaireJeu : MonoBehaviour
     }
 
     /// <summary>
-    /// Permet de mettre à jour l'affichage du score et du temps restant dans l'UI pendant la partie
+    /// Permet de mettre a jour l'affichage du score et du temps restant dans l'UI pendant la partie
     /// </summary>
     void MettreAJourUI()
     {
