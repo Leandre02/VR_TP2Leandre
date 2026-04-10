@@ -40,6 +40,8 @@ public class GestionnaireSpawn : MonoBehaviour
 
     /// <summary>
     /// Permet de faire spawn des cibles à des points aléatoires, avec un délai entre chaque spawn, et les détruit après un certain temps
+    /// @author Léandre Kanmegne
+    /// Code inspiré de la coroutine d'apparition des meteores - projet final - Cours de jeux 3D A25
     /// </summary>
     /// <returns></returns>
     IEnumerator SpawnCibles()

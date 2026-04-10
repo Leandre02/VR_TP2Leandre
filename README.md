@@ -66,6 +66,9 @@ La communication entre `Cible` et `GestionnaireJeu` passe par un event C# statiq
 
 **Déploiement sur casque** — Le premier build IL2CPP pour Android ARM64 prend considérablement de temps. L'utilisation du cache entre les builds suivants et la validation systématique sur le casque avant la remise finale ont permis d'éviter les surprises de dernière minute.
 
+**XRbaseController - Obsolete** - L'utilisation du component XRbaseController renvoie un warning CS0618: 'XRBaseController' is obsolete: 'XRBaseController has been deprecated dans la version 3.0.0 du XR interaction Toolkit. Elle a été officiellement remplacé par XRBaseInputInteractor 
+Source : https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.0/manual/upgrade-guide-3.0.html
+
 ---
 
 ## Utilisation de l'IA

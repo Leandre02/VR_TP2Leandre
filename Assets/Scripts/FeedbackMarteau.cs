@@ -10,7 +10,7 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 /// Références :
 ///  - Cégep de Victoriaville. Exercice 4.1 — Feedback VR : haptiques et audio spatial. Environnements Immersifs, 2026. https://envimmersif-cegepvicto.github.io/exercice_feedback_vr/
 ///  - Cégep de Victoriaville. Exercice 4 — Tri spatial VR : Grab & Socket. Environnements Immersifs, 2026. https://envimmersif-cegepvicto.github.io/exercice_tri_vr/
-///  - Unity Technologies. XR Interaction Toolkit Documentation. https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.0/api/UnityEngine.XR.Interaction.Toolkit.Interactors.html
+///  - Unity Technologies. XR Interaction Toolkit Documentation. https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.0/manual/upgrade-guide-3.0.html
 /// </summary>
 public class FeedbackMarteau : MonoBehaviour
 {
@@ -27,7 +27,8 @@ public class FeedbackMarteau : MonoBehaviour
 
     private XRGrabInteractable grabInteractable;
     private AudioSource audioSource;
-    private XRBaseInputInteractor interactorActuel; // garde en mémoire qui tient le marteau
+    private XRBaseInputInteractor controller; // Nouveau component du XR interaction Toolkit
+
 
     void Awake()
     {
@@ -51,26 +52,26 @@ public class FeedbackMarteau : MonoBehaviour
     private void OnGrab(SelectEnterEventArgs args)
     {
         // Garde une référence au contrôleur qui tient le marteau
-        interactorActuel = args.interactorObject as XRBaseInputInteractor;
+        controller = args.interactorObject.transform.GetComponent<XRBaseInputInteractor>();
 
-        if (interactorActuel != null)
+        if (controller != null)
         {
-            interactorActuel.SendHapticImpulse(amplitudeGrab, dureeGrab); //  vibration Haptique
+            controller.SendHapticImpulse(amplitudeGrab, dureeGrab); //  vibration Haptique
         }
     }
 
     private void OnRelache(SelectExitEventArgs args)
     {
-        interactorActuel = null;
+        controller = null;
     }
 
     // Appelée par Cible.cs quand le marteau touche une cible
     public void DeclencherImpact()
     {
         // Vibration sur le contrôleur qui tient le marteau
-        if (interactorActuel != null)
+        if (controller != null)
         {
-            interactorActuel.SendHapticImpulse(amplitudeImpact, dureeImpact);
+            controller.SendHapticImpulse(amplitudeImpact, dureeImpact);
         }
 
         // Son d'impact à la position du marteau
